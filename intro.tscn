@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://drp0gyujmbnbq"]
+
+[ext_resource type="Texture2D" uid="uid://b7146m6sstii5" path="res://background_nebula.png" id="1_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://c4eu14b3m252k" path="res://background_start_1.png" id="1_ayt76"]
+[ext_resource type="Texture2D" uid="uid://dw8wytvq2lidn" path="res://Add a heading.png" id="2_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://bp8tto2ule2ve" path="res://background_start_2.png" id="4_0a7ni"]
+[ext_resource type="Texture2D" uid="uid://dskxdxwbqhwfl" path="res://starfighter_2.png" id="5_y72e6"]
+[ext_resource type="Texture2D" uid="uid://dn2xwj8twlna" path="res://Add a heading (1).png" id="6_u2rf6"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1159.0
+offset_bottom = 644.0
+color = Color(0, 0, 0, 1)
+
+[node name="BackgroundNebula" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(823, 217)
+rotation = -0.380417
+scale = Vector2(3.32315, 3.51687)
+texture = ExtResource("1_7a8ye")
+
+[node name="BackgroundStart2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(621, 344)
+scale = Vector2(7.53174, 7.53174)
+texture = ExtResource("4_0a7ni")
+
+[node name="BackgroundStart1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578.5, 373.5)
+scale = Vector2(7.33125, 5.09375)
+texture = ExtResource("1_ayt76")
+
+[node name="AddAHeading" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(528, 276)
+rotation = 0.265054
+scale = Vector2(0.778704, 0.778704)
+texture = ExtResource("2_7a8ye")
+
+[node name="Starfighter2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(148, 67)
+texture = ExtResource("5_y72e6")
+
+[node name="AddAHeading(1)" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(559, 220)
+scale = Vector2(0.917024, 0.917024)
+texture = ExtResource("6_u2rf6")
