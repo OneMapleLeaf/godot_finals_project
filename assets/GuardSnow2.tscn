@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5w0sanht6bwd"]
+
+[ext_resource type="Texture2D" uid="uid://bdyl7ppwdxwoa" path="res://Guard2Snow.png" id="1_oxc2r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83l80"]
+atlas = ExtResource("1_oxc2r")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub7dw"]
+atlas = ExtResource("1_oxc2r")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y22d7"]
+atlas = ExtResource("1_oxc2r")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmghy"]
+atlas = ExtResource("1_oxc2r")
+region = Rect2(432, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjygg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83l80")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub7dw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y22d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmghy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Sprite2D" type="Sprite2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(266.5, 259.5)
+scale = Vector2(3.0625, 3.0625)
+sprite_frames = SubResource("SpriteFrames_cjygg")
+autoplay = "default"
+frame_progress = 0.301091
