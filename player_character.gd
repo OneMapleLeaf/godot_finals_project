@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-var speed = 201
+
+var speed = 300
 var isWalking
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
