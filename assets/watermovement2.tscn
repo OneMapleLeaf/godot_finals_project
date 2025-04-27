@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://cocd3wsx0t31i"]
+
+[ext_resource type="Texture2D" uid="uid://26a5lb1qs3gs" path="res://water_detilazation_ice.png" id="1_k8xcs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57bhi"]
+atlas = ExtResource("1_k8xcs")
+region = Rect2(0, 0, 296, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_st8jo"]
+atlas = ExtResource("1_k8xcs")
+region = Rect2(0, 192, 296, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp03p"]
+atlas = ExtResource("1_k8xcs")
+region = Rect2(0, 384, 296, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8unl"]
+atlas = ExtResource("1_k8xcs")
+region = Rect2(0, 864, 296, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54no6"]
+atlas = ExtResource("1_k8xcs")
+region = Rect2(0, 960, 296, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jtynu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57bhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_st8jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cp03p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8unl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54no6")
+}],
+"loop": true,
+"name": &"watermovement2",
+"speed": 2.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(226, 175)
+scale = Vector2(1, 1.10256)
+sprite_frames = SubResource("SpriteFrames_jtynu")
+animation = &"watermovement2"
+autoplay = "watermovement2"
+frame_progress = 0.581407
