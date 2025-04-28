@@ -4,5 +4,10 @@
 
 [node name="World" type="Node2D"]
 
+[node name="Canvas" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+
 [node name="Player_Character" parent="." instance=ExtResource("1_l6s2d")]
 position = Vector2(571, 318)
