@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dj00f5mpj4al2"]
+
+[ext_resource type="Texture2D" uid="uid://bxrxfy383cwa2" path="res://assets/DungeonCrawl_ProjectUtumnoTileset_0.png" id="1_6tj1f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3r7h"]
+atlas = ExtResource("1_6tj1f")
+region = Rect2(1824, 576, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5lyt"]
+atlas = ExtResource("1_6tj1f")
+region = Rect2(1856, 576, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugvtr"]
+atlas = ExtResource("1_6tj1f")
+region = Rect2(1888, 576, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq2gp"]
+atlas = ExtResource("1_6tj1f")
+region = Rect2(1920, 576, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yqmbe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3r7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5lyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugvtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq2gp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="torch" type="AnimatedSprite2D"]
+position = Vector2(51, 47)
+scale = Vector2(4.1875, 3.9375)
+sprite_frames = SubResource("SpriteFrames_yqmbe")
+frame_progress = 0.216065
