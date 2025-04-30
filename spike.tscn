@@ -44,4 +44,10 @@ animations = [{
 [node name="spike" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_mq8hj")
 autoplay = "default"
-frame_progress = 0.604467
+frame = 3
+frame_progress = 0.784347
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-27, 60, 25, 60, 17, 45, 14, -12, -5, -57, -20, -3, -16, 47)
