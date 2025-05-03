@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhb57bs3i0kv1"]
+
+[ext_resource type="Texture2D" uid="uid://bfxufyxs38fxp" path="res://bubbles.png" id="1_bcnbk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhhjs"]
+atlas = ExtResource("1_bcnbk")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1gqp"]
+atlas = ExtResource("1_bcnbk")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey1pn"]
+atlas = ExtResource("1_bcnbk")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okg11"]
+atlas = ExtResource("1_bcnbk")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_743j0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhhjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1gqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ey1pn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okg11")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="bubblesblood" type="AnimatedSprite2D"]
+self_modulate = Color(0.75124, 0.308243, 0.167073, 1)
+sprite_frames = SubResource("SpriteFrames_743j0")
+autoplay = "default"
+frame_progress = 0.955881
