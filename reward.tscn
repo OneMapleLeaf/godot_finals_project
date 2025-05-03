@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnabmp7i0api1"]
+
+[ext_resource type="Texture2D" uid="uid://41wx64gylkw5" path="res://coin.png" id="1_vybvr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ef35c"]
+atlas = ExtResource("1_vybvr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta3mg"]
+atlas = ExtResource("1_vybvr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yaaf5"]
+atlas = ExtResource("1_vybvr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpppv"]
+atlas = ExtResource("1_vybvr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4moh6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ef35c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta3mg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yaaf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpppv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="reward" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_4moh6")
+autoplay = "default"
