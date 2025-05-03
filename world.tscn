@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://badpro1yvogvw"]
+[gd_scene load_steps=43 format=4 uid="uid://d0q8ih4pax27b"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]

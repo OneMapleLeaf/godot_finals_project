@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bj3ymv8k1oqpx"]
+[gd_scene load_steps=23 format=3 uid="uid://bv3kr2n7vdpwr"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_44wa3"]
 [ext_resource type="Texture2D" uid="uid://y2w16pf76dk" path="res://assets/SOPHIE.png" id="2_xengn"]
@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bcro6iumyrcsb" path="res://assets/namesophie.png" id="4_8e5i8"]
 [ext_resource type="Texture2D" uid="uid://cbdkwm62hxejd" path="res://assets/character.png" id="5_6jwfy"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42djn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_44wa3"]
 texture = ExtResource("1_44wa3")
 8:2/0 = 0
 9:2/0 = 0
@@ -420,9 +420,9 @@ texture = ExtResource("1_44wa3")
 5:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_woyg5"]
-sources/0 = SubResource("TileSetAtlasSource_42djn")
+sources/0 = SubResource("TileSetAtlasSource_44wa3")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aq80v"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xengn"]
 texture = ExtResource("2_xengn")
 1:0/0 = 0
 4:0/0 = 0
@@ -646,7 +646,7 @@ texture = ExtResource("2_xengn")
 16:23/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_qo56v"]
-sources/0 = SubResource("TileSetAtlasSource_aq80v")
+sources/0 = SubResource("TileSetAtlasSource_xengn")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2pjyi"]
 atlas = ExtResource("3_unvyc")
@@ -1996,7 +1996,7 @@ texture = ExtResource("1_44wa3")
 [sub_resource type="TileSet" id="TileSet_5yfxf"]
 sources/0 = SubResource("TileSetAtlasSource_qb4qx")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkxiw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unvyc"]
 texture = ExtResource("1_44wa3")
 2:2/0 = 0
 3:2/0 = 0
@@ -2432,7 +2432,7 @@ texture = ExtResource("1_44wa3")
 33:15/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_b3ntq"]
-sources/1 = SubResource("TileSetAtlasSource_tkxiw")
+sources/1 = SubResource("TileSetAtlasSource_unvyc")
 
 [node name="Node2D" type="Node2D"]
 
