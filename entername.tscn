@@ -1,9 +1,13 @@
-[gd_scene format=3 uid="uid://cdg3cidn8yoaf"]
+[gd_scene load_steps=2 format=3 uid="uid://cdg3cidn8yoaf"]
+
+[sub_resource type="FontVariation" id="FontVariation_rfy5r"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 289.0
 offset_top = 107.0
-offset_right = 404.0
-offset_bottom = 191.0
+offset_right = 445.0
+offset_bottom = 150.0
+theme_override_fonts/font = SubResource("FontVariation_rfy5r")
+placeholder_text = "Enter Username"
