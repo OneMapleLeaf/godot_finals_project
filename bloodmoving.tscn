@@ -1,0 +1,127 @@
+[gd_scene load_steps=19 format=3 uid="uid://bpq2ei5ass8j0"]
+
+[ext_resource type="Texture2D" uid="uid://xjoxhlppal5q" path="res://movingblood.png" id="1_ikg61"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmgf4"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 0, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yttoq"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 36, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrkwf"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 72, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53prm"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 108, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2b7yy"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 144, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cobu0"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 180, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk4yn"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 216, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydmk4"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 252, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tf6d"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 288, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tesmv"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 324, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hrek"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 360, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_goeca"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 396, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gacu"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 432, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2poga"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 504, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8lv7"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 540, 344, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cdgj"]
+atlas = ExtResource("1_ikg61")
+region = Rect2(0, 576, 344, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vohcf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmgf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yttoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrkwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53prm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2b7yy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cobu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qk4yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydmk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tf6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tesmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hrek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_goeca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gacu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2poga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8lv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cdgj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="bloodmoving" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_vohcf")
+autoplay = "default"

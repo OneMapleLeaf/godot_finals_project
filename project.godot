@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Finals_Project"
-run/main_scene="uid://cdg3cidn8yoaf"
-config/features=PackedStringArray("4.4", "Forward Plus")
+run/main_scene="res://valtania.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [input]
