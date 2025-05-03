@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://5fjk5jgxl0bj"]
+
+[ext_resource type="Texture2D" uid="uid://yjqoddte8ggk" path="res://assets/spinner_run_attack_anim_all_dir_strip_8.png" id="1_t6rga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdgmi"]
+atlas = ExtResource("1_t6rga")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26vp4"]
+atlas = ExtResource("1_t6rga")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dg7vt"]
+atlas = ExtResource("1_t6rga")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a7iut"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdgmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26vp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dg7vt")
+}],
+"loop": true,
+"name": &"spinner",
+"speed": 7.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_a7iut")
+animation = &"spinner"
+autoplay = "spinner"
+frame_progress = 0.291589
