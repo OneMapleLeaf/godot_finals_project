@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://8a15g8226tt6"]
+
+[ext_resource type="Texture2D" uid="uid://cgwu0ofaa336j" path="res://assets/b9d5fb800b505bc142de8da6af3039f3-ezgif.com-gif-to-sprite-converter-removebg-preview.png" id="1_3xla1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0u03"]
+atlas = ExtResource("1_3xla1")
+region = Rect2(0, 0, 223, 223)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncpt7"]
+atlas = ExtResource("1_3xla1")
+region = Rect2(223, 0, 223, 223)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5gbe"]
+atlas = ExtResource("1_3xla1")
+region = Rect2(446, 0, 223, 223)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ugwr1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0u03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncpt7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5gbe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="tornado" type="AnimatedSprite2D"]
+modulate = Color(0.270789, 5.40749e-05, 0.274331, 1)
+sprite_frames = SubResource("SpriteFrames_ugwr1")
+autoplay = "default"
+frame_progress = 0.909174
