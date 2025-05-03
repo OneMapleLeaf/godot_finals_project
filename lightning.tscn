@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://ddwybc3elon43"]
+
+[ext_resource type="Texture2D" uid="uid://cqgsm6jf3ymtk" path="res://assets/thunder.png" id="1_mmcp4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds211"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(0, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3jrl"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(20, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3r7av"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(40, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glhag"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(60, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6jmw"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(80, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fig2g"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(100, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw3dw"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(120, 0, 20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8plu"]
+atlas = ExtResource("1_mmcp4")
+region = Rect2(140, 0, 20, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7l1w6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds211")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3jrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3r7av")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glhag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6jmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fig2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw3dw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8plu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="lightning" type="AnimatedSprite2D"]
+position = Vector2(-0.999999, 1.90735e-06)
+scale = Vector2(2.25, 2.10714)
+sprite_frames = SubResource("SpriteFrames_7l1w6")
+autoplay = "default"
+frame_progress = 0.0802095
