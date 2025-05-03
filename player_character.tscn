@@ -154,6 +154,8 @@ animations = [{
 size = Vector2(20, 38)
 
 [node name="Player_Character" type="CharacterBody2D"]
+collision_layer = 19
+collision_mask = 19
 script = ExtResource("1_cs804")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -167,5 +169,8 @@ position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_fvnmd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
