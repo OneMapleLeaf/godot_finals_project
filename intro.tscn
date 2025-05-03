@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddlut5r4ou8sx"]
+
+[ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ayt76"]
+[ext_resource type="Texture2D" uid="uid://cpsfyixjpxkva" path="res://assets/SCATTEREDWHITE.png" id="2_7a8ye"]
+[ext_resource type="PackedScene" uid="uid://1tsxkmqkenuy" path="res://star.tscn" id="3_7a8ye"]
+
+[node name="Node" type="Node"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(568, 330)
+scale = Vector2(0.617267, 0.617267)
+texture = ExtResource("1_ayt76")
+
+[node name="Scatteredwhite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(541, 409)
+scale = Vector2(0.616891, 0.616891)
+texture = ExtResource("2_7a8ye")
+
+[node name="Node2D" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(415, 337)
+
+[node name="Node2D2" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(523, 352)
+
+[node name="Node2D3" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(615, 251)
+
+[node name="Node2D4" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(392, 233)
+
+[node name="Node2D5" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(767, 241)
+
+[node name="Node2D6" parent="." instance=ExtResource("3_7a8ye")]
+position = Vector2(682, 321)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://cphsrwvd3wr2y"]
 
-[ext_resource type="Script" path="res://player_character.gd" id="1_cs804"]
+[ext_resource type="Script" uid="uid://bvjvffo4spqy" path="res://player_character.gd" id="1_cs804"]
 [ext_resource type="Texture2D" uid="uid://cn080ljrfts81" path="res://assets/characters/NoArmor.png" id="1_els5f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4erq"]
@@ -167,5 +167,8 @@ position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_fvnmd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(1.995, 1.995)
+limit_left = -4
+limit_top = -2
+limit_right = 1923
+limit_bottom = 1074
