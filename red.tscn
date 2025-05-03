@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://xn13gpbfub8h"]
+
+[ext_resource type="Texture2D" uid="uid://br3a1n72p62u2" path="res://assets/spr_coin_roj.png" id="1_l7oly"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxc2j"]
+atlas = ExtResource("1_l7oly")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87kqv"]
+atlas = ExtResource("1_l7oly")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fllm5"]
+atlas = ExtResource("1_l7oly")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qxhj"]
+atlas = ExtResource("1_l7oly")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_btava"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxc2j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87kqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fllm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qxhj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="red" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_btava")
+autoplay = "default"
+frame_progress = 0.483618
+
+[node name="StaticBody2D" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-4, -2, 0, -7, 4, -3, 4, 3, 0, 8, -4, 3)

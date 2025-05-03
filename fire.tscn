@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://8cytmljwqj2q"]
+
+[ext_resource type="Texture2D" uid="uid://bxrxfy383cwa2" path="res://assets/DungeonCrawl_ProjectUtumnoTileset_0.png" id="1_oi3g7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl8fu"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(416, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmd7x"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(448, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogyqr"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(480, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ib2us"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(512, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6epg"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(544, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52npp"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(576, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oeb75"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(608, 384, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fggmq"]
+atlas = ExtResource("1_oi3g7")
+region = Rect2(640, 384, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f55nb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rl8fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmd7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogyqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ib2us")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6epg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52npp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oeb75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fggmq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_f55nb")
+frame_progress = 0.556455
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-13, 15, 13, 15, 13, 10, 8, 5, 0, -20, -10, 7, -13, 10)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd0bh3x3bridb"]
+
+[ext_resource type="Texture2D" uid="uid://cob1yb8vavy0e" path="res://assets/rain.png" id="1_37aht"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arp6w"]
+atlas = ExtResource("1_37aht")
+region = Rect2(800, 0, 800, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncnjx"]
+atlas = ExtResource("1_37aht")
+region = Rect2(0, 0, 800, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ybsmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arp6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncnjx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="rain" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ybsmv")
+autoplay = "default"
+frame_progress = 0.70192
