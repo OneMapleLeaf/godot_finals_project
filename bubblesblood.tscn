@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dhb57bs3i0kv1"]
 
-[ext_resource type="Texture2D" uid="uid://bfxufyxs38fxp" path="res://bubbles.png" id="1_bcnbk"]
+[ext_resource type="Texture2D" uid="uid://dj784as668r8l" path="res://assets/bubbles.png" id="1_bcnbk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhhjs"]
 atlas = ExtResource("1_bcnbk")
@@ -42,4 +42,4 @@ animations = [{
 self_modulate = Color(0.75124, 0.308243, 0.167073, 1)
 sprite_frames = SubResource("SpriteFrames_743j0")
 autoplay = "default"
-frame_progress = 0.955881
+frame_progress = 0.852278

@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://bpq2ei5ass8j0"]
 
-[ext_resource type="Texture2D" uid="uid://xjoxhlppal5q" path="res://movingblood.png" id="1_ikg61"]
+[ext_resource type="Texture2D" uid="uid://cwtd18lcwhuu5" path="res://assets/movingblood.png" id="1_ikg61"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lmgf4"]
 atlas = ExtResource("1_ikg61")
@@ -125,3 +125,4 @@ animations = [{
 [node name="bloodmoving" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_vohcf")
 autoplay = "default"
+frame_progress = 0.971892
