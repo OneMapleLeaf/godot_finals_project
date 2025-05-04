@@ -1,6 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://p0hqmmcay5kv"]
+[gd_scene load_steps=21 format=3 uid="uid://p0hqmmcay5kv"]
 
-[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
+[ext_resource type="Script" uid="uid://cbqnjdcns4roi" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://56eiywomdtq3" path="res://assets/ValName.png" id="11_um0gg"]
 [ext_resource type="Texture2D" uid="uid://8otjpbumilvj" path="res://assets/zorvName.png" id="12_7vm0p"]
 [ext_resource type="Texture2D" uid="uid://bqtl4ocul0vn6" path="res://assets/XerName.png" id="13_c74fs"]
+[ext_resource type="Texture2D" uid="uid://cov06gyap7py2" path="res://assets/redfutuisticlock.png" id="15_um0gg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sj2x0"]
 radius = 51.9165
@@ -77,6 +78,7 @@ scale = Vector2(1.96856, 1.96856)
 shape = SubResource("CircleShape2D_sj2x0")
 
 [node name="nexar" parent="." instance=ExtResource("3_omd77")]
+modulate = Color(0.27, 0.27, 0.27, 1)
 position = Vector2(332, 384)
 scale = Vector2(1.67464, 1.67464)
 
@@ -87,6 +89,7 @@ position = Vector2(0.597143, -0.597143)
 shape = SubResource("CircleShape2D_p10tu")
 
 [node name="valtania" parent="." instance=ExtResource("4_lihnd")]
+modulate = Color(0.27, 0.27, 0.27, 1)
 position = Vector2(577, 322)
 scale = Vector2(1.39595, 1.39595)
 
@@ -96,6 +99,7 @@ scale = Vector2(1.39595, 1.39595)
 shape = SubResource("CircleShape2D_0b0fb")
 
 [node name="astria" parent="." instance=ExtResource("5_ox4fd")]
+modulate = Color(0.27, 0.27, 0.27, 1)
 position = Vector2(802, 234)
 scale = Vector2(1.64399, 1.64399)
 
@@ -106,6 +110,7 @@ position = Vector2(0, -0.608276)
 shape = SubResource("CircleShape2D_mymwo")
 
 [node name="zorvath" parent="." instance=ExtResource("6_yk03e")]
+modulate = Color(0.27, 0.27, 0.27, 1)
 position = Vector2(994, 434)
 scale = Vector2(1.69562, 1.69562)
 
@@ -155,6 +160,27 @@ texture_filter = 1
 position = Vector2(141, 331)
 scale = Vector2(0.29918, 0.29918)
 texture = ExtResource("13_c74fs")
+
+[node name="Redfutuisticlock" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(336, 392)
+scale = Vector2(0.241429, 0.241429)
+texture = ExtResource("15_um0gg")
+
+[node name="Redfutuisticlock2" type="Sprite2D" parent="."]
+position = Vector2(578, 327)
+scale = Vector2(0.223346, 0.223346)
+texture = ExtResource("15_um0gg")
+
+[node name="Redfutuisticlock3" type="Sprite2D" parent="."]
+position = Vector2(804, 239)
+scale = Vector2(0.240055, 0.240055)
+texture = ExtResource("15_um0gg")
+
+[node name="Redfutuisticlock4" type="Sprite2D" parent="."]
+position = Vector2(996, 438)
+scale = Vector2(0.237197, 0.237197)
+texture = ExtResource("15_um0gg")
 
 [connection signal="mouse_entered" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_entered"]
 [connection signal="mouse_exited" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_exited"]
