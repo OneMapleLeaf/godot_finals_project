@@ -1,20 +1,37 @@
-[gd_scene load_steps=14 format=3 uid="uid://p0hqmmcay5kv"]
+[gd_scene load_steps=20 format=3 uid="uid://cegwrb0j6ycke"]
 
+[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
-[ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
-[ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
-[ext_resource type="PackedScene" uid="uid://d4aki4dq3v667" path="res://NexarPlanet.tscn" id="3_omd77"]
-[ext_resource type="PackedScene" uid="uid://c1cguqowxhl1o" path="res://ValtaniaPlanet.tscn" id="4_lihnd"]
-[ext_resource type="PackedScene" uid="uid://bdrl8irn7en1j" path="res://AstriaPlanet.tscn" id="5_ox4fd"]
-[ext_resource type="PackedScene" uid="uid://b8t0tymi4deto" path="res://ZorvathPlanet.tscn" id="6_yk03e"]
+[ext_resource type="PackedScene" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
+[ext_resource type="Texture2D" path="res://assets/dash.png" id="2_lihnd"]
+[ext_resource type="PackedScene" path="res://NexarPlanet.tscn" id="3_omd77"]
+[ext_resource type="PackedScene" path="res://ValtaniaPlanet.tscn" id="4_lihnd"]
+[ext_resource type="PackedScene" path="res://AstriaPlanet.tscn" id="5_ox4fd"]
+[ext_resource type="PackedScene" path="res://ZorvathPlanet.tscn" id="6_yk03e"]
 [ext_resource type="PackedScene" uid="uid://1tsxkmqkenuy" path="res://star.tscn" id="7_omd77"]
-[ext_resource type="Texture2D" uid="uid://tx6mp8khpscj" path="res://assets/AstName.png" id="9_demyn"]
-[ext_resource type="Texture2D" uid="uid://cr3q2phh005sv" path="res://assets/NexName.png" id="10_utvq1"]
-[ext_resource type="Texture2D" uid="uid://56eiywomdtq3" path="res://assets/ValName.png" id="11_um0gg"]
-[ext_resource type="Texture2D" uid="uid://8otjpbumilvj" path="res://assets/zorvName.png" id="12_7vm0p"]
-[ext_resource type="Texture2D" uid="uid://bqtl4ocul0vn6" path="res://assets/XerName.png" id="13_c74fs"]
+[ext_resource type="Texture2D" path="res://assets/AstName.png" id="9_demyn"]
+[ext_resource type="Texture2D" path="res://assets/NexName.png" id="10_utvq1"]
+[ext_resource type="Texture2D" path="res://assets/ValName.png" id="11_um0gg"]
+[ext_resource type="Texture2D" path="res://assets/zorvName.png" id="12_7vm0p"]
+[ext_resource type="Texture2D" path="res://assets/XerName.png" id="13_c74fs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sj2x0"]
+radius = 51.9165
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p10tu"]
+radius = 50.9815
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0b0fb"]
+radius = 51.0025
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mymwo"]
+radius = 51.0118
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2jvvh"]
+radius = 50.9549
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_8o5t3")
 
 [node name="Bg-stars" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -54,21 +71,48 @@ texture = ExtResource("2_lihnd")
 position = Vector2(155, 197)
 scale = Vector2(1.96856, 1.96856)
 
+[node name="Area2dxerdia" type="Area2D" parent="xerdia"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="xerdia/Area2dxerdia"]
+shape = SubResource("CircleShape2D_sj2x0")
+
 [node name="nexar" parent="." instance=ExtResource("3_omd77")]
 position = Vector2(332, 384)
 scale = Vector2(1.67464, 1.67464)
+
+[node name="Area2dnexar" type="Area2D" parent="nexar"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nexar/Area2dnexar"]
+position = Vector2(0.597143, -0.597143)
+shape = SubResource("CircleShape2D_p10tu")
 
 [node name="valtania" parent="." instance=ExtResource("4_lihnd")]
 position = Vector2(577, 322)
 scale = Vector2(1.39595, 1.39595)
 
+[node name="Area2dvaltania" type="Area2D" parent="valtania"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="valtania/Area2dvaltania"]
+shape = SubResource("CircleShape2D_0b0fb")
+
 [node name="astria" parent="." instance=ExtResource("5_ox4fd")]
 position = Vector2(802, 234)
 scale = Vector2(1.64399, 1.64399)
 
+[node name="Area2dastria" type="Area2D" parent="astria"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="astria/Area2dastria"]
+position = Vector2(0, -0.608276)
+shape = SubResource("CircleShape2D_mymwo")
+
 [node name="zorvath" parent="." instance=ExtResource("6_yk03e")]
 position = Vector2(994, 434)
 scale = Vector2(1.69562, 1.69562)
+
+[node name="Area2Dzorvath" type="Area2D" parent="zorvath"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zorvath/Area2Dzorvath"]
+shape = SubResource("CircleShape2D_2jvvh")
 
 [node name="Node2D" parent="." instance=ExtResource("7_omd77")]
 position = Vector2(917, 174)
@@ -108,6 +152,17 @@ texture = ExtResource("12_7vm0p")
 
 [node name="XerName" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(148, 318)
+position = Vector2(141, 331)
 scale = Vector2(0.29918, 0.29918)
 texture = ExtResource("13_c74fs")
+
+[connection signal="mouse_entered" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_entered"]
+[connection signal="mouse_exited" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_exited"]
+[connection signal="mouse_entered" from="nexar/Area2dnexar" to="." method="_on_area_2_dnexar_mouse_entered"]
+[connection signal="mouse_exited" from="nexar/Area2dnexar" to="." method="_on_area_2_dnexar_mouse_exited"]
+[connection signal="mouse_entered" from="valtania/Area2dvaltania" to="." method="_on_area_2_dvaltania_mouse_entered"]
+[connection signal="mouse_exited" from="valtania/Area2dvaltania" to="." method="_on_area_2_dvaltania_mouse_exited"]
+[connection signal="mouse_entered" from="astria/Area2dastria" to="." method="_on_area_2_dastria_mouse_entered"]
+[connection signal="mouse_exited" from="astria/Area2dastria" to="." method="_on_area_2_dastria_mouse_exited"]
+[connection signal="mouse_entered" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_entered"]
+[connection signal="mouse_exited" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_exited"]
