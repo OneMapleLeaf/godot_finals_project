@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ayt76"]
 [ext_resource type="Texture2D" uid="uid://cpsfyixjpxkva" path="res://assets/SCATTEREDWHITE.png" id="2_7a8ye"]
 [ext_resource type="PackedScene" uid="uid://1tsxkmqkenuy" path="res://star.tscn" id="3_7a8ye"]
-[ext_resource type="Texture2D" uid="uid://by63igxou1as4" path="res://assets/introStart.png" id="4_y72e6"]
 [ext_resource type="Texture2D" uid="uid://dx3p8pvlfuhbf" path="res://assets/Lot.png" id="5_u2rf6"]
 [ext_resource type="Texture2D" uid="uid://dqypsfjei84p0" path="res://assets/exitBtn.png" id="6_u2rf6"]
+[ext_resource type="Texture2D" uid="uid://bju5i4uqedreg" path="res://assets/newstart.png" id="6_y6ycx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6ycx"]
 texture = ExtResource("5_u2rf6")
@@ -10367,12 +10367,6 @@ position = Vector2(767, 241)
 [node name="Node2D6" parent="." instance=ExtResource("3_7a8ye")]
 position = Vector2(682, 321)
 
-[node name="IntroStart" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(570, 484)
-scale = Vector2(0.495978, 0.495978)
-texture = ExtResource("4_y72e6")
-
 [node name="scatteredthings" type="TileMapLayer" parent="."]
 texture_filter = 1
 position = Vector2(86, -87)
@@ -10382,6 +10376,13 @@ tile_map_data = PackedByteArray("AAAIABIAAABSACwAAAAIABMAAABSAC0AAAAJABIAAABTACw
 tile_set = SubResource("TileSet_dpxxx")
 
 [node name="ExitBtn" type="Sprite2D" parent="."]
-position = Vector2(1051, 596)
-scale = Vector2(0.281287, 0.281287)
+texture_filter = 1
+position = Vector2(569, 521)
+scale = Vector2(0.494827, 0.494827)
 texture = ExtResource("6_u2rf6")
+
+[node name="Newstart" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(570, 457)
+scale = Vector2(0.498223, 0.498223)
+texture = ExtResource("6_y6ycx")
