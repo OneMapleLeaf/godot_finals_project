@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bd0bh3x3bridb" path="res://rain.tscn" id="5_qypkf"]
 [ext_resource type="PackedScene" uid="uid://ddwybc3elon43" path="res://lightning.tscn" id="7_4iyw2"]
 [ext_resource type="PackedScene" uid="uid://8a15g8226tt6" path="res://tornado.tscn" id="8_fmewl"]
-[ext_resource type="PackedScene" uid="uid://d31w3bjb13tya" path="res://gray.tscn" id="10_3jtgm"]
-[ext_resource type="PackedScene" uid="uid://6ghaqgrtwwhm" path="res://spike2.tscn" id="11_ifdi4"]
+[ext_resource type="PackedScene" path="res://gray.tscn" id="10_3jtgm"]
+[ext_resource type="PackedScene" uid="uid://3jmypieic2r" path="res://spike2.tscn" id="11_ifdi4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcwdr"]
 texture = ExtResource("1_hn2mn")

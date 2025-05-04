@@ -23,6 +23,21 @@ func _process(delta: float) -> void:
 	velocity = (getInput().normalized() * speed)
 	move_and_slide()
 	
+	isHome()
 func getInput():
 	var move = Vector2(Input.get_axis("A", "D"), Input.get_axis("W", "S"))
 	return move
+
+func isHome():
+	
+	if get_tree().current_scene.scene_file_path == "res://spaceship.tscn":
+		print("asdasdasd")
+		$Camera2D.limit_left = -351
+		$Camera2D.limit_right = 1550
+		$Camera2D.limit_bottom = 1630
+		$Camera2D.limit_top = -159
+	else:
+		$Camera2D.limit_left = -4
+		$Camera2D.limit_right = 1923
+		$Camera2D.limit_bottom = 1074
+		$Camera2D.limit_top = -2
