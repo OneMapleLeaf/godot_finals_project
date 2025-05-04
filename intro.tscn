@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://drvskxsdxv4l2"]
+[gd_scene load_steps=9 format=4 uid="uid://drvskxsdxv4l2"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ayt76"]
 [ext_resource type="Texture2D" uid="uid://cpsfyixjpxkva" path="res://assets/SCATTEREDWHITE.png" id="2_7a8ye"]
 [ext_resource type="PackedScene" uid="uid://1tsxkmqkenuy" path="res://star.tscn" id="3_7a8ye"]
 [ext_resource type="Texture2D" uid="uid://by63igxou1as4" path="res://assets/introStart.png" id="4_y72e6"]
 [ext_resource type="Texture2D" uid="uid://dx3p8pvlfuhbf" path="res://assets/Lot.png" id="5_u2rf6"]
+[ext_resource type="Texture2D" uid="uid://dqypsfjei84p0" path="res://assets/exitBtn.png" id="6_u2rf6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6ycx"]
 texture = ExtResource("5_u2rf6")
@@ -10379,3 +10380,8 @@ rotation = 0.268396
 scale = Vector2(1.52977, 1.52977)
 tile_map_data = PackedByteArray("AAAIABIAAABSACwAAAAIABMAAABSAC0AAAAJABIAAABTACwAAAAJABMAAABTAC0AAAAkAAUAAABWACgAAAAkAAYAAABWACkAAAAlAAUAAABXACgAAAAlAAYAAABXACkAAAAJAAcAAABiADIAAAAJAAgAAABiADMAAAAKAAcAAABjADIAAAAKAAgAAABjADMAAAAUAAIAAAB0ACwAAAAUAAMAAAB0AC0AAAAVAAIAAAB1ACwAAAAVAAMAAAB1AC0AAAAOABQAAABiACwAAAAOABUAAABiAC0AAAAPABQAAABjACwAAAAPABUAAABjAC0AAAAiAP7/AAA8ADgAAAAiAP//AAA8ADkAAAAjAP7/AAA9ADgAAAAjAP//AAA9ADkAAAAkAA4AAAAoADoAAAAkAA8AAAAoADsAAAAlAA4AAAApADoAAAAlAA8AAAApADsAAAAZABUAAAB4ACgAAAAZABYAAAB4ACkAAAAaABUAAAB5ACgAAAAaABYAAAB5ACkAAAABAAcAAAA4AC4AAAABAAgAAAA4AC8AAAACAAcAAAA5AC4AAAACAAgAAAA5AC8AAAAHABkAAAAyAC4AAAAHABoAAAAyAC8AAAAIABkAAAAzAC4AAAAIABoAAAAzAC8AAAArAAsAAABIAC4AAAArAAwAAABIAC8AAAAsAAsAAABJAC4AAAAsAAwAAABJAC8AAAA=")
 tile_set = SubResource("TileSet_dpxxx")
+
+[node name="ExitBtn" type="Sprite2D" parent="."]
+position = Vector2(1051, 596)
+scale = Vector2(0.281287, 0.281287)
+texture = ExtResource("6_u2rf6")
