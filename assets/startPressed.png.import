@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://bsv5angwkdsfc"
-
-path="res://.godot/imported/Holy Light AuraR1.png-99ddbac0e5f424e2027219502ced1c3f.ctex"
+uid="uid://djjsh31x67gr4"
+path="res://.godot/imported/startPressed.png-7353a2e61a7698678d69f3785112596a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Holy Light AuraR1.png"
-dest_files=["res://.godot/imported/Holy Light AuraR1.png-99ddbac0e5f424e2027219502ced1c3f.ctex"]
+source_file="res://assets/startPressed.png"
+dest_files=["res://.godot/imported/startPressed.png-7353a2e61a7698678d69f3785112596a.ctex"]
 
 [params]
 
