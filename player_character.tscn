@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://cphsrwvd3wr2y"]
 
-[ext_resource type="Script" uid="uid://bvjvffo4spqy" path="res://player_character.gd" id="1_cs804"]
+[ext_resource type="Script" path="res://player_character.gd" id="1_cs804"]
 [ext_resource type="Texture2D" uid="uid://cn080ljrfts81" path="res://assets/characters/NoArmor.png" id="1_els5f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4erq"]
