@@ -6,16 +6,16 @@ var isWalking
 func _process(delta: float) -> void:
 	isWalking = false
 	if Input.is_action_pressed("W"):
-		$AnimatedSprite2D.play("walk_up")
+		$AnimatedSprite2D.play("male_walk_up")
 		isWalking = true
 	if Input.is_action_pressed("S"):
-		$AnimatedSprite2D.play("walk_down")
+		$AnimatedSprite2D.play("male_walk_down")
 		isWalking = true
 	if Input.is_action_pressed("A"):
-		$AnimatedSprite2D.play("walk_left")
+		$AnimatedSprite2D.play("male_walk_left")
 		isWalking = true
 	if Input.is_action_pressed("D"):
-		$AnimatedSprite2D.play("walk_right")
+		$AnimatedSprite2D.play("male_walk_right")
 		isWalking = true
 	if !isWalking:
 		$AnimatedSprite2D.stop()
