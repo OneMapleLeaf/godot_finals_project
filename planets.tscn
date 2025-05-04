@@ -1,0 +1,113 @@
+[gd_scene load_steps=14 format=3 uid="uid://p0hqmmcay5kv"]
+
+[ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
+[ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
+[ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
+[ext_resource type="PackedScene" uid="uid://d4aki4dq3v667" path="res://NexarPlanet.tscn" id="3_omd77"]
+[ext_resource type="PackedScene" uid="uid://c1cguqowxhl1o" path="res://ValtaniaPlanet.tscn" id="4_lihnd"]
+[ext_resource type="PackedScene" uid="uid://bdrl8irn7en1j" path="res://AstriaPlanet.tscn" id="5_ox4fd"]
+[ext_resource type="PackedScene" uid="uid://b8t0tymi4deto" path="res://ZorvathPlanet.tscn" id="6_yk03e"]
+[ext_resource type="PackedScene" uid="uid://1tsxkmqkenuy" path="res://star.tscn" id="7_omd77"]
+[ext_resource type="Texture2D" uid="uid://tx6mp8khpscj" path="res://assets/AstName.png" id="9_demyn"]
+[ext_resource type="Texture2D" uid="uid://cr3q2phh005sv" path="res://assets/NexName.png" id="10_utvq1"]
+[ext_resource type="Texture2D" uid="uid://56eiywomdtq3" path="res://assets/ValName.png" id="11_um0gg"]
+[ext_resource type="Texture2D" uid="uid://8otjpbumilvj" path="res://assets/zorvName.png" id="12_7vm0p"]
+[ext_resource type="Texture2D" uid="uid://bqtl4ocul0vn6" path="res://assets/XerName.png" id="13_c74fs"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bg-stars" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 334)
+scale = Vector2(0.639816, 0.639816)
+texture = ExtResource("1_dknfl")
+
+[node name="Dash" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(227, 281)
+rotation = 0.841618
+scale = Vector2(2.34164, 2.34164)
+texture = ExtResource("2_lihnd")
+
+[node name="Dash2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(424, 369)
+rotation = -0.357101
+scale = Vector2(2.34164, 2.34164)
+texture = ExtResource("2_lihnd")
+
+[node name="Dash3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(699, 266)
+rotation = -0.417332
+scale = Vector2(2.34164, 2.34164)
+texture = ExtResource("2_lihnd")
+
+[node name="Dash4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(861, 329)
+rotation = -2.3008
+scale = Vector2(2.34164, 2.34164)
+texture = ExtResource("2_lihnd")
+
+[node name="xerdia" parent="." instance=ExtResource("2_0jm45")]
+position = Vector2(155, 197)
+scale = Vector2(1.96856, 1.96856)
+
+[node name="nexar" parent="." instance=ExtResource("3_omd77")]
+position = Vector2(332, 384)
+scale = Vector2(1.67464, 1.67464)
+
+[node name="valtania" parent="." instance=ExtResource("4_lihnd")]
+position = Vector2(577, 322)
+scale = Vector2(1.39595, 1.39595)
+
+[node name="astria" parent="." instance=ExtResource("5_ox4fd")]
+position = Vector2(802, 234)
+scale = Vector2(1.64399, 1.64399)
+
+[node name="zorvath" parent="." instance=ExtResource("6_yk03e")]
+position = Vector2(994, 434)
+scale = Vector2(1.69562, 1.69562)
+
+[node name="Node2D" parent="." instance=ExtResource("7_omd77")]
+position = Vector2(917, 174)
+
+[node name="Node2D2" parent="." instance=ExtResource("7_omd77")]
+position = Vector2(59, 324)
+
+[node name="Node2D3" parent="." instance=ExtResource("7_omd77")]
+position = Vector2(627, 450)
+
+[node name="Node2D4" parent="." instance=ExtResource("7_omd77")]
+position = Vector2(355, 173)
+
+[node name="AstName" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(803, 342)
+scale = Vector2(0.308333, 0.308333)
+texture = ExtResource("9_demyn")
+
+[node name="NexName" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(323, 497)
+scale = Vector2(0.30725, 0.30725)
+texture = ExtResource("10_utvq1")
+
+[node name="ValName" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 418)
+scale = Vector2(0.280045, 0.280045)
+texture = ExtResource("11_um0gg")
+
+[node name="ZorvName" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(999, 549)
+scale = Vector2(0.280093, 0.280093)
+texture = ExtResource("12_7vm0p")
+
+[node name="XerName" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(148, 318)
+scale = Vector2(0.29918, 0.29918)
+texture = ExtResource("13_c74fs")
