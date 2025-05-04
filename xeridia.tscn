@@ -1,10 +1,10 @@
 [gd_scene load_steps=21 format=4 uid="uid://d3bupl20b1tby"]
 
-[ext_resource type="Texture2D" uid="uid://oun08kjyy53o" path="res://seasonal sample (spring).png" id="1_kjij7"]
-[ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://seasonal sample (summer).png" id="2_gdiki"]
-[ext_resource type="Texture2D" uid="uid://dtl5eabdnq83x" path="res://Surplus Trees.png" id="3_b8njg"]
-[ext_resource type="Texture2D" uid="uid://0i8c2iq47qv4" path="res://Trees+.png" id="4_1l1mo"]
-[ext_resource type="Texture2D" uid="uid://bcbmxj6yoh1md" path="res://x-mark-16.png" id="5_b8mom"]
+[ext_resource type="Texture2D" uid="uid://bircmbusj08ru" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
+[ext_resource type="Texture2D" uid="uid://dxnkw50xm45s0" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
+[ext_resource type="Texture2D" uid="uid://coy0kcs0kpjwq" path="res://assets/Surplus Trees.png" id="3_b8njg"]
+[ext_resource type="Texture2D" uid="uid://cv7t6pish2d" path="res://assets/Trees+.png" id="4_1l1mo"]
+[ext_resource type="Texture2D" uid="uid://bext7y16m0dg2" path="res://assets/x-mark-16.png" id="5_b8mom"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -7413,7 +7413,6 @@ tile_map_data = PackedByteArray("AAAeAP7/AgALAAAAAAAhAAAAAgALAAAAAAAkAP7/AgALAAA
 tile_set = SubResource("TileSet_xlid5")
 
 [node name="Cactus" type="TileMapLayer" parent="."]
-visible = false
 texture_filter = 5
 position = Vector2(4, 0)
 tile_map_data = PackedByteArray("AABWABUAAAAsAA4AAABbABYAAAAsABAAAAA0ABEAAAAsABAAAAA7ABMAAAAsAA4AAABDABEAAAAsAA4AAAAtABEAAAAsAA4AAABIABMAAAAsAA4AAAA2ABgAAAAsAA4AAABDABYAAAAsABAAAAAwACYAAAAsAA4AAAA3ACYAAAAsAA4AAABFABsAAAAsAA4AAABJACYAAAAsAA4AAAAoACgAAAAsAA4AAAAfACUAAAAsAA4AAAATAB0AAAAsAA4AAAAGAB8AAAAsAA4AAAAEACMAAAAsAA4AAAAiABAAAAAsABAAAAAmABIAAAAsABAAAAAmAAoAAAAsABAAAAAhAAwAAAAsAA4AAAAoAA4AAAAsABAAAAAaABIAAAAsAA4AAAAQABYAAAAsAA4AAAAaABYAAAAsAA4AAAAwAAoAAAAsAA4AAAA3AAUAAAAsABAAAAAeAAUAAAAsAA4AAABGAAUAAAAsAA4AAAA8AAoAAAAsAA4AAABMAAoAAAAsAA4AAABaAAMAAAAsAA4AAABVAAQAAAAsAA4AAAB1AAsAAAAsAA4AAABlAAkAAAAsAA4AAABnAA8AAAAsABAAAABlABYAAAAsABAAAABeAB8AAAAsAA4AAABYACQAAAAsABAAAABgACYAAAAsABAAAABRACEAAAAsABAAAABTABcAAAAsABAAAABRAA4AAAAsABAAAABhAAoAAAAsABAAAABdAA8AAAAsABAAAABYAA0AAAAsABAAAABmACgAAAAsAA4AAABrABwAAAAsABAAAABEACsAAAAsAA4AAABDACcAAAAsABAAAABxAB0AAAAsABAAAABvABQAAAAsABAAAAB2ABkAAAAsABAAAAB2AB4AAAAsABAAAABWACsAAAAsABAAAAAMAC4AAAAsAA4AAAAdAC4AAAAsAA4AAAAVACsAAAAsABAAAAALACoAAAAsAA4AAAABAC4AAAAsABAAAAAHADgAAAAsABAAAAAMADIAAAAsABAAAAAWADIAAAAsAA4AAAADADYAAAAsABAAAAAhADIAAAAsABAAAAAtADIAAAAsABAAAAAmADUAAAAsAA4AAAAnAD0AAAAsABAAAAAaAEAAAAAsABAAAABJADQAAAAsABAAAABEADIAAAAsAA4AAABOADIAAAAsAA4AAABVADQAAAAsABAAAAA6ADAAAAAsAA4AAABmACQAAAAsABAAAABDAD8AAAAsABAAAABYADwAAAAsABAAAAAHAEIAAAAsAA4AAAABAEIAAAAsAA4AAAA3AEIAAAAsAA4AAAA7ADkAAAAsAA4AAABDADkAAAAsAA4AAABtADsAAAAsAA4AAABdADsAAAAsAA4AAABkADEAAAAsAA4AAABsADMAAAAsAA4AAAB1ADIAAAAsABAAAABuACwAAAAsABAAAAAyACEAAAAsABAAAAA4AB0AAAAsABAAAAA=")
@@ -7425,7 +7424,6 @@ tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAD//wIAAAAAAAA
 tile_set = SubResource("TileSet_rnxm8")
 
 [node name="Area2D" type="Area2D" parent="."]
-visible = false
 
 [node name="collisionwall1" type="CollisionPolygon2D" parent="Area2D"]
 polygon = PackedVector2Array(323, 151, 322, 194, 305, 177, 246, 176, 235, 194, 202, 194, 193, 175, 182, 175, 173, 194, 137, 194, 129, 176, 117, 176, 110, 194, 71, 194, 67, 176, 55, 176, 48, 194, 4, 194, -42, 194, -42, 130, 306, 129)

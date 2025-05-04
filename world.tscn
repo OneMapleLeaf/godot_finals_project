@@ -23661,8 +23661,6 @@ texture = ExtResource("2_tlwt5")
 sources/0 = SubResource("TileSetAtlasSource_aqk2v")
 
 [node name="World" type="Node2D"]
-metadata/_edit_vertical_guides_ = [1923.0, -2.0]
-metadata/_edit_horizontal_guides_ = [1074.0, -4.0]
 
 [node name="Canvas" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1920, 1080)

@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://3jmypieic2r"]
+
+[ext_resource type="Texture2D" uid="uid://cp6fovxfhtgs5" path="res://assets/small_wood_spike_01.png" id="1_20qrf"]
+[ext_resource type="Texture2D" uid="uid://cpnk6grofigor" path="res://assets/small_wood_spike_02.png" id="2_p4814"]
+[ext_resource type="Texture2D" uid="uid://m4fkco2ef68n" path="res://assets/small_wood_spike_03.png" id="3_vtdb2"]
+[ext_resource type="Texture2D" uid="uid://d1fcaycvbonx6" path="res://assets/small_wood_spike_04.png" id="4_k7j76"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea5n6"]
+atlas = ExtResource("1_20qrf")
+region = Rect2(0, 0, 72, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq8os"]
+atlas = ExtResource("2_p4814")
+region = Rect2(0, 0, 72, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrcq4"]
+atlas = ExtResource("3_vtdb2")
+region = Rect2(0, 0, 72, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stget"]
+atlas = ExtResource("4_k7j76")
+region = Rect2(0, 0, 72, 133)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mq8hj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea5n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq8os")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrcq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stget")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="spike" type="AnimatedSprite2D"]
+modulate = Color(0.434291, 0.000131782, 0.434599, 1)
+position = Vector2(-1.19209e-07, 0)
+scale = Vector2(0.100694, 0.068609)
+sprite_frames = SubResource("SpriteFrames_mq8hj")
+autoplay = "default"
+frame = 3
+frame_progress = 0.784347
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(3, 3)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-27, 60, 25, 60, 17, 45, 14, -12, -5, -57, -20, -3, -16, 47)

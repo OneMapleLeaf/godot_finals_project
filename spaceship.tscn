@@ -1,13 +1,15 @@
+
 [gd_scene load_steps=18 format=4 uid="uid://bsrxl30e01ufy"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
-[ext_resource type="TileSet" uid="uid://3pet0p5o7rvb" path="res://assets/spaceship.tres" id="2_xokri"]
+[ext_resource type="TileSet" uid="uid://byaruj6aet7u8" path="res://assets/spaceship.tres" id="2_xokri"]
 [ext_resource type="Texture2D" uid="uid://cpw4rc0ccgfjb" path="res://assets/pixelspace.png" id="3_fddem"]
 [ext_resource type="Texture2D" uid="uid://bi1l8137cl3kc" path="res://assets/Interiors_free_16x16.png" id="3_onphi"]
 [ext_resource type="Texture2D" uid="uid://efkmy0fu76mj" path="res://assets/Interiors_free_32x32.png" id="4_b4e4c"]
 [ext_resource type="Texture2D" uid="uid://di7oyl2bb1yo7" path="res://assets/Regen.png" id="4_tl4jb"]
 [ext_resource type="Texture2D" uid="uid://cwh1spixobrdx" path="res://assets/Eletric Aura.png" id="5_no881"]
 [ext_resource type="Texture2D" uid="uid://c38x2eqibmobg" path="res://assets/Holy Light Aura.png" id="8_tb5uw"]
+[ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_2f75y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tporb"]
 texture = ExtResource("3_onphi")
@@ -6657,6 +6659,8 @@ sources/0 = SubResource("TileSetAtlasSource_svkk0")
 sources/1 = SubResource("TileSetAtlasSource_p463p")
 
 [node name="Spaceship" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-159.0, 1624.0]
+metadata/_edit_vertical_guides_ = [-361.0]
 
 [node name="Bg" type="Sprite2D" parent="."]
 position = Vector2(609, 358)
@@ -6701,28 +6705,31 @@ tile_set = SubResource("TileSet_0sd8x")
 tile_map_data = PackedByteArray("AAAEACoAAAAAAAAAAAAGACYAAAAAAAAAAAAGAEYAAAAAAAAAAAADAE4AAAAAAAAAAAADABIAAAAAAAAAAAAGAAoAAAAAAAAAAABAABMAAQAAAAIAAAAiACIAAQAAAAIAAAA=")
 tile_set = SubResource("TileSet_wlw1k")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(130, 0, 129, 1342, 894, 1343, 897, 1280, 1024, 1279, 1024, 1212, 1153, 1214, 1151, 690, 1089, 690, 1088, 1151, 960, 1151, 960, 1218, 835, 1217, 833, 1281, 194, 1279, 193, 57)
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(1152, 705, 384, 704, 384, 639, 1088, 639, 1089, 450, 385, 450, 384, 385, 1089, 384, 1090, 191, 961, 194, 960, 129, 768, 129, 769, 65, 520.34, 64.1411, 190, 63, 130, 1, 832, 1, 833, 66, 1023, 65, 1025, 129, 1151, 129)
 
-[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(238, 131, 232, 125, 211, 125, 211, 113, 207, 108, 197, 108, 193, 113, 193, 64, 768, 65, 768, 79, 722, 77, 723, 104, 768, 104, 768, 127, 517, 129, 475, 130, 445, 130, 391, 130)
 
-[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(769, 130, 960, 129, 961, 194, 768, 194)
 
-[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(960, 194, 1093, 193, 1093, 257, 960, 259)
 
-[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(385, 447, 1091, 447, 1093, 512, 1055, 513, 385, 512)
 
-[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(1089, 707, 384, 706, 385, 799, 734, 797, 733, 769, 775, 769, 774, 803, 839, 803, 839, 768, 1092, 769)
 
-[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(193, 108, 235, 108, 235, 256, 191, 257)
+
+[node name="Player_Character" parent="." instance=ExtResource("9_2f75y")]
+position = Vector2(521, 299)
