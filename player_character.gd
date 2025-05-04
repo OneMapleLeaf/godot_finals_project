@@ -31,7 +31,6 @@ func getInput():
 func isHome():
 	
 	if get_tree().current_scene.scene_file_path == "res://spaceship.tscn":
-		print("asdasdasd")
 		$Camera2D.limit_left = -351
 		$Camera2D.limit_right = 1550
 		$Camera2D.limit_bottom = 1630
