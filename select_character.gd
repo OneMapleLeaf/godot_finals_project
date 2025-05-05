@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,9 +12,11 @@ func _process(delta: float) -> void:
 
 
 
-func _on_startbutton_pressed() -> void:
-	get_tree().change_scene_to_file("res://selectCharacter.tscn")
 
 
-func _on_exitbut_pressed() -> void:
-	get_tree().quit()
+func _on_checkbutton_pressed() -> void:
+	get_tree().change_scene_to_file("res://spaceship.tscn")
+
+
+func _on_xbutton_pressed() -> void:
+	get_tree().change_scene_to_file("res://intro.tscn")
