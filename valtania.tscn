@@ -123126,7 +123126,7 @@ frame_progress = 0.403302
 
 [node name="gold" parent="." instance=ExtResource("15_b0r7i")]
 position = Vector2(467, 622)
-frame_progress = 0.0932561
+frame_progress = 0.916006
 
 [node name="gold2" parent="." instance=ExtResource("15_b0r7i")]
 position = Vector2(1037, 368)
@@ -123169,4 +123169,4 @@ position = Vector2(1117, 369)
 
 [node name="gold15" parent="." instance=ExtResource("15_b0r7i")]
 position = Vector2(1168, 370)
-frame_progress = 0.365386
+frame_progress = 0.188135
