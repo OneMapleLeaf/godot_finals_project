@@ -122748,6 +122748,29 @@ polygon = PackedVector2Array(1185, 993, 1215, 993, 1218, 1087, 1184, 1087)
 build_mode = 1
 polygon = PackedVector2Array(1, 0, 1, 1085, 1923, 1087, 1921, 0)
 
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+polygon = PackedVector2Array(1295, 554, 1311, 530, 1329, 545, 1338, 568, 1324, 561, 1312, 563, 1289, 564)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+position = Vector2(-434, 479)
+polygon = PackedVector2Array(1295, 554, 1311, 530, 1329, 545, 1338, 568, 1324, 561, 1312, 563, 1289, 564)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+position = Vector2(-688, -164)
+polygon = PackedVector2Array(1295, 554, 1311, 530, 1329, 545, 1338, 568, 1324, 561, 1312, 563, 1289, 564)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+position = Vector2(-955, -356)
+polygon = PackedVector2Array(1288, 543, 1311, 530, 1329, 545, 1328, 560, 1325, 557, 1309, 554, 1281, 555)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+position = Vector2(-1258, -50)
+polygon = PackedVector2Array(1288, 543, 1311, 530, 1329, 545, 1328, 560, 1325, 557, 1309, 554, 1281, 555)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="stones/StaticBody2D"]
+position = Vector2(-554, 109)
+polygon = PackedVector2Array(1288, 543, 1311, 530, 1329, 545, 1328, 560, 1325, 557, 1309, 554, 1281, 555)
+
 [node name="statue" type="TileMapLayer" parent="."]
 position = Vector2(12, 47)
 scale = Vector2(3.3045, 2.88693)
