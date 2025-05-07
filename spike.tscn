@@ -1,44 +1,40 @@
-[gd_scene load_steps=8 format=3 uid="uid://cuccod78tn1vm"]
+[gd_scene load_steps=10 format=3 uid="uid://cuccod78tn1vm"]
 
-[ext_resource type="Texture2D" uid="uid://d20ux8xc2bwgx" path="res://assets/spike.jpg" id="1_ncl36"]
+[ext_resource type="Texture2D" uid="uid://cp6fovxfhtgs5" path="res://assets/small_wood_spike_01.png" id="1_xi44j"]
+[ext_resource type="Texture2D" uid="uid://cpnk6grofigor" path="res://assets/small_wood_spike_02.png" id="2_j8dla"]
+[ext_resource type="Texture2D" uid="uid://m4fkco2ef68n" path="res://assets/small_wood_spike_03.png" id="3_hksiq"]
+[ext_resource type="Texture2D" uid="uid://d1fcaycvbonx6" path="res://assets/small_wood_spike_04.png" id="4_llkal"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_li240"]
-atlas = ExtResource("1_ncl36")
-region = Rect2(112, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea5n6"]
+atlas = ExtResource("1_xi44j")
+region = Rect2(0, 0, 72, 133)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8m7n4"]
-atlas = ExtResource("1_ncl36")
-region = Rect2(128, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq8os"]
+atlas = ExtResource("2_j8dla")
+region = Rect2(0, 0, 72, 133)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xapyl"]
-atlas = ExtResource("1_ncl36")
-region = Rect2(144, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrcq4"]
+atlas = ExtResource("3_hksiq")
+region = Rect2(0, 0, 72, 133)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pkpho"]
-atlas = ExtResource("1_ncl36")
-region = Rect2(160, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_stget"]
+atlas = ExtResource("4_llkal")
+region = Rect2(0, 0, 72, 133)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8hkct"]
-atlas = ExtResource("1_ncl36")
-region = Rect2(176, 0, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6i8sj"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_mq8hj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_li240")
+"texture": SubResource("AtlasTexture_ea5n6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8m7n4")
+"texture": SubResource("AtlasTexture_pq8os")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xapyl")
+"texture": SubResource("AtlasTexture_mrcq4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pkpho")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8hkct")
+"texture": SubResource("AtlasTexture_stget")
 }],
 "loop": true,
 "name": &"default",
@@ -46,9 +42,12 @@ animations = [{
 }]
 
 [node name="spike" type="AnimatedSprite2D"]
-self_modulate = Color(0.534361, 0.534361, 0.534361, 1)
-position = Vector2(2.38419e-07, 0)
-scale = Vector2(1.375, 1.3125)
-sprite_frames = SubResource("SpriteFrames_6i8sj")
+sprite_frames = SubResource("SpriteFrames_mq8hj")
 autoplay = "default"
-frame_progress = 0.38234
+frame = 3
+frame_progress = 0.784347
+
+[node name="StaticBody2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-27, 60, 25, 60, 17, 45, 14, -12, -5, -57, -20, -3, -16, 47)
