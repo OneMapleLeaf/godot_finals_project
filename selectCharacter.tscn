@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://donuei4ni1v1j"]
+[gd_scene load_steps=26 format=3 uid="uid://donuei4ni1v1j"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_44wa3"]
+[ext_resource type="Script" path="res://select_character.gd" id="1_hfoaq"]
 [ext_resource type="Texture2D" uid="uid://y2w16pf76dk" path="res://assets/SOPHIE.png" id="2_xengn"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="3_unvyc"]
 [ext_resource type="Texture2D" uid="uid://bcro6iumyrcsb" path="res://assets/namesophie.png" id="4_8e5i8"]
@@ -2434,7 +2435,12 @@ texture = ExtResource("1_44wa3")
 [sub_resource type="TileSet" id="TileSet_b3ntq"]
 sources/1 = SubResource("TileSetAtlasSource_unvyc")
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_d85ov"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_o8p17"]
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_hfoaq")
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -2497,3 +2503,18 @@ position = Vector2(-1090, -1013)
 scale = Vector2(2.94637, 2.94637)
 tile_map_data = PackedByteArray(0, 0, 34, 0, 31, 0, 1, 0, 34, 0, 10, 0, 0, 0, 34, 0, 32, 0, 1, 0, 34, 0, 11, 0, 0, 0, 35, 0, 31, 0, 1, 0, 35, 0, 10, 0, 0, 0, 35, 0, 32, 0, 1, 0, 35, 0, 11, 0, 0, 0)
 tile_set = SubResource("TileSet_b3ntq")
+
+[node name="touchscreenselect" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(533, 472)
+scale = Vector2(51, 47)
+texture_normal = SubResource("CanvasTexture_d85ov")
+
+[node name="touchscreenx" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(860, 111)
+scale = Vector2(53.0001, 48)
+texture_normal = SubResource("CanvasTexture_o8p17")
+
+[connection signal="pressed" from="touchscreenselect" to="." method="_on_touchscreenselect_pressed"]
+[connection signal="pressed" from="touchscreenx" to="." method="_on_touchscreenx_pressed"]
