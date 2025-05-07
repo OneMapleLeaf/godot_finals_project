@@ -950,6 +950,15 @@ animation = &"selection "
 autoplay = "selection "
 frame_progress = 0.761782
 
+[node name="selection2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(761, 233)
+scale = Vector2(5.50977, 5.50977)
+sprite_frames = SubResource("SpriteFrames_5mj8u")
+animation = &"selection "
+autoplay = "selection "
+frame_progress = 0.761782
+
 [node name="Male" type="Sprite2D" parent="."]
 position = Vector2(420, 374)
 scale = Vector2(0.353747, 0.353747)
