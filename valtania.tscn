@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://badpro1yvogvw"]
+[gd_scene load_steps=42 format=4 uid="uid://bvmjgy0nedoyx"]
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bh5bxe8fn27ym" path="res://assets/base_out_atlas.png" id="7_qq4mn"]
 [ext_resource type="PackedScene" uid="uid://8cytmljwqj2q" path="res://fire.tscn" id="9_g8kw4"]
 [ext_resource type="PackedScene" uid="uid://cgf780qvcm42l" path="res://lava.tscn" id="10_617nw"]
-[ext_resource type="PackedScene" uid="uid://dm7l4xwfcmf2t" path="res://spike.tscn" id="11_38jjy"]
+[ext_resource type="PackedScene" uid="uid://cuccod78tn1vm" path="res://spike.tscn" id="11_38jjy"]
 [ext_resource type="PackedScene" uid="uid://dj00f5mpj4al2" path="res://torch.tscn" id="12_j3b2s"]
 [ext_resource type="PackedScene" uid="uid://dum3kw6xaoykk" path="res://gold.tscn" id="15_b0r7i"]
 

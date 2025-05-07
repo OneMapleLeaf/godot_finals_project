@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dm7l4xwfcmf2t"]
+[gd_scene load_steps=10 format=3 uid="uid://cuccod78tn1vm"]
 
 [ext_resource type="Texture2D" uid="uid://cp6fovxfhtgs5" path="res://assets/small_wood_spike_01.png" id="1_xi44j"]
 [ext_resource type="Texture2D" uid="uid://cpnk6grofigor" path="res://assets/small_wood_spike_02.png" id="2_j8dla"]
@@ -47,7 +47,7 @@ autoplay = "default"
 frame = 3
 frame_progress = 0.784347
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(-27, 60, 25, 60, 17, 45, 14, -12, -5, -57, -20, -3, -16, 47)
