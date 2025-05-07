@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,8 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_touchscreenstart_pressed() -> void:
-	get_tree().change_scene_to_file("res://entername.tscn")
-
-
-func _on_touchscreenexit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://selectCharacter.tscn")

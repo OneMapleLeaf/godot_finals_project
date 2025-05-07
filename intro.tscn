@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://52yd8q03l1l7"]
+[gd_scene load_steps=12 format=4 uid="uid://52yd8q03l1l7"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ayt76"]
 [ext_resource type="Script" path="res://intro.gd" id="1_oc1vf"]
@@ -10336,6 +10336,10 @@ texture = ExtResource("5_u2rf6")
 [sub_resource type="TileSet" id="TileSet_dpxxx"]
 sources/0 = SubResource("TileSetAtlasSource_y6ycx")
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_rqudd"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xkjnd"]
+
 [node name="Node" type="Node"]
 script = ExtResource("1_oc1vf")
 
@@ -10383,10 +10387,23 @@ position = Vector2(569, 521)
 scale = Vector2(0.494827, 0.494827)
 texture = ExtResource("6_u2rf6")
 
-[node name="Newstart" type="TouchScreenButton" parent="."]
+[node name="Newstart" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(298, 175)
+position = Vector2(568, 453)
 scale = Vector2(0.498223, 0.498223)
-texture_normal = ExtResource("6_y6ycx")
+texture = ExtResource("6_y6ycx")
 
-[connection signal="pressed" from="Newstart" to="." method="_on_newstart_pressed"]
+[node name="touchscreenstart" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(464, 433)
+scale = Vector2(208, 39)
+texture_normal = SubResource("CanvasTexture_rqudd")
+
+[node name="touchscreenexit" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(672.786, 501)
+scale = Vector2(-207.138, 39.2303)
+texture_normal = SubResource("CanvasTexture_xkjnd")
+
+[connection signal="pressed" from="touchscreenstart" to="." method="_on_touchscreenstart_pressed"]
+[connection signal="pressed" from="touchscreenexit" to="." method="_on_touchscreenexit_pressed"]
