@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://d4aki4dq3v667"]
+[gd_scene load_steps=53 format=3 uid="uid://ry1ruu0jw71j"]
 
 [ext_resource type="Texture2D" uid="uid://btsxe8b76jur0" path="res://assets/nexarplanet.png" id="1_ai6v8"]
 
@@ -360,7 +360,7 @@ animations = [{
 "speed": 3.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
