@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://drvskxsdxv4l2"]
+[gd_scene load_steps=10 format=4 uid="uid://drvskxsdxv4l2"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ayt76"]
 [ext_resource type="Script" path="res://intro.gd" id="1_oc1vf"]
@@ -10336,10 +10336,6 @@ texture = ExtResource("5_u2rf6")
 [sub_resource type="TileSet" id="TileSet_dpxxx"]
 sources/0 = SubResource("TileSetAtlasSource_y6ycx")
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_lugex"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_xegwi"]
-
 [node name="Node" type="Node"]
 script = ExtResource("1_oc1vf")
 
@@ -10381,28 +10377,16 @@ scale = Vector2(1.52977, 1.52977)
 tile_map_data = PackedByteArray("AAAIABIAAABSACwAAAAIABMAAABSAC0AAAAJABIAAABTACwAAAAJABMAAABTAC0AAAAkAAUAAABWACgAAAAkAAYAAABWACkAAAAlAAUAAABXACgAAAAlAAYAAABXACkAAAAJAAcAAABiADIAAAAJAAgAAABiADMAAAAKAAcAAABjADIAAAAKAAgAAABjADMAAAAUAAIAAAB0ACwAAAAUAAMAAAB0AC0AAAAVAAIAAAB1ACwAAAAVAAMAAAB1AC0AAAAOABQAAABiACwAAAAOABUAAABiAC0AAAAPABQAAABjACwAAAAPABUAAABjAC0AAAAiAP7/AAA8ADgAAAAiAP//AAA8ADkAAAAjAP7/AAA9ADgAAAAjAP//AAA9ADkAAAAkAA4AAAAoADoAAAAkAA8AAAAoADsAAAAlAA4AAAApADoAAAAlAA8AAAApADsAAAAZABUAAAB4ACgAAAAZABYAAAB4ACkAAAAaABUAAAB5ACgAAAAaABYAAAB5ACkAAAABAAcAAAA4AC4AAAABAAgAAAA4AC8AAAACAAcAAAA5AC4AAAACAAgAAAA5AC8AAAAHABkAAAAyAC4AAAAHABoAAAAyAC8AAAAIABkAAAAzAC4AAAAIABoAAAAzAC8AAAArAAsAAABIAC4AAAArAAwAAABIAC8AAAAsAAsAAABJAC4AAAAsAAwAAABJAC8AAAA=")
 tile_set = SubResource("TileSet_dpxxx")
 
-[node name="Newstart" type="Sprite2D" parent="."]
+[node name="ExitBtn" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(562, 451)
-scale = Vector2(0.503, 0.503)
-texture = ExtResource("6_y6ycx")
-
-[node name="exitbutton" type="Sprite2D" parent="."]
-position = Vector2(562, 523)
-scale = Vector2(0.502778, 0.502778)
+position = Vector2(569, 521)
+scale = Vector2(0.494827, 0.494827)
 texture = ExtResource("6_u2rf6")
 
-[node name="startbutton" type="TouchScreenButton" parent="."]
-z_index = -1
-position = Vector2(458, 431)
-scale = Vector2(208, 38)
-texture_normal = SubResource("CanvasTexture_lugex")
+[node name="Newstart" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(298, 175)
+scale = Vector2(0.498223, 0.498223)
+texture_normal = ExtResource("6_y6ycx")
 
-[node name="exitbut" type="TouchScreenButton" parent="."]
-z_index = -1
-position = Vector2(458, 503)
-scale = Vector2(210, 40)
-texture_normal = SubResource("CanvasTexture_xegwi")
-
-[connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
-[connection signal="pressed" from="exitbut" to="." method="_on_exitbut_pressed"]
+[connection signal="pressed" from="Newstart" to="." method="_on_newstart_pressed"]
