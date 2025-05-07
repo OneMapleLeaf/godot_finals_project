@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://s4ffwwe8ujcw"]
+
+[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="1_80rfx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajsav"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbb3y"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykhji"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qa14h"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hwd4"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iscr2"]
+atlas = ExtResource("1_80rfx")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgo0q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajsav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbb3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykhji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa14h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hwd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iscr2")
+}],
+"loop": true,
+"name": &"orange_gem",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ncktc"]
+radius = 3.60555
+
+[node name="Node2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 0.416667, 0, 1)
+texture_filter = 1
+scale = Vector2(1.64876, 1.64876)
+sprite_frames = SubResource("SpriteFrames_sgo0q")
+animation = &"orange_gem"
+autoplay = "orange_gem"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_ncktc")
