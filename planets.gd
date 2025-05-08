@@ -16,6 +16,10 @@ func _on_area_2_dxerdia_mouse_exited() -> void:
 
 func _on_area_2_dnexar_mouse_entered() -> void:
 	$nexar.scale = Vector2(1.9, 1.9)
+	#testing for unlock planet
+	$nexar.modulate = Color("FFFFFF")
+	$Redfutuisticlock.visible = false
+	#testing for unlock planet
 
 
 func _on_area_2_dnexar_mouse_exited() -> void:
