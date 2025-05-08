@@ -53873,7 +53873,7 @@ scale = Vector2(2.11247, 2.11247)
 sprite_frames = SubResource("SpriteFrames_8xn2g")
 animation = &"selection "
 autoplay = "selection "
-frame_progress = 0.297645
+frame_progress = 0.501371
 
 [node name="bluegem" parent="." instance=ExtResource("3_0xmy5")]
 position = Vector2(375, 247)
