@@ -1,21 +1,21 @@
 extends CharacterBody2D
 
-var speed = 200
+var speed = 150
 var isWalking
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	isWalking = false
 	if Input.is_action_pressed("W"):
-		$AnimatedSprite2D.play("walk_up")
+		$AnimatedSprite2D.play("male_walk_up")
 		isWalking = true
 	if Input.is_action_pressed("S"):
-		$AnimatedSprite2D.play("walk_down")
+		$AnimatedSprite2D.play("male_walk_down")
 		isWalking = true
 	if Input.is_action_pressed("A"):
-		$AnimatedSprite2D.play("walk_left")
+		$AnimatedSprite2D.play("male_walk_left")
 		isWalking = true
 	if Input.is_action_pressed("D"):
-		$AnimatedSprite2D.play("walk_right")
+		$AnimatedSprite2D.play("male_walk_right")
 		isWalking = true
 	if !isWalking:
 		$AnimatedSprite2D.stop()
@@ -23,6 +23,20 @@ func _process(delta: float) -> void:
 	velocity = (getInput().normalized() * speed)
 	move_and_slide()
 	
+	isHome()
 func getInput():
 	var move = Vector2(Input.get_axis("A", "D"), Input.get_axis("W", "S"))
 	return move
+
+func isHome():
+	
+	if get_tree().current_scene.scene_file_path == "res://spaceship.tscn":
+		$Camera2D.limit_left = -351
+		$Camera2D.limit_right = 1550
+		$Camera2D.limit_bottom = 1630
+		$Camera2D.limit_top = -159
+	else:
+		$Camera2D.limit_left = -4
+		$Camera2D.limit_right = 1923
+		$Camera2D.limit_bottom = 1074
+		$Camera2D.limit_top = -2

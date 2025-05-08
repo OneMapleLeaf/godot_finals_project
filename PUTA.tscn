@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://b16vtq0ts0xru"]
+
+[ext_resource type="Texture2D" uid="uid://bpv2hakllvd27" path="res://assets/Cabin - Copy.png" id="1_ehye4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xw32"]
+atlas = ExtResource("1_ehye4")
+region = Rect2(0, 0, 130, 169)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpqqi"]
+atlas = ExtResource("1_ehye4")
+region = Rect2(130, 0, 130, 169)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6f41"]
+atlas = ExtResource("1_ehye4")
+region = Rect2(260, 0, 130, 169)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g4pt"]
+atlas = ExtResource("1_ehye4")
+region = Rect2(390, 0, 130, 169)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hn8ti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xw32")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpqqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6f41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2g4pt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_hn8ti")
+frame_progress = 0.401559
