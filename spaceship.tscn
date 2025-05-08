@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=4 uid="uid://dufbsnq47dyul"]
+[gd_scene load_steps=19 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
-[ext_resource type="Script" path="res://spaceship.gd" id="1_vemlq"]
 [ext_resource type="TileSet" uid="uid://b6lawr0piso1o" path="res://assets/spaceship.tres" id="2_xokri"]
 [ext_resource type="Texture2D" uid="uid://cpw4rc0ccgfjb" path="res://assets/pixelspace.png" id="3_fddem"]
 [ext_resource type="Texture2D" uid="uid://bi1l8137cl3kc" path="res://assets/Interiors_free_16x16.png" id="3_onphi"]
@@ -6658,14 +6657,7 @@ texture = ExtResource("8_tb5uw")
 sources/0 = SubResource("TileSetAtlasSource_svkk0")
 sources/1 = SubResource("TileSetAtlasSource_p463p")
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_yogxf"]
-radius = 8.06226
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypmw1"]
-size = Vector2(46, 77)
-
 [node name="Spaceship" type="Node2D"]
-script = ExtResource("1_vemlq")
 metadata/_edit_horizontal_guides_ = [-159.0, 1624.0]
 metadata/_edit_vertical_guides_ = [-361.0]
 
@@ -6740,27 +6732,3 @@ polygon = PackedVector2Array(193, 108, 235, 108, 235, 256, 191, 257)
 
 [node name="Player_Character" parent="." instance=ExtResource("9_2f75y")]
 position = Vector2(521, 299)
-
-[node name="Area2D" type="Area2D" parent="Player_Character"]
-collision_layer = 4
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player_Character/Area2D"]
-position = Vector2(0, 11)
-shape = SubResource("CircleShape2D_yogxf")
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 5
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(544, 529.5)
-shape = SubResource("RectangleShape2D_ypmw1")
-
-[node name="Labelinteract" type="Label" parent="Area2D"]
-offset_left = 539.0
-offset_top = 490.0
-offset_right = 561.0
-offset_bottom = 513.0
-text = "E"
-
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
