@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://cvlbyu2k2ymvk"]
+
+[ext_resource type="Texture2D" uid="uid://d4ljfvw04x07d" path="res://enemy.png" id="1_jxlqa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7puf2"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(2, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uana"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(65, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1brdg"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(128, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6o4vl"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(191, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0wwc"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(254, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs47k"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(317, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5r5d"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(380, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wn66c"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(443, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2vtb"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(506, 128, 62, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeivo"]
+atlas = ExtResource("1_jxlqa")
+region = Rect2(569, 128, 62, 63)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wirsd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7puf2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uana")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1brdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6o4vl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0wwc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs47k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5r5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wn66c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2vtb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeivo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="flee" type="AnimatedSprite2D"]
+self_modulate = Color(0.964786, 0.324657, 0.282118, 1)
+position = Vector2(2, 0)
+scale = Vector2(1.48387, 1.61111)
+sprite_frames = SubResource("SpriteFrames_wirsd")
+autoplay = "default"
