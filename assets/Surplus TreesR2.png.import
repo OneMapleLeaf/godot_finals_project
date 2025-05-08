@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djeivr0pla8hw"
-path="res://.godot/imported/seasonal sample (summer).png-ecfbd2bcf641b0a879844f927cc9f211.ctex"
+uid="uid://b25avmq50q8q"
+path="res://.godot/imported/Surplus TreesR2.png-7cd368594d54845579ff4efd78b772aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/seasonal sample (summer).png"
-dest_files=["res://.godot/imported/seasonal sample (summer).png-ecfbd2bcf641b0a879844f927cc9f211.ctex"]
+source_file="res://assets/Surplus TreesR2.png"
+dest_files=["res://.godot/imported/Surplus TreesR2.png-7cd368594d54845579ff4efd78b772aa.ctex"]
 
 [params]
 

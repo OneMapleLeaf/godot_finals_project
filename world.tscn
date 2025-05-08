@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]
-[ext_resource type="Texture2D" uid="uid://cv7t6pish2d" path="res://assets/Trees+.png" id="2_tlwt5"]
-[ext_resource type="Texture2D" uid="uid://bircmbusj08ru" path="res://assets/seasonal sample (spring).png" id="3_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://0i8c2iq47qv4" path="res://assets/Trees+.png" id="2_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="3_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://bcsqfujc53ceh" path="res://assets/water_coastsice.png" id="4_036b0"]
 [ext_resource type="Texture2D" uid="uid://ceg4ufm1272sf" path="res://assets/tileset.png" id="4_dwbse"]
 [ext_resource type="Texture2D" uid="uid://dkf32bjlthgy2" path="res://assets/Cabin.png" id="6_pkg7o"]
