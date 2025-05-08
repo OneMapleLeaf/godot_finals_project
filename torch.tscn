@@ -47,4 +47,4 @@ frame_progress = 0.216065
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(-1.91045, 14.9841, 2.38806, 14.4762, 4.77612, 0.253968, 0, 0.507936, -3.34328, -0.507936)
+polygon = PackedVector2Array(0.238807, 15.2381, 2.38806, 14.4762, 3.34328, 8.88889, 0.955224, 8.88889, -1.43284, 8.12698)
