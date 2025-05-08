@@ -41,7 +41,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="spike" type="AnimatedSprite2D"]
+[node name="spike2" type="AnimatedSprite2D"]
 modulate = Color(0.434291, 0.000131782, 0.434599, 1)
 position = Vector2(-1.19209e-07, 0)
 scale = Vector2(0.100694, 0.068609)
