@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://car4ic23rc0qc" path="res://assets/Sprite-0001.png" id="1_lqm3i"]
 [ext_resource type="Texture2D" uid="uid://bdfqg752tn4s0" path="res://assets/Upper.png" id="2_t56wn"]
 [ext_resource type="Texture2D" uid="uid://dqcdmupe77nyu" path="res://assets/healthlaoder-export.png" id="3_74lst"]
-[ext_resource type="Texture2D" uid="uid://b13qbo3b074r" path="res://assets/Sprite-0004.png" id="4_88vhh"]
-[ext_resource type="Texture2D" uid="uid://nursa88u7oqe" path="res://assets/pressedinverntory.png" id="5_jmvop"]
-[ext_resource type="Texture2D" uid="uid://b2t83m3gx7v32" path="res://assets/pause.png" id="6_jgngw"]
-[ext_resource type="Texture2D" uid="uid://dkiqjhfjciisi" path="res://assets/play.png" id="7_dcr61"]
+[ext_resource type="Texture2D" uid="uid://ctq0gw0hfdvbi" path="res://assets/BagIconInv2.png" id="4_y4yjw"]
+[ext_resource type="Texture2D" uid="uid://bd3tmlsvi5ygj" path="res://assets/BagIconInv.png" id="5_waa4j"]
+[ext_resource type="Texture2D" uid="uid://c0lc7ardnx7la" path="res://assets/pause-vergray.png" id="6_y4yjw"]
+[ext_resource type="Texture2D" uid="uid://f5s5630hl2ng" path="res://assets/play-vergray.png" id="7_waa4j"]
 
 [node name="UI" type="CanvasLayer"]
 
@@ -23,15 +23,15 @@ texture_progress = ExtResource("3_74lst")
 texture_progress_offset = Vector2(2, 1)
 
 [node name="inventory" type="TouchScreenButton" parent="."]
-texture_filter = 3
-position = Vector2(853, 566)
-scale = Vector2(2.16406, 2.1875)
-texture_normal = ExtResource("4_88vhh")
-texture_pressed = ExtResource("5_jmvop")
+texture_filter = 1
+position = Vector2(935, 454)
+scale = Vector2(0.228717, 0.231195)
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
 
 [node name="pause" type="TouchScreenButton" parent="."]
 texture_filter = 5
 position = Vector2(1075, 7)
 scale = Vector2(0.453125, 0.460938)
-texture_normal = ExtResource("6_jgngw")
-texture_pressed = ExtResource("7_dcr61")
+texture_normal = ExtResource("6_y4yjw")
+texture_pressed = ExtResource("7_waa4j")
