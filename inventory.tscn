@@ -1,13 +1,10 @@
-[gd_scene load_steps=24 format=4 uid="uid://dng51u3djyirw"]
+[gd_scene load_steps=25 format=4 uid="uid://dng51u3djyirw"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_mrqgh"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="2_dw5ng"]
-[ext_resource type="PackedScene" uid="uid://d6u5c5w1xfew" path="res://bluegem.tscn" id="3_0xmy5"]
-[ext_resource type="PackedScene" uid="uid://chkwiv31eu8rg" path="res://diagreen.tscn" id="5_ormsd"]
-[ext_resource type="PackedScene" uid="uid://dum3kw6xaoykk" path="res://gold.tscn" id="6_ho8i8"]
+[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="4_dw5ng"]
+[ext_resource type="Texture2D" uid="uid://br3a1n72p62u2" path="res://assets/spr_coin_roj.png" id="5_0xmy5"]
 [ext_resource type="Texture2D" uid="uid://1vwgw2u1jfhc" path="res://assets/Inventory2.png" id="6_qjyhv"]
-[ext_resource type="PackedScene" uid="uid://d31w3bjb13tya" path="res://gray.tscn" id="7_udyo3"]
-[ext_resource type="PackedScene" uid="uid://cgxwl762b1ubq" path="res://reward.tscn" id="8_a8ig1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xmy5"]
 texture = ExtResource("1_mrqgh")
@@ -2211,6 +2208,28 @@ texture = ExtResource("1_mrqgh")
 [sub_resource type="TileSet" id="TileSet_mckt2"]
 sources/0 = SubResource("TileSetAtlasSource_2pjyi")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ho8i8"]
+texture = ExtResource("4_dw5ng")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_udyo3"]
+sources/0 = SubResource("TileSetAtlasSource_ho8i8")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a8ig1"]
+texture = ExtResource("5_0xmy5")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2pjyi"]
+sources/0 = SubResource("TileSetAtlasSource_a8ig1")
+
 [node name="Node2" type="Node"]
 
 [node name="frame" type="TileMapLayer" parent="."]
@@ -2222,12 +2241,13 @@ tile_set = SubResource("TileSet_ho8i8")
 
 [node name="insideframe" type="TileMapLayer" parent="."]
 texture_filter = 1
-position = Vector2(-385, -250)
-scale = Vector2(1.82236, 1.82236)
-tile_map_data = PackedByteArray("AAAZABAAAAACAAoAAAAZABEAAAACAAsAAAAaABAAAAADAAoAAAAaABEAAAADAAsAAAAcABAAAAACAAoAAAAcABEAAAACAAsAAAAdABAAAAADAAoAAAAdABEAAAADAAsAAAAfABAAAAACAAoAAAAfABEAAAACAAsAAAAgABAAAAADAAoAAAAgABEAAAADAAsAAAAiABAAAAACAAoAAAAiABEAAAACAAsAAAAjABAAAAADAAoAAAAjABEAAAADAAsAAAAZABMAAAACAAoAAAAZABQAAAACAAsAAAAaABMAAAADAAoAAAAaABQAAAADAAsAAAAcABMAAAACAAoAAAAcABQAAAACAAsAAAAdABMAAAADAAoAAAAdABQAAAADAAsAAAAfABMAAAACAAoAAAAfABQAAAACAAsAAAAgABMAAAADAAoAAAAgABQAAAADAAsAAAAiABMAAAACAAoAAAAiABQAAAACAAsAAAAjABMAAAADAAoAAAAjABQAAAADAAsAAAA=")
+position = Vector2(-248, -149)
+scale = Vector2(1.4738, 1.4738)
+tile_map_data = PackedByteArray("AAAZABMAAAACAAoAAAAZABQAAAACAAsAAAAaABMAAAADAAoAAAAaABQAAAADAAsAAAAcABMAAAACAAoAAAAcABQAAAACAAsAAAAdABMAAAADAAoAAAAdABQAAAADAAsAAAAfABMAAAACAAoAAAAfABQAAAACAAsAAAAgABMAAAADAAoAAAAgABQAAAADAAsAAAAiABMAAAACAAoAAAAiABQAAAACAAsAAAAjABMAAAADAAoAAAAjABQAAAADAAsAAAAlABMAAAACAAoAAAAlABQAAAACAAsAAAAmABMAAAADAAoAAAAmABQAAAADAAsAAAAcABAAAAACAAoAAAAcABEAAAACAAsAAAAdABAAAAADAAoAAAAdABEAAAADAAsAAAAfABAAAAACAAoAAAAfABEAAAACAAsAAAAgABAAAAADAAoAAAAgABEAAAADAAsAAAAiABAAAAACAAoAAAAiABEAAAACAAsAAAAjABAAAAADAAoAAAAjABEAAAADAAsAAAA=")
 tile_set = SubResource("TileSet_a8ig1")
 
 [node name="selection" type="AnimatedSprite2D" parent="."]
+visible = false
 texture_filter = 1
 position = Vector2(374, 246)
 scale = Vector2(2.11247, 2.11247)
@@ -2235,9 +2255,6 @@ sprite_frames = SubResource("SpriteFrames_8xn2g")
 animation = &"selection "
 autoplay = "selection "
 frame_progress = 0.501371
-
-[node name="bluegem" parent="." instance=ExtResource("3_0xmy5")]
-position = Vector2(375, 247)
 
 [node name="rightBtn" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -2266,61 +2283,130 @@ position = Vector2(506, 195)
 scale = Vector2(0.123747, 0.123747)
 texture = ExtResource("6_qjyhv")
 
-[node name="diagreen" parent="." instance=ExtResource("5_ormsd")]
-position = Vector2(463, 245)
-scale = Vector2(0.931984, 0.931984)
-
-[node name="gold" parent="." instance=ExtResource("6_ho8i8")]
-texture_filter = 1
-position = Vector2(548, 245)
-
-[node name="gray" parent="." instance=ExtResource("7_udyo3")]
-position = Vector2(634, 245)
-
-[node name="reward" parent="." instance=ExtResource("8_a8ig1")]
-texture_filter = 1
-position = Vector2(374, 332)
-
 [node name="greengemCount" type="Label" parent="."]
 texture_filter = 1
-offset_left = 476.0
-offset_top = 226.0
-offset_right = 516.0
-offset_bottom = 249.0
+offset_left = 517.0
+offset_top = 301.0
+offset_right = 557.0
+offset_bottom = 324.0
 scale = Vector2(0.732531, 0.732531)
-text = "1"
+text = "0"
 
 [node name="orangegemCount" type="Label" parent="."]
 texture_filter = 1
-offset_left = 561.0
-offset_top = 225.0
-offset_right = 601.0
-offset_bottom = 248.0
+offset_left = 589.0
+offset_top = 302.0
+offset_right = 629.0
+offset_bottom = 325.0
 scale = Vector2(0.732531, 0.732531)
-text = "1"
+text = "0"
 
 [node name="violetgemCount" type="Label" parent="."]
 texture_filter = 1
-offset_left = 651.0
-offset_top = 225.0
-offset_right = 691.0
-offset_bottom = 248.0
+offset_left = 660.0
+offset_top = 301.0
+offset_right = 700.0
+offset_bottom = 324.0
 scale = Vector2(0.732531, 0.732531)
-text = "1"
+text = "0"
 
 [node name="redgemCount" type="Label" parent="."]
 texture_filter = 1
-offset_left = 386.0
-offset_top = 313.0
-offset_right = 426.0
-offset_bottom = 336.0
+offset_left = 445.0
+offset_top = 302.0
+offset_right = 485.0
+offset_bottom = 325.0
 scale = Vector2(0.732531, 0.732531)
-text = "1"
+text = "0
+"
 
 [node name="bluegemCount" type="Label" parent="."]
-offset_left = 387.0
-offset_top = 226.0
-offset_right = 427.0
-offset_bottom = 249.0
+offset_left = 375.0
+offset_top = 303.0
+offset_right = 415.0
+offset_bottom = 326.0
 scale = Vector2(0.732531, 0.732531)
-text = "1"
+text = "0
+"
+
+[node name="LblGreenGem" type="Label" parent="."]
+texture_filter = 1
+offset_left = 340.0
+offset_top = 348.0
+offset_right = 428.0
+offset_bottom = 397.0
+scale = Vector2(0.578209, 0.578209)
+text = "Green Gem"
+
+[node name="LblGoldGem" type="Label" parent="."]
+texture_filter = 1
+offset_left = 485.0
+offset_top = 348.0
+offset_right = 562.0
+offset_bottom = 371.0
+scale = Vector2(0.578209, 0.578209)
+text = "Gold Gem"
+
+[node name="LblVioletGem" type="Label" parent="."]
+texture_filter = 1
+offset_left = 553.0
+offset_top = 348.0
+offset_right = 638.0
+offset_bottom = 371.0
+scale = Vector2(0.578209, 0.578209)
+text = "Violet Gem"
+
+[node name="LblRedGem" type="Label" parent="."]
+texture_filter = 1
+offset_left = 628.0
+offset_top = 347.0
+offset_right = 703.0
+offset_bottom = 370.0
+scale = Vector2(0.578209, 0.578209)
+text = "Red Gem"
+
+[node name="LblBlueGem" type="Label" parent="."]
+texture_filter = 1
+offset_left = 415.0
+offset_top = 348.0
+offset_right = 490.0
+offset_bottom = 371.0
+scale = Vector2(0.578209, 0.578209)
+text = "Blue Gem"
+
+[node name="bluegem" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-134, -98)
+scale = Vector2(1.29335, 1.29335)
+tile_map_data = PackedByteArray("AAAbABQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_udyo3")
+
+[node name="greengem" type="TileMapLayer" parent="."]
+modulate = Color(0, 1, 0.286275, 1)
+texture_filter = 1
+position = Vector2(-321, -185)
+scale = Vector2(1.55801, 1.55801)
+tile_map_data = PackedByteArray("AAAbABQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_udyo3")
+
+[node name="goldgem" type="TileMapLayer" parent="."]
+modulate = Color(1, 0.952941, 0.0509804, 1)
+texture_filter = 1
+position = Vector2(-177, -184)
+scale = Vector2(1.55801, 1.55801)
+tile_map_data = PackedByteArray("AAAbABQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_udyo3")
+
+[node name="violetgem" type="TileMapLayer" parent="."]
+modulate = Color(0.890196, 0, 1, 1)
+texture_filter = 1
+position = Vector2(-109, -184)
+scale = Vector2(1.55801, 1.55801)
+tile_map_data = PackedByteArray("AAAbABQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_udyo3")
+
+[node name="redgem" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(0, -4)
+tile_map_data = PackedByteArray("AAAoABQAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_2pjyi")
