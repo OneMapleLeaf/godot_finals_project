@@ -1,10 +1,14 @@
-[gd_scene load_steps=21 format=4 uid="uid://dng51u3djyirw"]
+[gd_scene load_steps=25 format=4 uid="uid://dng51u3djyirw"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_mrqgh"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="2_dw5ng"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="4_dw5ng"]
 [ext_resource type="Texture2D" uid="uid://br3a1n72p62u2" path="res://assets/spr_coin_roj.png" id="5_0xmy5"]
+[ext_resource type="Texture2D" uid="uid://c5byxj3vi32e8" path="res://assets/mapa1.png" id="6_ormsd"]
 [ext_resource type="Texture2D" uid="uid://1vwgw2u1jfhc" path="res://assets/Inventory2.png" id="6_qjyhv"]
+[ext_resource type="Texture2D" uid="uid://dhewtspipq1c5" path="res://assets/mapa2.png" id="7_ho8i8"]
+[ext_resource type="Texture2D" uid="uid://dg0cqixxx7nex" path="res://assets/mapa3.png" id="8_udyo3"]
+[ext_resource type="Texture2D" uid="uid://cov06gyap7py2" path="res://assets/redfutuisticlock.png" id="9_ho8i8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xmy5"]
 texture = ExtResource("1_mrqgh")
@@ -1549,3 +1553,36 @@ texture_filter = 1
 position = Vector2(0, -4)
 tile_map_data = PackedByteArray("AAAoABQAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_2pjyi")
+
+[node name="Mapa1" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(435, 252)
+scale = Vector2(0.0327169, 0.0327169)
+texture = ExtResource("6_ormsd")
+
+[node name="Mapa2" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(507, 251)
+scale = Vector2(0.0317908, 0.0317908)
+texture = ExtResource("7_ho8i8")
+
+[node name="Mapa3" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(578, 252)
+scale = Vector2(0.0345575, 0.0345575)
+texture = ExtResource("8_udyo3")
+
+[node name="Redfutuisticlock" type="Sprite2D" parent="."]
+position = Vector2(435, 253)
+scale = Vector2(0.0528034, 0.0528034)
+texture = ExtResource("9_ho8i8")
+
+[node name="Redfutuisticlock2" type="Sprite2D" parent="."]
+position = Vector2(507, 254)
+scale = Vector2(0.0550943, 0.0550943)
+texture = ExtResource("9_ho8i8")
+
+[node name="Redfutuisticlock3" type="Sprite2D" parent="."]
+position = Vector2(578, 253)
+scale = Vector2(0.0549141, 0.0549141)
+texture = ExtResource("9_ho8i8")
