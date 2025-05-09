@@ -44,13 +44,13 @@ func isHome():
 		$Camera2D.limit_bottom = 1074
 		$Camera2D.limit_top = -2
 
-func rewardLogic():
-	
-	pass
+
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	var parent = area.get_parent()
 	if parent.is_in_group("collectibles"):
 		parent.queue_free()
-		
+	if parent.is_in_group("obstacles"):
+		print("hit")
+		$AnimationPlayer.play("on_hit")

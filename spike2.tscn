@@ -41,7 +41,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="spike2" type="AnimatedSprite2D"]
+[node name="spike2" type="AnimatedSprite2D" groups=["obstacles"]]
 modulate = Color(0.434291, 0.000131782, 0.434599, 1)
 position = Vector2(-1.19209e-07, 0)
 scale = Vector2(0.100694, 0.068609)
@@ -51,7 +51,6 @@ frame = 3
 frame_progress = 0.784347
 
 [node name="area2D" type="Area2D" parent="."]
-visible = false
 position = Vector2(3, 3)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area2D"]
