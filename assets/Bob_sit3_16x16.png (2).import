@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqd1q0vpewubc"
-path="res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"
+uid="uid://dylwhp6npni0h"
+path="res://.godot/imported/Bob_sit3_16x16.png-6d8ae48375c34c2560336a3f59de9925.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ground.png"
-dest_files=["res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"]
+source_file="res://assets/Bob_sit3_16x16.png"
+dest_files=["res://.godot/imported/Bob_sit3_16x16.png-6d8ae48375c34c2560336a3f59de9925.ctex"]
 
 [params]
 

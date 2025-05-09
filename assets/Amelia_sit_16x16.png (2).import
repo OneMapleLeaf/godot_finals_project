@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqd1q0vpewubc"
-path="res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"
+uid="uid://csh8264ygd8a2"
+path="res://.godot/imported/Amelia_sit_16x16.png-134a3680f4ffb50230c8ba5ba4e196a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ground.png"
-dest_files=["res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"]
+source_file="res://assets/Amelia_sit_16x16.png"
+dest_files=["res://.godot/imported/Amelia_sit_16x16.png-134a3680f4ffb50230c8ba5ba4e196a6.ctex"]
 
 [params]
 

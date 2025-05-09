@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://cp6aecvq3xkdg"]
+
+[ext_resource type="Texture2D" uid="uid://cqhac5rv43u0g" path="res://assets/gemjubs.png" id="1_mlryy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq3i4"]
+atlas = ExtResource("1_mlryy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbxyi"]
+atlas = ExtResource("1_mlryy")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7eklh"]
+atlas = ExtResource("1_mlryy")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fffkr"]
+atlas = ExtResource("1_mlryy")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lsgch"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gq3i4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbxyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7eklh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fffkr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="gemjubs" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lsgch")
+autoplay = "default"
+frame_progress = 0.460189
