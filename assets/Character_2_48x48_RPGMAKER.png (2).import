@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqd1q0vpewubc"
-path="res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"
+uid="uid://ydeqq51cs0ay"
+path="res://.godot/imported/Character_2_48x48_RPGMAKER.png-7e6cf2b49bd8ea39b4a7a11690f971d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ground.png"
-dest_files=["res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"]
+source_file="res://assets/Character_2_48x48_RPGMAKER.png"
+dest_files=["res://.godot/imported/Character_2_48x48_RPGMAKER.png-7e6cf2b49bd8ea39b4a7a11690f971d0.ctex"]
 
 [params]
 

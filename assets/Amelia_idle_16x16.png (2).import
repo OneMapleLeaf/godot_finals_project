@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqd1q0vpewubc"
-path="res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"
+uid="uid://dw6yr8rwddcdu"
+path="res://.godot/imported/Amelia_idle_16x16.png-f140603e03ac1602d750be00371065b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ground.png"
-dest_files=["res://.godot/imported/Ground.png-f08cade11b1b3e916f004372551e0865.ctex"]
+source_file="res://assets/Amelia_idle_16x16.png"
+dest_files=["res://.godot/imported/Amelia_idle_16x16.png-f140603e03ac1602d750be00371065b6.ctex"]
 
 [params]
 
