@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://eu6dicmv1e57"]
+[gd_scene load_steps=26 format=4 uid="uid://eu6dicmv1e57"]
 
 [ext_resource type="Texture2D" uid="uid://c6e3mikfihtxk" path="res://assets/astriaBG.png" id="1_hn2mn"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_vswc8"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://8a15g8226tt6" path="res://tornado.tscn" id="8_fmewl"]
 [ext_resource type="PackedScene" uid="uid://d31w3bjb13tya" path="res://gray.tscn" id="10_3jtgm"]
 [ext_resource type="PackedScene" uid="uid://3jmypieic2r" path="res://spike2.tscn" id="11_ifdi4"]
+[ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_p4obc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcwdr"]
 texture = ExtResource("1_hn2mn")
@@ -13815,3 +13816,5 @@ frame_progress = 0.725473
 [node name="spike124" parent="." instance=ExtResource("11_ifdi4")]
 position = Vector2(63.625, 54.5625)
 frame_progress = 0.520036
+
+[node name="UI" parent="." instance=ExtResource("12_p4obc")]

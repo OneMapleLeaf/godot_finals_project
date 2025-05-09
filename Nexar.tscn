@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=40 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://d6u5c5w1xfew" path="res://bluegem.tscn" id="11_ic0uy"]
 [ext_resource type="PackedScene" uid="uid://dj0dlpbs5wy8r" path="res://waterlily.tscn" id="12_k3n1d"]
 [ext_resource type="PackedScene" uid="uid://d2xjlkg8e4x3d" path="res://bonfire.tscn" id="13_2o6r5"]
+[ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="13_6813a"]
 [ext_resource type="PackedScene" uid="uid://5fjk5jgxl0bj" path="res://spinnerattack.tscn" id="14_70uel"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
@@ -22180,3 +22181,5 @@ polygon = PackedVector2Array(196, 1069, 206, 1070, 205, 1084, 197, 1084)
 polygon = PackedVector2Array(804, 1037, 814, 1037, 813, 1050, 812, 1054, 807, 1054, 804, 1052)
 
 [node name="pickaxe" type="TileMapLayer" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("13_6813a")]
