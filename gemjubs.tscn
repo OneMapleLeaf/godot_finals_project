@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cp6aecvq3xkdg"]
+[gd_scene load_steps=8 format=3 uid="uid://dwqekqygdt45"]
 
 [ext_resource type="Texture2D" uid="uid://cqhac5rv43u0g" path="res://assets/gemjubs.png" id="1_mlryy"]
 
@@ -38,7 +38,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="gemjubs" type="AnimatedSprite2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_2qv36"]
+radius = 7.0
+
+[node name="gemjubs" type="AnimatedSprite2D" groups=["collectibles"]]
 sprite_frames = SubResource("SpriteFrames_lsgch")
 autoplay = "default"
 frame_progress = 0.460189
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2qv36")
