@@ -70,7 +70,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_35l2q"]
 size = Vector2(4, 3.32203)
 
-[node name="lightning" type="AnimatedSprite2D" groups=["obstacles"]]
+[node name="lightning" type="AnimatedSprite2D" groups=["delay_obstacle", "obstacles"]]
 position = Vector2(-0.999999, 1.90735e-06)
 scale = Vector2(2.25, 2.10714)
 sprite_frames = SubResource("SpriteFrames_7l1w6")
@@ -82,6 +82,5 @@ script = ExtResource("2_1773v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(4.22222, 13.0509)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_35l2q")
 disabled = true
