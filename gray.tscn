@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d31w3bjb13tya"]
+[gd_scene load_steps=10 format=3 uid="uid://d31w3bjb13tya"]
 
 [ext_resource type="Texture2D" uid="uid://db1efodpnuqjv" path="res://assets/gems.png" id="1_48p8q"]
 
@@ -52,20 +52,19 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_feokm"]
+radius = 5.09136
+
 [node name="gray" type="AnimatedSprite2D" groups=["collectibles"]]
 modulate = Color(1, 0.286275, 1, 1)
 position = Vector2(0, 1.19209e-07)
 scale = Vector2(0.785645, 0.646404)
 sprite_frames = SubResource("SpriteFrames_wcn6n")
 autoplay = "default"
-frame_progress = 0.211534
+frame_progress = 0.710596
 
 [node name="Area2d" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2d"]
-visible = false
-position = Vector2(0, -3.01314)
-scale = Vector2(1, 0.687115)
-polygon = PackedVector2Array(-3.32075, -2.11321, 0, -4.62068, 3.01887, -2.71698, 3.92453, 3.32075, 0.301887, 7.24528, -3.92453, 3.32075)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2d"]
+position = Vector2(0, -1.54702)
+shape = SubResource("CircleShape2D_feokm")

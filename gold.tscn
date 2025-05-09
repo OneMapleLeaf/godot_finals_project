@@ -57,7 +57,7 @@ modulate = Color(0.996078, 0.984314, 0.0392157, 1)
 scale = Vector2(1.5625, 1.375)
 sprite_frames = SubResource("SpriteFrames_1ifo1")
 autoplay = "default"
-frame_progress = 0.62286
+frame_progress = 0.587982
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 3
