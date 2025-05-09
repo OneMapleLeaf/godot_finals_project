@@ -1,132 +1,212 @@
-[gd_scene load_steps=19 format=3 uid="uid://gfedb7glv807"]
+[gd_scene load_steps=4 format=3 uid="uid://baeasr5rf8fjx"]
 
-[ext_resource type="Texture2D" uid="uid://j53wcgl02ms3" path="res://assets/AnimatedAutum.png" id="1_s13c7"]
+[ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_jv7km"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t820p"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(0, 0, 64, 64)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gx1x0"]
+texture = ExtResource("1_jv7km")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+10:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+0:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+13:15/0 = 0
+14:15/0 = 0
+15:15/0 = 0
+11:0/size_in_atlas = Vector2i(5, 7)
+11:0/0 = 0
+11:0/0/texture_origin = Vector2i(0, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d58ua"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(64, 0, 64, 64)
+[sub_resource type="TileSet" id="TileSet_3qdfm"]
+sources/0 = SubResource("TileSetAtlasSource_gx1x0")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jn7q1"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(128, 0, 64, 64)
+[node name="tree" type="Node2D"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gmpx7"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dlqgt"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(256, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2qsky"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(320, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m1cmo"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(384, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7o0yy"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(448, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pnpa2"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(512, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qwrbl"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(576, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eljj0"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(640, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m2g1k"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(704, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sdm4w"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(768, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6x3fs"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(832, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4jw72"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(896, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eu147"]
-atlas = ExtResource("1_s13c7")
-region = Rect2(960, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_b552r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t820p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d58ua")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jn7q1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gmpx7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dlqgt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2qsky")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m1cmo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7o0yy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pnpa2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qwrbl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eljj0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m2g1k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sdm4w")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6x3fs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4jw72")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eu147")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_b552r")
-autoplay = "default"
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(-5, 20, -5, 17, -3, 20, 0, 18, 3, 17, 4, 19, 6, 18, 6, 20, 6, 25, 7, 26, 7, 28, 6, 29, 5, 30, -4, 30, -5, 29, -6, 28, -6, 27, -5, 27)
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(-8, 0)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 254, 255, 0, 0, 11, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_3qdfm")

@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://b5466ij6u8ry"]
+
+[ext_resource type="Texture2D" uid="uid://b431ovoputgbi" path="res://assets/spider_idle_anim_all_dir_strip_4.webp" id="1_voox6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q34cb"]
+atlas = ExtResource("1_voox6")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dby5e"]
+atlas = ExtResource("1_voox6")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpdo6"]
+atlas = ExtResource("1_voox6")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0w1ga"]
+atlas = ExtResource("1_voox6")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjwaf"]
+atlas = ExtResource("1_voox6")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xlln8"]
+atlas = ExtResource("1_voox6")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnb7k"]
+atlas = ExtResource("1_voox6")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w16sx"]
+atlas = ExtResource("1_voox6")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vvxid"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q34cb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dby5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpdo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0w1ga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjwaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xlln8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnb7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w16sx")
+}],
+"loop": true,
+"name": &"spidey",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xtfv"]
+size = Vector2(34, 16)
+
+[node name="Spider" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 5
+scale = Vector2(2.125, 2.125)
+sprite_frames = SubResource("SpriteFrames_vvxid")
+animation = &"spidey"
+frame_progress = 0.735972
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0xtfv")
