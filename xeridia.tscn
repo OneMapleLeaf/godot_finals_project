@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=26 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
 [ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://chkwiv31eu8rg" path="res://diagreen.tscn" id="6_nje0e"]
 [ext_resource type="PackedScene" uid="uid://b5466ij6u8ry" path="res://spider.tscn" id="8_gbtkm"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_l70iv"]
+[ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="10_h5frx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -7993,3 +7994,5 @@ position = Vector2(1219, 840)
 
 [node name="Player_Character" parent="." instance=ExtResource("9_l70iv")]
 position = Vector2(40, 1046)
+
+[node name="UI" parent="." instance=ExtResource("10_h5frx")]

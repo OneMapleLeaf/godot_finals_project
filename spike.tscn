@@ -41,7 +41,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="spike" type="AnimatedSprite2D"]
+[node name="spike" type="AnimatedSprite2D" groups=["obstacles"]]
 sprite_frames = SubResource("SpriteFrames_mq8hj")
 autoplay = "default"
 frame = 3

@@ -8,20 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://b2t83m3gx7v32" path="res://assets/pause.png" id="6_jgngw"]
 [ext_resource type="Texture2D" uid="uid://dkiqjhfjciisi" path="res://assets/play.png" id="7_dcr61"]
 
-[node name="UI" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="UI" type="CanvasLayer"]
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
 texture_filter = 5
-layout_mode = 0
-offset_left = 27.0
+offset_left = 16.0
 offset_top = 22.0
-offset_right = 283.0
+offset_right = 272.0
 offset_bottom = 54.0
 value = 23.0
 texture_under = ExtResource("1_lqm3i")
@@ -31,14 +24,14 @@ texture_progress_offset = Vector2(2, 1)
 
 [node name="inventory" type="TouchScreenButton" parent="."]
 texture_filter = 3
-position = Vector2(864, 566)
+position = Vector2(853, 566)
 scale = Vector2(2.16406, 2.1875)
 texture_normal = ExtResource("4_88vhh")
 texture_pressed = ExtResource("5_jmvop")
 
 [node name="pause" type="TouchScreenButton" parent="."]
 texture_filter = 5
-position = Vector2(1086, 7)
+position = Vector2(1075, 7)
 scale = Vector2(0.453125, 0.460938)
 texture_normal = ExtResource("6_jgngw")
 texture_pressed = ExtResource("7_dcr61")
