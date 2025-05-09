@@ -1,7 +1,7 @@
 [gd_scene load_steps=55 format=3 uid="uid://dfjn80t15s10s"]
 
 [ext_resource type="Texture2D" uid="uid://ccm50u7gp1l2k" path="res://assets/xerdiaplanet.png" id="1_kqfmg"]
-[ext_resource type="Script" uid="uid://ebsx81t2pbg7" path="res://xerdia_planet.gd" id="1_xm4qt"]
+[ext_resource type="Script" path="res://xerdia_planet.gd" id="1_xm4qt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_j2img"]
 radius = 47.0425

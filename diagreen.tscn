@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://chkwiv31eu8rg"]
+[gd_scene load_steps=17 format=3 uid="uid://chkwiv31eu8rg"]
 
 [ext_resource type="Texture2D" uid="uid://btjd58w6a6ix5" path="res://assets/crystal_item_anim_strip_6.webp" id="1_4y6eb"]
+[ext_resource type="Script" path="res://xeridia_collectibles.gd" id="1_omrdb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_idtje"]
 atlas = ExtResource("1_4y6eb")
@@ -96,7 +97,8 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kgcte"]
 
-[node name="diagreen" type="Node2D"]
+[node name="diagreen" type="Node2D" groups=["collectibles"]]
+script = ExtResource("1_omrdb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.372471, 0.936621, 0, 1)
@@ -104,9 +106,12 @@ texture_filter = 5
 scale = Vector2(2.4375, 2.4375)
 sprite_frames = SubResource("SpriteFrames_qgxy8")
 animation = &"diamond_green"
+autoplay = "diamond_green"
 frame_progress = 0.833124
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CapsuleShape2D_kgcte")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

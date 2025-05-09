@@ -52,18 +52,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="gold" type="AnimatedSprite2D"]
+[node name="gold" type="AnimatedSprite2D" groups=["collectibles"]]
 modulate = Color(0.996078, 0.984314, 0.0392157, 1)
 scale = Vector2(1.5625, 1.375)
 sprite_frames = SubResource("SpriteFrames_1ifo1")
 autoplay = "default"
-frame_progress = 0.601114
+frame_progress = 0.62286
 
-[node name="StaticBody2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 collision_layer = 3
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Area2D"]
 position = Vector2(0, -4.1)
 scale = Vector2(1, 0.633929)
-polygon = PackedVector2Array(-3, 0.157747, 0, -7, 3, -1.41972, 3, -1.41972, 1, 6.46761, -3, 0.157747)
+polygon = PackedVector2Array(-4.48, 3.02586, 0, -3.85762, 4.48, 3.02586, 0, 11.0566, 0, 11.0566, -4.48, 3.02586, 0, -3.85762)

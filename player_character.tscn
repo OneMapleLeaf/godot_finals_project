@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cphsrwvd3wr2y"]
+[gd_scene load_steps=41 format=3 uid="uid://cphsrwvd3wr2y"]
 
 [ext_resource type="Script" path="res://player_character.gd" id="1_cs804"]
 [ext_resource type="Texture2D" uid="uid://c3j1t8appawvt" path="res://assets/MaleChars.png" id="2_4akcp"]
@@ -293,6 +293,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fvnmd"]
 size = Vector2(20, 5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtn8h"]
+size = Vector2(20, 40)
+
 [node name="Player_Character" type="CharacterBody2D"]
 z_index = 10
 script = ExtResource("1_cs804")
@@ -314,3 +317,12 @@ limit_left = -4
 limit_top = -2
 limit_right = 1923
 limit_bottom = 1074
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_mtn8h")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
