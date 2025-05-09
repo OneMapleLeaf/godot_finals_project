@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://gvqpp3h7k2jv"]
+[gd_scene load_steps=15 format=3 uid="uid://dp5l2ue5lbhhc"]
 
 [ext_resource type="Texture2D" uid="uid://dm3wb7erepen5" path="res://assets/Sandworm trap - Level 1.png" id="1_dj3nb"]
 
@@ -90,7 +90,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_voo3b"]
 size = Vector2(28, 29)
 
-[node name="worm1" type="AnimatedSprite2D"]
+[node name="worm1" type="AnimatedSprite2D" groups=["delay_obstacle", "obstacles"]]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_i3gyv")
 autoplay = "default"

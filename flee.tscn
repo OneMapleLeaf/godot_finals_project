@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://con3jmk1ucgie"]
+[gd_scene load_steps=15 format=3 uid="uid://b3mtovuvam48m"]
 
 [ext_resource type="Texture2D" uid="uid://c66pbf0kfdxcp" path="res://assets/flee.png" id="1_78rgj"]
 
@@ -90,7 +90,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_hyehd"]
 radius = 73.8241
 
-[node name="flee" type="AnimatedSprite2D"]
+[node name="flee" type="AnimatedSprite2D" groups=["delay_obstacle", "obstacles"]]
 modulate = Color(0.360784, 0, 0, 1)
 texture_filter = 1
 position = Vector2(1, 0)
