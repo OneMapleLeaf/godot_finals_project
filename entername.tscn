@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dtxx6jkt6euo4"]
+[gd_scene load_steps=24 format=3 uid="uid://dtxx6jkt6euo4"]
 
 [ext_resource type="Script" path="res://entername.gd" id="1_31wyg"]
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_qylq5"]
@@ -902,6 +902,8 @@ animations = [{
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_ild1d"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_juvry"]
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_31wyg")
 
@@ -941,9 +943,20 @@ scale = Vector2(4.3893, 4.3893)
 tile_map_data = PackedByteArray(0, 0, 20, 0, 12, 0, 0, 0, 13, 0, 6, 0, 0, 0, 20, 0, 13, 0, 0, 0, 13, 0, 7, 0, 0, 0, 20, 0, 14, 0, 0, 0, 13, 0, 8, 0, 0, 0)
 tile_set = SubResource("TileSet_qmnxh")
 
-[node name="selection" type="AnimatedSprite2D" parent="."]
+[node name="selectionmale" type="AnimatedSprite2D" parent="."]
+visible = false
 texture_filter = 1
 position = Vector2(422, 232)
+scale = Vector2(5.50977, 5.50977)
+sprite_frames = SubResource("SpriteFrames_5mj8u")
+animation = &"selection "
+autoplay = "selection "
+frame_progress = 0.761782
+
+[node name="selectionfemale" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(758, 232)
 scale = Vector2(5.50977, 5.50977)
 sprite_frames = SubResource("SpriteFrames_5mj8u")
 animation = &"selection "
@@ -972,4 +985,18 @@ position = Vector2(511, 466)
 scale = Vector2(186, 58)
 texture_normal = SubResource("CanvasTexture_ild1d")
 
+[node name="touchscreenmale" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(377, 165)
+scale = Vector2(92, 147)
+texture_normal = SubResource("CanvasTexture_juvry")
+
+[node name="touchscreenfemale" type="TouchScreenButton" parent="."]
+z_index = -1
+position = Vector2(710, 165)
+scale = Vector2(92, 147)
+texture_normal = SubResource("CanvasTexture_juvry")
+
 [connection signal="pressed" from="touchscreenstart" to="." method="_on_touchscreenstart_pressed"]
+[connection signal="pressed" from="touchscreenmale" to="." method="_on_touchscreenmale_pressed"]
+[connection signal="pressed" from="touchscreenfemale" to="." method="_on_touchscreenfemale_pressed"]
