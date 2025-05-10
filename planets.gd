@@ -51,3 +51,7 @@ func _on_area_2_dzorvath_mouse_entered() -> void:
 
 func _on_area_2_dzorvath_mouse_exited() -> void:
 	$zorvath.scale = Vector2(1.696, 1.696)
+
+
+func _on_touch_screen_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://xeridia.tscn")
