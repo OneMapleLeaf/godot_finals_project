@@ -2,11 +2,10 @@ extends CharacterBody2D
 
 var speed = 150
 var isWalking
-var character_gender
 func _ready() -> void:
-	if character_gender == null:
-		character_gender = "male"
-	$AnimatedSprite2D.play("%s_default" % character_gender)
+	if Globals.character_gender == null:
+		Globals.character_gender = "male"
+	$AnimatedSprite2D.play("%s_default" % Globals.character_gender)
 	
 	randomize()
 	for sprite in get_tree().get_nodes_in_group("delay_obstacle"):
@@ -21,16 +20,16 @@ func _process(delta: float) -> void:
 
 	# Priority: D > A > W > S
 	if Input.is_action_pressed("D"):
-		$AnimatedSprite2D.play("%s_walk_right" % character_gender)
+		$AnimatedSprite2D.play("%s_walk_right" % Globals.character_gender)
 		isWalking = true
 	elif Input.is_action_pressed("A"):
-		$AnimatedSprite2D.play("%s_walk_left" % character_gender)
+		$AnimatedSprite2D.play("%s_walk_left" % Globals.character_gender)
 		isWalking = true
 	elif Input.is_action_pressed("W"):
-		$AnimatedSprite2D.play("%s_walk_up" % character_gender)
+		$AnimatedSprite2D.play("%s_walk_up" % Globals.character_gender)
 		isWalking = true
 	elif Input.is_action_pressed("S"):
-		$AnimatedSprite2D.play("%s_walk_down" % character_gender)
+		$AnimatedSprite2D.play("%s_walk_down" % Globals.character_gender)
 		isWalking = true
 	else:
 		$AnimatedSprite2D.stop()

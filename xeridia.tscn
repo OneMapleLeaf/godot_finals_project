@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=30 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
 [ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_l70iv"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="10_h5frx"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="11_lix5q"]
+[ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -7508,6 +7509,7 @@ position = Vector2(680, 638)
 texture_filter = 5
 position = Vector2(4, 0)
 tile_map_data = PackedByteArray("AABWABUAAAAsAA4AAABbABYAAAAsABAAAAA0ABEAAAAsABAAAAA7ABMAAAAsAA4AAABDABEAAAAsAA4AAAAtABEAAAAsAA4AAABIABMAAAAsAA4AAAA2ABgAAAAsAA4AAABDABYAAAAsABAAAAAwACYAAAAsAA4AAAA3ACYAAAAsAA4AAABFABsAAAAsAA4AAABJACYAAAAsAA4AAAAoACgAAAAsAA4AAAAfACUAAAAsAA4AAAATAB0AAAAsAA4AAAAGAB8AAAAsAA4AAAAEACMAAAAsAA4AAAAiABAAAAAsABAAAAAmABIAAAAsABAAAAAmAAoAAAAsABAAAAAhAAwAAAAsAA4AAAAoAA4AAAAsABAAAAAaABIAAAAsAA4AAAAQABYAAAAsAA4AAAAaABYAAAAsAA4AAAAwAAoAAAAsAA4AAAA3AAUAAAAsABAAAAAeAAUAAAAsAA4AAABGAAUAAAAsAA4AAAA8AAoAAAAsAA4AAABMAAoAAAAsAA4AAABaAAMAAAAsAA4AAABVAAQAAAAsAA4AAAB1AAsAAAAsAA4AAABlAAkAAAAsAA4AAABnAA8AAAAsABAAAABlABYAAAAsABAAAABeAB8AAAAsAA4AAABYACQAAAAsABAAAABgACYAAAAsABAAAABTABcAAAAsABAAAABhAAoAAAAsABAAAABdAA8AAAAsABAAAABYAA0AAAAsABAAAABmACgAAAAsAA4AAABrABwAAAAsABAAAABEACsAAAAsAA4AAABDACcAAAAsABAAAABxAB0AAAAsABAAAABvABQAAAAsABAAAAB2ABkAAAAsABAAAAB2AB4AAAAsABAAAABWACsAAAAsABAAAAAMAC4AAAAsAA4AAAAdAC4AAAAsAA4AAAAVACsAAAAsABAAAAALACoAAAAsAA4AAAABAC4AAAAsABAAAAAHADgAAAAsABAAAAAMADIAAAAsABAAAAAWADIAAAAsAA4AAAADADYAAAAsABAAAAAhADIAAAAsABAAAAAtADIAAAAsABAAAAAmADUAAAAsAA4AAAAnAD0AAAAsABAAAAAaAEAAAAAsABAAAABJADQAAAAsABAAAABEADIAAAAsAA4AAABOADIAAAAsAA4AAABVADQAAAAsABAAAAA6ADAAAAAsAA4AAABmACQAAAAsABAAAABDAD8AAAAsABAAAABYADwAAAAsABAAAAAHAEIAAAAsAA4AAAABAEIAAAAsAA4AAAA3AEIAAAAsAA4AAAA7ADkAAAAsAA4AAABDADkAAAAsAA4AAABtADsAAAAsAA4AAABdADsAAAAsAA4AAABkADEAAAAsAA4AAABsADMAAAAsAA4AAAB1ADIAAAAsABAAAABuACwAAAAsABAAAAAyACEAAAAsABAAAAA4AB0AAAAsABAAAAA=")
+enabled = false
 tile_set = SubResource("TileSet_xttlo")
 
 [node name="Off" type="TileMapLayer" parent="."]
@@ -8034,3 +8036,51 @@ offset_top = 22.0
 offset_right = 1014.0
 offset_bottom = 45.0
 text = "Gem:"
+
+[node name="treetop" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(699, 669)
+
+[node name="treetop2" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(971, 623)
+
+[node name="treetop3" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(571, 575)
+
+[node name="treetop4" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(252, 927)
+
+[node name="treetop5" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1547, 927)
+
+[node name="treetop6" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1788, 862)
+
+[node name="treetop7" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1850, 862)
+
+[node name="treetop8" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1722, 576)
+
+[node name="treetop9" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1483, 656)
+
+[node name="treetop10" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1850, 525)
+
+[node name="treetop11" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1851, 80)
+
+[node name="treetop12" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(221, 128)
+
+[node name="treetop13" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(153, 128)
+
+[node name="treetop14" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(89, 128)
+
+[node name="treetop15" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(24, 130)
+
+[node name="treetop16" parent="." instance=ExtResource("12_vqsi2")]
+position = Vector2(1002, 447)

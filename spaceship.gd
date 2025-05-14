@@ -15,7 +15,9 @@ func _process(delta: float) -> void:
 
 func _on_consolearea_area_entered(area: Area2D) -> void:
 	OnArea = true
+	$Consolearea/interact.visible = true
 
 
 func _on_consolearea_area_exited(area: Area2D) -> void:
 	OnArea = false
+	$Consolearea/interact.visible = false
