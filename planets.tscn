@@ -1,6 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://s3uubsx6mxqv"]
+[gd_scene load_steps=24 format=3 uid="uid://s3uubsx6mxqv"]
 
-[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
+[ext_resource type="Script" uid="uid://cbqnjdcns4roi" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://8otjpbumilvj" path="res://assets/zorvName.png" id="12_7vm0p"]
 [ext_resource type="Texture2D" uid="uid://bqtl4ocul0vn6" path="res://assets/XerName.png" id="13_c74fs"]
 [ext_resource type="Texture2D" uid="uid://cov06gyap7py2" path="res://assets/redfutuisticlock.png" id="15_um0gg"]
+[ext_resource type="Texture2D" uid="uid://bkmkhv324wvyq" path="res://assets/backBtn.png" id="16_c74fs"]
+[ext_resource type="Texture2D" uid="uid://bqbywf6v0o30b" path="res://assets/backBtnPressed.png" id="17_ax4cp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sj2x0"]
 radius = 51.9165
@@ -188,6 +190,13 @@ texture = ExtResource("15_um0gg")
 position = Vector2(996, 438)
 scale = Vector2(0.237197, 0.237197)
 texture = ExtResource("15_um0gg")
+
+[node name="resumeBtn" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(883, -89)
+scale = Vector2(0.291889, 0.295051)
+texture_normal = ExtResource("16_c74fs")
+texture_pressed = ExtResource("17_ax4cp")
 
 [connection signal="mouse_entered" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_entered"]
 [connection signal="mouse_exited" from="xerdia/Area2dxerdia" to="." method="_on_area_2_dxerdia_mouse_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://dufbsnq47dyul"]
+[gd_scene load_steps=22 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
 [ext_resource type="Script" uid="uid://ckwge5lgi185c" path="res://spaceship.gd" id="1_h45ub"]
@@ -10,8 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cwh1spixobrdx" path="res://assets/Eletric Aura.png" id="5_no881"]
 [ext_resource type="Texture2D" uid="uid://c38x2eqibmobg" path="res://assets/Holy Light Aura.png" id="8_tb5uw"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_2f75y"]
-[ext_resource type="Texture2D" uid="uid://b23ygl5pypptl" path="res://assets/InteractBtn.png" id="11_odcj8"]
-[ext_resource type="Texture2D" uid="uid://cp4x2adl6gjmq" path="res://assets/InteractBtnPressed.png" id="12_oyh7x"]
+[ext_resource type="Texture2D" uid="uid://drbnraqorln86" path="res://assets/E.png" id="11_82ln7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqmem"]
 texture = ExtResource("3_onphi")
@@ -6750,8 +6749,8 @@ shape = SubResource("RectangleShape2D_3a58n")
 texture_filter = 5
 position = Vector2(477, 401)
 scale = Vector2(0.129136, 0.131363)
-texture_normal = ExtResource("11_odcj8")
-texture_pressed = ExtResource("12_oyh7x")
+texture_normal = ExtResource("11_82ln7")
+texture_pressed = ExtResource("11_82ln7")
 
 [connection signal="area_entered" from="Consolearea" to="." method="_on_consolearea_area_entered"]
 [connection signal="area_exited" from="Consolearea" to="." method="_on_consolearea_area_exited"]
