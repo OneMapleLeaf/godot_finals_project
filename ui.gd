@@ -12,7 +12,10 @@ func _process(delta: float) -> void:
 
 
 func _on_inventory_pressed() -> void:
-	$inventoryui.visible = true
+	if $inventoryui.visible == true:
+		$inventoryui.visible = false
+	else:
+		$inventoryui.visible = true
 
 
 func _on_pause_pressed() -> void:

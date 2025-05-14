@@ -10,9 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cwh1spixobrdx" path="res://assets/Eletric Aura.png" id="5_no881"]
 [ext_resource type="Texture2D" uid="uid://c38x2eqibmobg" path="res://assets/Holy Light Aura.png" id="8_tb5uw"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_2f75y"]
-
 [ext_resource type="Texture2D" uid="uid://drbnraqorln86" path="res://assets/E.png" id="11_82ln7"]
-
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqmem"]
 texture = ExtResource("3_onphi")
@@ -6750,12 +6748,9 @@ shape = SubResource("RectangleShape2D_3a58n")
 [node name="interact" type="Sprite2D" parent="Consolearea"]
 visible = false
 texture_filter = 5
-
-position = Vector2(477, 401)
+position = Vector2(554, 480)
 scale = Vector2(0.129136, 0.131363)
-texture_normal = ExtResource("11_82ln7")
-texture_pressed = ExtResource("11_82ln7")
-
+texture = ExtResource("11_82ln7")
 
 [connection signal="area_entered" from="Consolearea" to="." method="_on_consolearea_area_entered"]
 [connection signal="area_exited" from="Consolearea" to="." method="_on_consolearea_area_exited"]

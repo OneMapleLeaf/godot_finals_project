@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://s3uubsx6mxqv"]
 
-[ext_resource type="Script" uid="uid://cbqnjdcns4roi" path="res://planets.gd" id="1_8o5t3"]
+[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
@@ -191,7 +191,7 @@ position = Vector2(996, 438)
 scale = Vector2(0.237197, 0.237197)
 texture = ExtResource("15_um0gg")
 
-[node name="resumeBtn" type="TouchScreenButton" parent="."]
+[node name="backbutton" type="TouchScreenButton" parent="."]
 texture_filter = 1
 position = Vector2(883, -89)
 scale = Vector2(0.291889, 0.295051)
@@ -209,3 +209,4 @@ texture_pressed = ExtResource("17_ax4cp")
 [connection signal="mouse_exited" from="astria/Area2dastria" to="." method="_on_area_2_dastria_mouse_exited"]
 [connection signal="mouse_entered" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_entered"]
 [connection signal="mouse_exited" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_exited"]
+[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]

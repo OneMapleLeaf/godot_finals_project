@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://entername.gd" id="1_31wyg"]
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_qylq5"]
 [ext_resource type="Texture2D" uid="uid://8ssbmbblr5vq" path="res://assets/choosechar.png" id="2_50oix"]
+[ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="3_f7sxe"]
 [ext_resource type="Texture2D" uid="uid://y2w16pf76dk" path="res://assets/SOPHIE.png" id="3_lv1h4"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="4_vwb6j"]
 [ext_resource type="Texture2D" uid="uid://dej8saaov52mb" path="res://assets/MaleChar.png" id="5_5odrv"]
@@ -425,8 +426,6 @@ texture = ExtResource("1_qylq5")
 
 [sub_resource type="TileSet" id="TileSet_qj54v"]
 sources/0 = SubResource("TileSetAtlasSource_7j2hv")
-
-[sub_resource type="FontVariation" id="FontVariation_rfy5r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4fpr"]
 texture = ExtResource("3_lv1h4")
@@ -916,11 +915,11 @@ tile_set = SubResource("TileSet_qj54v")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 texture_filter = 1
-offset_left = 534.0
-offset_top = 403.0
-offset_right = 676.0
-offset_bottom = 443.0
-theme_override_fonts/font = SubResource("FontVariation_rfy5r")
+offset_left = 499.0
+offset_top = 407.0
+offset_right = 697.0
+offset_bottom = 447.0
+theme_override_fonts/font = ExtResource("3_f7sxe")
 theme_override_font_sizes/font_size = 17
 placeholder_text = "Enter Username"
 
