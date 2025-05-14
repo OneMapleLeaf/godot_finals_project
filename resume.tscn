@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqqojr7ehpv8o"]
+[gd_scene load_steps=11 format=3 uid="uid://dqqojr7ehpv8o"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_wb7ci"]
+[ext_resource type="Script" path="res://resume.gd" id="1_xat2g"]
 [ext_resource type="Texture2D" uid="uid://c1ktsowq7240l" path="res://assets/homebuttonpressed.png" id="2_tkoqo"]
 [ext_resource type="Texture2D" uid="uid://du5h5oi1f3myv" path="res://assets/homebutton.png" id="3_cj2us"]
 [ext_resource type="Texture2D" uid="uid://lxrjj043yuq" path="res://assets/restartnewpressed.png" id="4_iy25o"]
@@ -424,7 +425,8 @@ texture = ExtResource("1_wb7ci")
 [sub_resource type="TileSet" id="TileSet_37kly"]
 sources/0 = SubResource("TileSetAtlasSource_sss5c")
 
-[node name="Node2D" type="Node2D"]
+[node name="menu" type="Sprite2D"]
+script = ExtResource("1_xat2g")
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1

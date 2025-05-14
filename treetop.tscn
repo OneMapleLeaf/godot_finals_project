@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://baeasr5rf8fjx"]
+[gd_scene load_steps=4 format=4 uid="uid://c8uvrjngkr2hy"]
 
-[ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_jv7km"]
+[ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_suhl2"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1puhv"]
-texture = ExtResource("1_jv7km")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d58g0"]
+texture = ExtResource("1_suhl2")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -197,16 +197,40 @@ texture = ExtResource("1_jv7km")
 13:15/0 = 0
 14:15/0 = 0
 15:15/0 = 0
-11:0/size_in_atlas = Vector2i(5, 7)
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+11:3/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+12:1/size_in_atlas = Vector2i(1, 2)
+12:1/0 = 0
+13:2/0 = 0
+15:2/0 = 0
+14:1/0 = 0
+13:1/0 = 0
+15:1/0 = 0
+14:2/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+11:4/0 = 0
+15:4/0 = 0
 11:0/0 = 0
-11:0/0/texture_origin = Vector2i(0, 1)
+12:0/0 = 0
+13:0/0 = 0
+15:0/0 = 0
+14:0/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_3qdfm"]
-sources/0 = SubResource("TileSetAtlasSource_1puhv")
+[sub_resource type="TileSet" id="TileSet_dk71y"]
+sources/0 = SubResource("TileSetAtlasSource_d58g0")
 
-[node name="tree" type="Node2D"]
+[node name="treetop" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+z_index = 11
+texture_filter = 1
 position = Vector2(-8, 0)
-tile_map_data = PackedByteArray(0, 0, 0, 0, 254, 255, 0, 0, 11, 0, 0, 0, 0, 0)
-tile_set = SubResource("TileSet_3qdfm")
+tile_map_data = PackedByteArray("AAD+//3/AAALAAAAAAD+//7/AAALAAEAAAD+////AAALAAIAAAD+/wAAAAALAAMAAAD///3/AAAMAAAAAAD///7/AAAMAAEAAAD//wAAAAAMAAMAAAAAAP3/AAANAAAAAAAAAP7/AAANAAEAAAAAAP//AAANAAIAAAAAAAAAAAANAAMAAAABAP3/AAAOAAAAAAABAP7/AAAOAAEAAAABAP//AAAOAAIAAAABAAAAAAAOAAMAAAACAP3/AAAPAAAAAAACAP7/AAAPAAEAAAACAP//AAAPAAIAAAACAAAAAAAPAAMAAAD/////AAANAAMAAAA=")
+tile_set = SubResource("TileSet_dk71y")

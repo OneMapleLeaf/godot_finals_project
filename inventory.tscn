@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=4 uid="uid://dng51u3djyirw"]
+[gd_scene load_steps=27 format=4 uid="uid://dng51u3djyirw"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_mrqgh"]
+[ext_resource type="Script" path="res://inventory.gd" id="1_w3tfj"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="2_dw5ng"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="4_dw5ng"]
 [ext_resource type="Texture2D" uid="uid://br3a1n72p62u2" path="res://assets/spr_coin_roj.png" id="5_0xmy5"]
@@ -1336,6 +1337,8 @@ texture = ExtResource("1_mrqgh")
 [sub_resource type="TileSet" id="TileSet_mckt2"]
 sources/0 = SubResource("TileSetAtlasSource_2pjyi")
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_q4tpj"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ho8i8"]
 texture = ExtResource("4_dw5ng")
 0:0/0 = 0
@@ -1358,7 +1361,8 @@ texture = ExtResource("5_0xmy5")
 [sub_resource type="TileSet" id="TileSet_2pjyi"]
 sources/0 = SubResource("TileSetAtlasSource_a8ig1")
 
-[node name="Node2" type="Node"]
+[node name="inventoryui" type="Sprite2D"]
+script = ExtResource("1_w3tfj")
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -1390,6 +1394,12 @@ position = Vector2(-221, -52)
 scale = Vector2(1.32939, 1.32939)
 tile_map_data = PackedByteArray("AAApAAsAAAAoAAoAAAA=")
 tile_set = SubResource("TileSet_mckt2")
+
+[node name="xbutton" type="TouchScreenButton" parent="XBtn"]
+z_index = -99
+position = Vector2(654.435, 176.021)
+scale = Vector2(18.0534, 15.7967)
+texture_normal = SubResource("CanvasTexture_q4tpj")
 
 [node name="Inventory2" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -1586,3 +1596,5 @@ texture = ExtResource("9_ho8i8")
 position = Vector2(578, 253)
 scale = Vector2(0.0549141, 0.0549141)
 texture = ExtResource("9_ho8i8")
+
+[connection signal="pressed" from="XBtn/xbutton" to="." method="_on_xbutton_pressed"]
