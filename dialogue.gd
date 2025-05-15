@@ -1,10 +1,13 @@
-extends Node
+extends Node2D
 
-var playerScore = 0
-var character_gender
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	if Entername.gender == 1:
+		$MALE1.visible = true
+		print("male appear")
+	elif Entername.gender == 2:
+		$FEMALE1.visible = true
+		print("female appear")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

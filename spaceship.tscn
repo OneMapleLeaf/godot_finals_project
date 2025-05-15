@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
-[ext_resource type="Script" uid="uid://ckwge5lgi185c" path="res://spaceship.gd" id="1_h45ub"]
+[ext_resource type="Script" path="res://spaceship.gd" id="1_h45ub"]
 [ext_resource type="TileSet" uid="uid://b6lawr0piso1o" path="res://assets/spaceship.tres" id="2_xokri"]
 [ext_resource type="Texture2D" uid="uid://cpw4rc0ccgfjb" path="res://assets/pixelspace.png" id="3_fddem"]
 [ext_resource type="Texture2D" uid="uid://bi1l8137cl3kc" path="res://assets/Interiors_free_16x16.png" id="3_onphi"]
@@ -6660,7 +6660,7 @@ sources/0 = SubResource("TileSetAtlasSource_svkk0")
 sources/1 = SubResource("TileSetAtlasSource_p463p")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3a58n"]
-size = Vector2(51.5, 77)
+size = Vector2(51.5, 78)
 
 [node name="Spaceship" type="Node2D"]
 script = ExtResource("1_h45ub")
@@ -6742,15 +6742,15 @@ position = Vector2(521, 299)
 [node name="Consolearea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Consolearea"]
-position = Vector2(546.75, 527.5)
+position = Vector2(546.75, 501)
 shape = SubResource("RectangleShape2D_3a58n")
 
-[node name="restart" type="TouchScreenButton" parent="."]
+[node name="interact" type="Sprite2D" parent="Consolearea"]
+visible = false
 texture_filter = 5
-position = Vector2(477, 401)
+position = Vector2(554, 480)
 scale = Vector2(0.129136, 0.131363)
-texture_normal = ExtResource("11_82ln7")
-texture_pressed = ExtResource("11_82ln7")
+texture = ExtResource("11_82ln7")
 
 [connection signal="area_entered" from="Consolearea" to="." method="_on_consolearea_area_entered"]
 [connection signal="area_exited" from="Consolearea" to="." method="_on_consolearea_area_exited"]

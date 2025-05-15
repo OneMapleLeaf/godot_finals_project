@@ -55,3 +55,7 @@ func _on_area_2_dzorvath_mouse_exited() -> void:
 
 func _on_touch_screen_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://xeridia.tscn")
+
+
+func _on_backbutton_pressed() -> void:
+	get_tree().change_scene_to_file("res://spaceship.tscn")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7wcqnxunuf52"]
+[gd_scene load_steps=10 format=3 uid="uid://c7wcqnxunuf52"]
 
+[ext_resource type="Script" path="res://ui.gd" id="1_28nh8"]
 [ext_resource type="Texture2D" uid="uid://car4ic23rc0qc" path="res://assets/Sprite-0001.png" id="1_lqm3i"]
 [ext_resource type="Texture2D" uid="uid://bdfqg752tn4s0" path="res://assets/Upper.png" id="2_t56wn"]
 [ext_resource type="Texture2D" uid="uid://dqcdmupe77nyu" path="res://assets/healthlaoder-export.png" id="3_74lst"]
@@ -7,8 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://bd3tmlsvi5ygj" path="res://assets/BagIconInv.png" id="5_waa4j"]
 [ext_resource type="Texture2D" uid="uid://c0lc7ardnx7la" path="res://assets/pause-vergray.png" id="6_y4yjw"]
 [ext_resource type="Texture2D" uid="uid://f5s5630hl2ng" path="res://assets/play-vergray.png" id="7_waa4j"]
+[ext_resource type="PackedScene" uid="uid://dng51u3djyirw" path="res://inventory.tscn" id="9_m45f1"]
 
 [node name="UI" type="CanvasLayer"]
+script = ExtResource("1_28nh8")
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
 texture_filter = 5
@@ -35,3 +38,12 @@ position = Vector2(1075, 7)
 scale = Vector2(0.453125, 0.460938)
 texture_normal = ExtResource("6_y4yjw")
 texture_pressed = ExtResource("7_waa4j")
+
+[node name="inventoryui" parent="." instance=ExtResource("9_m45f1")]
+visible = false
+texture_filter = 1
+position = Vector2(4.99999, -21)
+scale = Vector2(1.14797, 1.14797)
+
+[connection signal="pressed" from="inventory" to="." method="_on_inventory_pressed"]
+[connection signal="pressed" from="pause" to="." method="_on_pause_pressed"]
