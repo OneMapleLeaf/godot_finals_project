@@ -5,18 +5,17 @@ var opened
 var isrelic
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	isrelic = false
 	opened = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if inside == true and Input.is_action_pressed("Interact"):
+	if inside == true and Input.is_action_pressed("Interact") and !opened:
 		$AnimatedSprite2D.play("opening")
 		$AnimatedSprite2D.stop()
 		$AnimatedSprite2D.frame = 4
 		opened = true
-		isrelic = true
-		
 		if isrelic:
 			Globals.map_obtained = true
 		print(randi() % 2)

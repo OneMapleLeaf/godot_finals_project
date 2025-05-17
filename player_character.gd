@@ -90,4 +90,3 @@ func _on_area_2d_area_exited(area: Area2D) -> void:
 
 func _on_damage_timer_timeout() -> void:
 	$AnimationPlayer.play("on_hit")
-	print("hit")

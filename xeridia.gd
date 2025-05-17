@@ -1,14 +1,14 @@
-extends Node
+extends Node2D
 
-var playerScore = 0
-var character_gender
-var map_obtained
-var chestMapVal
+var mapChestVal
+var mapChest
+var chosenChest
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	map_obtained = false
 	randomize()
-	chestMapVal = randi() % 8 + 1
+	mapChestVal = randi() % 8 + 1
+	chosenChest = $Chests.get_node("Chest%d" % mapChestVal)
+	chosenChest.isrelic = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

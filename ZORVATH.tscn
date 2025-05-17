@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dwqekqygdt45" path="res://gemjubs.tscn" id="8_qh5oi"]
 [ext_resource type="Texture2D" uid="uid://b8kqvogjqjbhs" path="res://assets/bridge.png" id="9_6v1e1"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="10_1783n"]
-[ext_resource type="PackedScene" uid="uid://22kow2w3doyu" path="res://trees1.tscn" id="11_nw7fo"]
+[ext_resource type="PackedScene" path="res://trees1.tscn" id="11_nw7fo"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_805wh"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_wnhyi"]
 

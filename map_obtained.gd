@@ -8,7 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if get_tree().current_scene.scene_file_path == "res://xeridia.tscn":
+		$map1.visible = true
+		$AnimatedSprite2D.play("map1")
 
 
 func _on_touchscreenbuttonx_pressed() -> void:

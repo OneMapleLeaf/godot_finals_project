@@ -941,7 +941,7 @@ texture_filter = 1
 position = Vector2(455, 250)
 scale = Vector2(0.105713, 0.105713)
 sprite_frames = SubResource("SpriteFrames_dkrgl")
-animation = &"map5"
+animation = &"map1"
 
 [node name="you obtained" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
@@ -955,6 +955,7 @@ text = "YOU OBTAINED"
 metadata/_edit_use_anchors_ = true
 
 [node name="map1" type="Label" parent="."]
+visible = false
 modulate = Color(0, 0, 0, 1)
 offset_left = 420.0
 offset_top = 318.0
