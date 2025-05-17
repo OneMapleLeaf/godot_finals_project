@@ -22,4 +22,5 @@ func _on_inventory_pressed() -> void:
 
 
 func _on_pause_pressed() -> void:
-	$menu.visible = true
+	$resume.visible = true
+	get_tree().paused = true

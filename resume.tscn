@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://dqqojr7ehpv8o"]
+[gd_scene load_steps=13 format=3 uid="uid://dqqojr7ehpv8o"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_wb7ci"]
+[ext_resource type="Script" path="res://resume.gd" id="1_xq8dx"]
 [ext_resource type="Texture2D" uid="uid://c1ktsowq7240l" path="res://assets/homebuttonpressed.png" id="2_tkoqo"]
 [ext_resource type="Texture2D" uid="uid://du5h5oi1f3myv" path="res://assets/homebutton.png" id="3_cj2us"]
 [ext_resource type="Texture2D" uid="uid://lxrjj043yuq" path="res://assets/restartnewpressed.png" id="4_iy25o"]
@@ -426,7 +427,8 @@ texture = ExtResource("1_wb7ci")
 [sub_resource type="TileSet" id="TileSet_37kly"]
 sources/0 = SubResource("TileSetAtlasSource_sss5c")
 
-[node name="Node2D" type="Node2D"]
+[node name="resume" type="Sprite2D"]
+script = ExtResource("1_xq8dx")
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -451,7 +453,7 @@ texture_pressed = ExtResource("5_osl82")
 
 [node name="resumeBtn" type="TouchScreenButton" parent="."]
 texture_filter = 1
-position = Vector2(286, 27)
+position = Vector2(292, 13)
 scale = Vector2(0.407488, 0.411902)
 texture_normal = ExtResource("6_dlqgi")
 texture_pressed = ExtResource("7_7owf0")
@@ -462,3 +464,8 @@ position = Vector2(574, 291)
 scale = Vector2(0.453125, 0.460938)
 texture_normal = ExtResource("8_cj2us")
 texture_pressed = ExtResource("9_iy25o")
+
+[connection signal="pressed" from="hometBtn" to="." method="_on_homet_btn_pressed"]
+[connection signal="pressed" from="restartBtn" to="." method="_on_restart_btn_pressed"]
+[connection signal="pressed" from="resumeBtn" to="." method="_on_resume_btn_pressed"]
+[connection signal="pressed" from="exitBtn" to="." method="_on_exit_btn_pressed"]

@@ -6724,28 +6724,28 @@ sprite_frames = SubResource("SpriteFrames_ajmj3")
 autoplay = "default"
 frame_progress = 0.493228
 
-[node name="MaleMsg1" type="Sprite2D" parent="."]
+[node name="Line2" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(526, 379)
 scale = Vector2(0.609632, 0.609632)
 texture = ExtResource("9_cd3gt")
 
-[node name="MaleMsg2" type="Sprite2D" parent="."]
+[node name="Line4" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(523, 398)
 scale = Vector2(0.599533, 0.599533)
 texture = ExtResource("8_5mesi")
 
-[node name="MaleMsg3" type="Sprite2D" parent="."]
+[node name="Line6" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(515, 401)
 scale = Vector2(0.671575, 0.671575)
 texture = ExtResource("9_6fyao")
 
-[node name="MaleMsg4" type="Sprite2D" parent="."]
+[node name="Line8" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(544, 390)
@@ -6761,27 +6761,27 @@ autoplay = "default"
 frame_progress = 0.245796
 flip_h = true
 
-[node name="AiMsg1" type="Sprite2D" parent="."]
+[node name="Line1" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(634, 400)
 scale = Vector2(0.528446, 0.528446)
 texture = ExtResource("7_iqg0b")
 
-[node name="AiMsg2" type="Sprite2D" parent="."]
+[node name="Line3" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(677, 352)
 scale = Vector2(0.514915, 0.514915)
 texture = ExtResource("10_x4m5d")
 
-[node name="AiMsg3" type="Sprite2D" parent="."]
+[node name="Line5" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(639, 392)
 scale = Vector2(0.534528, 0.534528)
 texture = ExtResource("11_ajmj3")
 
-[node name="AiMsg4" type="Sprite2D" parent="."]
+[node name="Line7" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(622, 389)
@@ -6794,3 +6794,5 @@ position = Vector2(812, 585)
 scale = Vector2(0.242208, 0.246384)
 texture_normal = ExtResource("17_3ff0t")
 texture_pressed = ExtResource("18_ht4hd")
+
+[connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]
