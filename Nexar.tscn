@@ -1,6 +1,7 @@
-[gd_scene load_steps=44 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=45 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
+[ext_resource type="Script" path="res://nexar.gd" id="1_h2qr8"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]
 [ext_resource type="Texture2D" uid="uid://0i8c2iq47qv4" path="res://assets/Trees+.png" id="2_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="3_aqk2v"]
@@ -21749,6 +21750,7 @@ texture = ExtResource("14_uv3hr")
 sources/0 = SubResource("TileSetAtlasSource_kdlng")
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_h2qr8")
 
 [node name="Canvas" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -22224,26 +22226,28 @@ offset_right = 1014.0
 offset_bottom = 45.0
 text = "Gem:"
 
-[node name="Chest" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chests" type="Node" parent="."]
+
+[node name="Chest1" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(95, 332)
 
-[node name="Chest2" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest2" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1810, 210)
 
-[node name="Chest3" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest3" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1004, 890)
 
-[node name="Chest4" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest4" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1478, 1027)
 
-[node name="Chest5" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest5" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1383, 179)
 
-[node name="Chest6" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest6" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(325, 391)
 
-[node name="Chest7" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest7" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(60, 1090)
 
-[node name="Chest8" parent="." instance=ExtResource("15_aqyky")]
+[node name="Chest8" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1908, 657)

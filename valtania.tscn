@@ -1,7 +1,8 @@
-[gd_scene load_steps=47 format=4 uid="uid://bvmjgy0nedoyx"]
+[gd_scene load_steps=48 format=4 uid="uid://bvmjgy0nedoyx"]
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
+[ext_resource type="Script" path="res://valtania.gd" id="1_vcd22"]
 [ext_resource type="Texture2D" uid="uid://cl14bv7oatev1" path="res://assets/Karrcz.png" id="2_3jxkj"]
 [ext_resource type="Texture2D" uid="uid://bxrxfy383cwa2" path="res://assets/DungeonCrawl_ProjectUtumnoTileset_0.png" id="3_yqn4a"]
 [ext_resource type="Texture2D" uid="uid://dabrfolk1um1o" path="res://assets/396666040_869731578147463_3831246054818884650_n.png" id="4_5nilq"]
@@ -122682,6 +122683,7 @@ texture = ExtResource("15_1hhia")
 sources/0 = SubResource("TileSetAtlasSource_b0qx2")
 
 [node name="World_Valtania" type="Node2D"]
+script = ExtResource("1_vcd22")
 metadata/_edit_vertical_guides_ = [1099.0]
 metadata/_edit_horizontal_guides_ = [604.0]
 
@@ -123205,26 +123207,28 @@ offset_right = 1014.0
 offset_bottom = 45.0
 text = "Gem:"
 
-[node name="Chest" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chests" type="Node" parent="."]
+
+[node name="Chest1" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1918, 1035)
 
-[node name="Chest2" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest2" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1472, 63)
 
-[node name="Chest3" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest3" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(255, 241)
 
-[node name="Chest4" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest4" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(287, 1099)
 
-[node name="Chest5" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest5" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1008, 161)
 
-[node name="Chest6" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest6" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1113, 969)
 
-[node name="Chest7" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest7" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1645, 727)
 
-[node name="Chest8" parent="." instance=ExtResource("16_rxyls")]
+[node name="Chest8" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1921, 377)

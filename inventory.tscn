@@ -1430,44 +1430,44 @@ position = Vector2(506, 195)
 scale = Vector2(0.123747, 0.123747)
 texture = ExtResource("6_qjyhv")
 
-[node name="greengemCount" type="Label" parent="."]
+[node name="gold_gem_counter" type="Label" parent="."]
 texture_filter = 1
 offset_left = 517.0
-offset_top = 301.0
+offset_top = 303.0
 offset_right = 557.0
-offset_bottom = 324.0
+offset_bottom = 326.0
 scale = Vector2(0.732531, 0.732531)
 text = "0"
 
-[node name="orangegemCount" type="Label" parent="."]
+[node name="violet_gem_counter" type="Label" parent="."]
 texture_filter = 1
 offset_left = 589.0
-offset_top = 302.0
+offset_top = 303.0
 offset_right = 629.0
-offset_bottom = 325.0
+offset_bottom = 326.0
 scale = Vector2(0.732531, 0.732531)
 text = "0"
 
-[node name="violetgemCount" type="Label" parent="."]
+[node name="red_gem_counter" type="Label" parent="."]
 texture_filter = 1
 offset_left = 660.0
-offset_top = 301.0
+offset_top = 303.0
 offset_right = 700.0
-offset_bottom = 324.0
+offset_bottom = 326.0
 scale = Vector2(0.732531, 0.732531)
 text = "0"
 
-[node name="redgemCount" type="Label" parent="."]
+[node name="blue_gem_counter" type="Label" parent="."]
 texture_filter = 1
 offset_left = 445.0
-offset_top = 302.0
+offset_top = 303.0
 offset_right = 485.0
-offset_bottom = 325.0
+offset_bottom = 326.0
 scale = Vector2(0.732531, 0.732531)
 text = "0
 "
 
-[node name="bluegemCount" type="Label" parent="."]
+[node name="green_gem_counter" type="Label" parent="."]
 offset_left = 375.0
 offset_top = 303.0
 offset_right = 415.0
@@ -1609,37 +1609,37 @@ position = Vector2(0, -4)
 tile_map_data = PackedByteArray("AAAoABQAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_2pjyi")
 
-[node name="Mapa1" type="Sprite2D" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
-position = Vector2(435, 252)
-scale = Vector2(0.0327169, 0.0327169)
-texture = ExtResource("6_ormsd")
-
-[node name="Mapa2" type="Sprite2D" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
-position = Vector2(507, 251)
-scale = Vector2(0.0317908, 0.0317908)
-texture = ExtResource("7_ho8i8")
-
-[node name="Mapa3" type="Sprite2D" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
-position = Vector2(578, 252)
-scale = Vector2(0.0345575, 0.0345575)
-texture = ExtResource("8_udyo3")
-
-[node name="Mapa4" type="Sprite2D" parent="."]
+[node name="Map_0" type="Sprite2D" parent="."]
 modulate = Color(0.4, 0.4, 0.4, 1)
 position = Vector2(364, 252)
 scale = Vector2(0.0328141, 0.0328141)
 texture = ExtResource("10_2pjyi")
 
-[node name="Mapa5" type="Sprite2D" parent="."]
+[node name="Map_1" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(435, 252)
+scale = Vector2(0.0327169, 0.0327169)
+texture = ExtResource("6_ormsd")
+
+[node name="Map_2" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(507, 251)
+scale = Vector2(0.0317908, 0.0317908)
+texture = ExtResource("7_ho8i8")
+
+[node name="Map_3" type="Sprite2D" parent="."]
+modulate = Color(0.4, 0.4, 0.4, 1)
+position = Vector2(578, 252)
+scale = Vector2(0.0345575, 0.0345575)
+texture = ExtResource("8_udyo3")
+
+[node name="Map_4" type="Sprite2D" parent="."]
 modulate = Color(0.4, 0.4, 0.4, 1)
 position = Vector2(648, 251)
 scale = Vector2(0.0282428, 0.0282428)
 texture = ExtResource("11_dhhmk")
 
-[node name="Redfutuisticlock" type="Sprite2D" parent="."]
+[node name="Redfutuisticlock1" type="Sprite2D" parent="."]
 position = Vector2(435, 253)
 scale = Vector2(0.0528034, 0.0528034)
 texture = ExtResource("9_ho8i8")
@@ -1659,7 +1659,7 @@ position = Vector2(649, 252)
 scale = Vector2(0.0528034, 0.0528034)
 texture = ExtResource("9_ho8i8")
 
-[node name="Redfutuisticlock5" type="Sprite2D" parent="."]
+[node name="Redfutuisticlock0" type="Sprite2D" parent="."]
 position = Vector2(364, 253)
 scale = Vector2(0.0528034, 0.0528034)
 texture = ExtResource("9_ho8i8")

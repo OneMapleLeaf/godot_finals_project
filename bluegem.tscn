@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://d6u5c5w1xfew"]
+[gd_scene load_steps=11 format=3 uid="uid://d6u5c5w1xfew"]
 
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="1_r4smq"]
+[ext_resource type="Script" path="res://bluegem.gd" id="2_2q3gf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4eb7n"]
 atlas = ExtResource("1_r4smq")
@@ -62,6 +63,7 @@ sprite_frames = SubResource("SpriteFrames_5jqpp")
 animation = &"bluegem"
 autoplay = "bluegem"
 frame_progress = 0.769056
+script = ExtResource("2_2q3gf")
 
 [node name="Area2D" type="Area2D" parent="."]
 

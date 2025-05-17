@@ -18,7 +18,6 @@ func _process(delta: float) -> void:
 		opened = true
 		if isrelic:
 			Globals.map_obtained = true
-		print(randi() % 2)
 
 
 func _on_area_entered(area: Area2D) -> void:

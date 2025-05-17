@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://d31w3bjb13tya"]
+[gd_scene load_steps=11 format=3 uid="uid://d31w3bjb13tya"]
 
 [ext_resource type="Texture2D" uid="uid://db1efodpnuqjv" path="res://assets/gems.png" id="1_48p8q"]
+[ext_resource type="Script" path="res://gray.gd" id="2_qwpf6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5lc7s"]
 atlas = ExtResource("1_48p8q")
@@ -62,6 +63,7 @@ scale = Vector2(0.785645, 0.646404)
 sprite_frames = SubResource("SpriteFrames_wcn6n")
 autoplay = "default"
 frame_progress = 0.7331
+script = ExtResource("2_qwpf6")
 
 [node name="Area2d" type="Area2D" parent="."]
 

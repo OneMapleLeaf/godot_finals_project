@@ -2,7 +2,10 @@ extends CharacterBody2D
 
 var speed = 150
 var isWalking
+var game_over
+
 func _ready() -> void:
+	game_over = false
 	if Globals.character_gender == null:
 		Globals.character_gender = "male"
 	$AnimatedSprite2D.play("%s_default" % Globals.character_gender)
@@ -16,6 +19,8 @@ func _ready() -> void:
 			start_delayed_play(sprite, delay)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if game_over:
+		return
 	isWalking = false
 
 	# Priority: D > A > W > S
@@ -79,6 +84,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	var parent = area.get_parent()
 	if parent.is_in_group("collectibles"):
 		parent.queue_free()
+		Globals.collectiblesCounter(parent.item_type)
 	if parent.is_in_group("obstacles"):
 		$DamageTimer.start()
 
@@ -89,4 +95,8 @@ func _on_area_2d_area_exited(area: Area2D) -> void:
 
 
 func _on_damage_timer_timeout() -> void:
+	Globals.playerHP -= 5
 	$AnimationPlayer.play("on_hit")
+	if Globals.playerHP <= 0 and !game_over:
+		$AnimatedSprite2D.visible = false
+		game_over = true

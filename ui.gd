@@ -8,6 +8,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$TextureProgressBar.value = Globals.playerHP
+	
 	if Globals.map_obtained:
 		$mapobtained.visible = true
 

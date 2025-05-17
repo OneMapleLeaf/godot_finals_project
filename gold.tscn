@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dum3kw6xaoykk"]
+[gd_scene load_steps=10 format=3 uid="uid://dum3kw6xaoykk"]
 
 [ext_resource type="Texture2D" uid="uid://db1efodpnuqjv" path="res://assets/gems.png" id="1_nw847"]
+[ext_resource type="Script" path="res://gold.gd" id="2_tanho"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_840ap"]
 atlas = ExtResource("1_nw847")
@@ -58,6 +59,7 @@ scale = Vector2(1.5625, 1.375)
 sprite_frames = SubResource("SpriteFrames_1ifo1")
 autoplay = "default"
 frame_progress = 0.874183
+script = ExtResource("2_tanho")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 3
