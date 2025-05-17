@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 
 func _on_touchscreenstart_pressed() -> void:
-	get_tree().change_scene_to_file("res://spaceship.tscn")
+	get_tree().change_scene_to_file("res://dialogue.tscn")
 
 
 func _on_touchscreenmale_pressed() -> void:
