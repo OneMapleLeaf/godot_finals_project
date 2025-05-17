@@ -1,6 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://bun4wcak1wwug"]
+[gd_scene load_steps=22 format=3 uid="uid://bun4wcak1wwug"]
 
 [ext_resource type="Texture2D" uid="uid://s2h7vsnfnn1i" path="res://assets/lootchest_item_anim_opening_strip_5.png" id="1_ijw8x"]
+[ext_resource type="Script" path="res://chestloot.gd" id="1_lv2p5"]
 [ext_resource type="Texture2D" uid="uid://btybhxsccmjlh" path="res://assets/lootchest_item_anim_strip_8.png" id="2_gkaly"]
 [ext_resource type="Texture2D" uid="uid://dlbsdb6gxxa6g" path="res://assets/open.png" id="3_gkaly"]
 
@@ -138,27 +139,31 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lvxxg"]
-size = Vector2(64.3514, 65.6154)
+size = Vector2(51.4794, 51.7955)
 
-[node name="Node2D" type="Area2D"]
-position = Vector2(276, 190)
+[node name="Chest" type="Area2D"]
+position = Vector2(33, 38)
+script = ExtResource("1_lv2p5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(3.6341, 3.6341)
+position = Vector2(-33, -36)
+scale = Vector2(2.06705, 2.06705)
 sprite_frames = SubResource("SpriteFrames_wytha")
-animation = &"empty"
+animation = &"opening"
 autoplay = "idle"
-frame_progress = 0.376354
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0.616806, 0.116798)
+position = Vector2(-33, -38)
 scale = Vector2(0.791148, 0.791148)
 shape = SubResource("RectangleShape2D_lvxxg")
 
 [node name="Open" type="Sprite2D" parent="."]
+visible = false
 texture_filter = 1
-position = Vector2(13, -51)
-scale = Vector2(0.179259, 0.179259)
+position = Vector2(-26.95, -65.95)
+scale = Vector2(0.0962036, 0.0962036)
 texture = ExtResource("3_gkaly")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

@@ -76,6 +76,7 @@ texture_filter = 5
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_vvxid")
 animation = &"spidey"
+autoplay = "spidey"
 frame_progress = 0.735972
 
 [node name="Area2D" type="Area2D" parent="."]

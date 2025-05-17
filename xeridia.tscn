@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=31 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
 [ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="10_h5frx"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="11_lix5q"]
 [ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
+[ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_ni6dq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -7474,11 +7475,11 @@ position = Vector2(1831, 495)
 position = Vector2(1832, 49)
 
 [node name="tree15" parent="Trees" instance=ExtResource("5_hx3a8")]
-z_index = 11
+z_index = 9
 position = Vector2(1831, 832)
 
 [node name="tree16" parent="Trees" instance=ExtResource("5_hx3a8")]
-z_index = 11
+z_index = 9
 position = Vector2(1769, 832)
 
 [node name="tree17" parent="Trees" instance=ExtResource("5_hx3a8")]
@@ -7518,7 +7519,6 @@ tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAD//wIAAAAAAAA
 tile_set = SubResource("TileSet_rnxm8")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-visible = false
 
 [node name="collisionwall1" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(323, 151, 322, 194, 305, 177, 246, 176, 235, 194, 202, 194, 193, 175, 182, 175, 173, 194, 137, 194, 129, 176, 117, 176, 110, 194, 71, 194, 67, 176, 55, 176, 48, 194, 4, 194, -42, 194, -42, 130, 306, 129)
@@ -7596,10 +7596,12 @@ polygon = PackedVector2Array(1745, 624, 1744, 634, 1738, 641, 1707, 640, 1702, 6
 polygon = PackedVector2Array(1567, 975, 1567, 987, 1562, 993, 1531, 993, 1525, 985, 1529, 980, 1529, 975, 1536, 975, 1536, 959, 1524, 940, 1567, 939, 1557, 959, 1557, 974)
 
 [node name="collisiontree13" type="CollisionPolygon2D" parent="StaticBody2D"]
+z_index = 100
 polygon = PackedVector2Array(1870, 911, 1870, 922, 1867, 928, 1832, 928, 1829, 921, 1832, 912, 1841, 911, 1841, 894, 1826, 875, 1879, 874, 1862, 895, 1862, 910)
 
 [node name="collisiontree14" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(1806, 911, 1806, 922, 1803, 928, 1769, 928, 1765, 920, 1769, 913, 1774, 910, 1776, 911, 1776, 894, 1765, 880, 1807, 879, 1797, 894, 1796, 910)
+z_index = 385
+polygon = PackedVector2Array(1806, 911, 1806, 922, 1803, 928, 1785.15, 928, 1769, 928, 1765, 920, 1769, 913, 1774, 910, 1776, 911, 1776, 894, 1765, 880, 1807, 879, 1797, 894, 1796, 910)
 
 [node name="collisiontree15" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(468, 82, 1183, 81, 1189, 62, 1192, 49, 1229, 49, 1236, 35, 1253, 36, 1257, 49, 1300, 50, 1306, 37, 1347, 35, 1350, 46, 1391, 47, 1402, 31, 1414, 14, 1457, 17, 1479, 29, 1478, 46, 1488, 50, 1587, 49, 1594, 35, 1713, 33, 1712, 45, 1718, 50, 1806, 48, 1814, 33, 1890, 33, 1894, 43, 1905, 50, 1951, 49, 1953, -22, 411, -26, 414, 17, 413, 62, 419, 82)
@@ -7759,7 +7761,7 @@ position = Vector2(345, 338)
 position = Vector2(346, 276)
 
 [node name="diagreen3" parent="." instance=ExtResource("6_nje0e")]
-position = Vector2(31, 326)
+position = Vector2(150, 359)
 
 [node name="diagreen4" parent="." instance=ExtResource("6_nje0e")]
 position = Vector2(73, 348)
@@ -7819,7 +7821,7 @@ position = Vector2(777, 286)
 position = Vector2(1024, 283)
 
 [node name="diagreen23" parent="." instance=ExtResource("6_nje0e")]
-position = Vector2(45, 686)
+position = Vector2(30, 879)
 
 [node name="diagreen24" parent="." instance=ExtResource("6_nje0e")]
 position = Vector2(309, 747)
@@ -7879,7 +7881,7 @@ position = Vector2(1144, 978)
 position = Vector2(1009, 920)
 
 [node name="diagreen43" parent="." instance=ExtResource("6_nje0e")]
-position = Vector2(1874, 691)
+position = Vector2(1865, 784)
 
 [node name="diagreen44" parent="." instance=ExtResource("6_nje0e")]
 position = Vector2(1642, 738)
@@ -7948,7 +7950,7 @@ position = Vector2(1687, 479)
 position = Vector2(1466, 169)
 
 [node name="diagreen66" parent="." instance=ExtResource("6_nje0e")]
-position = Vector2(1676, 39)
+position = Vector2(1565, 53)
 
 [node name="diagreen67" parent="." instance=ExtResource("6_nje0e")]
 position = Vector2(1190, 152)
@@ -8084,3 +8086,27 @@ position = Vector2(24, 130)
 
 [node name="treetop16" parent="." instance=ExtResource("12_vqsi2")]
 position = Vector2(1002, 447)
+
+[node name="Chest" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(1891, 202)
+
+[node name="Chest2" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(1905, 718)
+
+[node name="Chest3" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(363, 561)
+
+[node name="Chest4" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(380, 84)
+
+[node name="Chest5" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(55, 366)
+
+[node name="Chest6" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(1722, 85)
+
+[node name="Chest7" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(1641, 1004)
+
+[node name="Chest8" parent="." instance=ExtResource("13_ni6dq")]
+position = Vector2(75, 727)

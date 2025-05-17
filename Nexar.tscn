@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=44 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="13_6813a"]
 [ext_resource type="PackedScene" uid="uid://5fjk5jgxl0bj" path="res://spinnerattack.tscn" id="14_70uel"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="14_uv3hr"]
+[ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="15_aqyky"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -22222,3 +22223,27 @@ offset_top = 22.0
 offset_right = 1014.0
 offset_bottom = 45.0
 text = "Gem:"
+
+[node name="Chest" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(95, 332)
+
+[node name="Chest2" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(1810, 210)
+
+[node name="Chest3" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(1004, 890)
+
+[node name="Chest4" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(1478, 1027)
+
+[node name="Chest5" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(1383, 179)
+
+[node name="Chest6" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(325, 391)
+
+[node name="Chest7" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(60, 1090)
+
+[node name="Chest8" parent="." instance=ExtResource("15_aqyky")]
+position = Vector2(1908, 657)
