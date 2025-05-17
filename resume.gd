@@ -12,7 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_homet_btn_pressed() -> void:
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://spaceship.tscn")
+	
 
 
 func _on_restart_btn_pressed() -> void:
@@ -20,7 +22,9 @@ func _on_restart_btn_pressed() -> void:
 
 
 func _on_exit_btn_pressed() -> void:
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://intro.tscn")
+	
 
 
 func _on_resume_btn_pressed() -> void:

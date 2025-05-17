@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://qiqoaiwg83w5"]
+[gd_scene load_steps=20 format=3 uid="uid://cony13t0ncb8m"]
 
 [ext_resource type="Texture2D" uid="uid://cr4ceweii6elq" path="res://assets/lightbeam.png" id="1_ek7s4"]
 [ext_resource type="Texture2D" uid="uid://cefxintmcwk7e" path="res://assets/lightyellow.png" id="2_q01tk"]
@@ -136,4 +136,4 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_n5kqv")
 animation = &"yellow"
 autoplay = "yellow"
-frame_progress = 0.972747
+frame_progress = 0.17276
