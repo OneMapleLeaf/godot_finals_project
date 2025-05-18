@@ -1,6 +1,6 @@
-[gd_scene load_steps=32 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=29 format=4 uid="uid://d3bupl20b1tby"]
 
-[ext_resource type="Script" path="res://xeridia.gd" id="1_it2yv"]
+[ext_resource type="Script" uid="uid://c3b3wclc2w7yo" path="res://xeridia.gd" id="1_it2yv"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
 [ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
 [ext_resource type="Texture2D" uid="uid://dtl5eabdnq83x" path="res://assets/Surplus Trees.png" id="3_b8njg"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://b5466ij6u8ry" path="res://spider.tscn" id="8_gbtkm"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_l70iv"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="10_h5frx"]
-[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="11_lix5q"]
 [ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_ni6dq"]
 
@@ -7384,18 +7383,6 @@ texture = ExtResource("5_b8mom")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mtubh")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lix5q"]
-texture = ExtResource("11_lix5q")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_ldxik"]
-sources/0 = SubResource("TileSetAtlasSource_lix5q")
-
 [node name="Xeridia" type="Node2D"]
 script = ExtResource("1_it2yv")
 
@@ -8015,31 +8002,6 @@ position = Vector2(1219, 840)
 position = Vector2(40, 1046)
 
 [node name="UI" parent="." instance=ExtResource("10_h5frx")]
-
-[node name="GreenGemDisplay" type="TileMapLayer" parent="UI"]
-modulate = Color(0.109804, 0.996078, 0.396078, 1)
-texture_filter = 1
-position = Vector2(-2928, -111)
-scale = Vector2(3.75596, 3.75596)
-tile_map_data = PackedByteArray("AABAAAIAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_ldxik")
-
-[node name="GemLblCount" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 1021.0
-offset_top = 16.0
-offset_right = 1062.0
-offset_bottom = 39.0
-scale = Vector2(1.53585, 1.53585)
-text = "0"
-
-[node name="GemLbl" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 973.0
-offset_top = 22.0
-offset_right = 1014.0
-offset_bottom = 45.0
-text = "Gem:"
 
 [node name="treetop" parent="." instance=ExtResource("12_vqsi2")]
 position = Vector2(699, 669)

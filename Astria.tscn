@@ -1,6 +1,6 @@
-[gd_scene load_steps=31 format=4 uid="uid://eu6dicmv1e57"]
+[gd_scene load_steps=28 format=4 uid="uid://eu6dicmv1e57"]
 
-[ext_resource type="Script" path="res://astria.gd" id="1_0raj8"]
+[ext_resource type="Script" uid="uid://b2onnp0tav7lf" path="res://astria.gd" id="1_0raj8"]
 [ext_resource type="Texture2D" uid="uid://c6e3mikfihtxk" path="res://assets/astriaBG.png" id="1_hn2mn"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_vswc8"]
 [ext_resource type="Texture2D" uid="uid://bh5bxe8fn27ym" path="res://assets/base_out_atlas.png" id="2_t60ex"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://d31w3bjb13tya" path="res://gray.tscn" id="10_3jtgm"]
 [ext_resource type="PackedScene" uid="uid://3jmypieic2r" path="res://spike2.tscn" id="11_ifdi4"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_p4obc"]
-[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="13_ecccx"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="14_57jpe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcwdr"]
@@ -12487,18 +12486,6 @@ texture = ExtResource("4_7hrkt")
 [sub_resource type="TileSet" id="TileSet_norub"]
 sources/1 = SubResource("TileSetAtlasSource_ssu4j")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_avgd5"]
-texture = ExtResource("13_ecccx")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_47wtt"]
-sources/0 = SubResource("TileSetAtlasSource_avgd5")
-
 [node name="World_Astria" type="Node2D"]
 script = ExtResource("1_0raj8")
 
@@ -13834,31 +13821,6 @@ position = Vector2(63.625, 54.5625)
 frame_progress = 0.520036
 
 [node name="UI" parent="." instance=ExtResource("12_p4obc")]
-
-[node name="GreenGemDisplay" type="TileMapLayer" parent="UI"]
-modulate = Color(0.757175, 0.0964661, 0.851563, 1)
-texture_filter = 1
-position = Vector2(-2928, -111)
-scale = Vector2(3.75596, 3.75596)
-tile_map_data = PackedByteArray("AABAAAIAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_47wtt")
-
-[node name="GemLblCount" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 1021.0
-offset_top = 16.0
-offset_right = 1062.0
-offset_bottom = 39.0
-scale = Vector2(1.53585, 1.53585)
-text = "0"
-
-[node name="GemLbl" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 973.0
-offset_top = 22.0
-offset_right = 1014.0
-offset_bottom = 45.0
-text = "Gem:"
 
 [node name="Chests" type="Node" parent="."]
 
