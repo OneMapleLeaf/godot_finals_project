@@ -7,14 +7,24 @@ var gender
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
 
 func _on_touchscreenstart_pressed() -> void:
-	get_tree().change_scene_to_file("res://dialogue.tscn")
+	if $TextEdit.text != "" and $selectionmale.visible == true or $selectionfemale.visible == true:
+		get_tree().change_scene_to_file("res://dialogue.tscn")
+	if $TextEdit.text == "":
+		$unamevalidation.visible = true
+	else:
+		$unamevalidation.visible = false
+		
+	if $selectionmale.visible == false and $selectionfemale.visible == false:
+		$charvalidation.visible = true
+	else:
+		$charvalidation.visible = false
+		
 
 
 func _on_touchscreenmale_pressed() -> void:

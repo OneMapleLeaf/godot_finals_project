@@ -996,6 +996,28 @@ position = Vector2(710, 165)
 scale = Vector2(92, 147)
 texture_normal = SubResource("CanvasTexture_juvry")
 
+[node name="unamevalidation" type="Label" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+offset_left = 449.0
+offset_top = 331.0
+offset_right = 764.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("3_f7sxe")
+theme_override_font_sizes/font_size = 16
+text = "Please Enter Your Username!"
+
+[node name="charvalidation" type="Label" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+offset_left = 461.0
+offset_top = 144.0
+offset_right = 776.0
+offset_bottom = 165.0
+theme_override_fonts/font = ExtResource("3_f7sxe")
+theme_override_font_sizes/font_size = 16
+text = "Please Choose a Character"
+
 [connection signal="pressed" from="touchscreenstart" to="." method="_on_touchscreenstart_pressed"]
 [connection signal="pressed" from="touchscreenmale" to="." method="_on_touchscreenmale_pressed"]
 [connection signal="pressed" from="touchscreenfemale" to="." method="_on_touchscreenfemale_pressed"]
