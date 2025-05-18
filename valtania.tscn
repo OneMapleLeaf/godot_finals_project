@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://bvmjgy0nedoyx"]
+[gd_scene load_steps=47 format=4 uid="uid://bvmjgy0nedoyx"]
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="14_275pr"]
 [ext_resource type="PackedScene" uid="uid://dum3kw6xaoykk" path="res://gold.tscn" id="15_b0r7i"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="16_rxyls"]
+[ext_resource type="Texture2D" uid="uid://cspivonvfeow" path="res://assets/quesMark.png" id="16_v2cml"]
+[ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="17_mlylh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ushlk"]
 texture = ExtResource("1_1bdms")
@@ -123168,6 +123170,19 @@ position = Vector2(1168, 370)
 frame_progress = 0.188135
 
 [node name="UI" parent="." instance=ExtResource("14_275pr")]
+
+[node name="quesMark" type="TouchScreenButton" parent="UI"]
+texture_filter = 5
+position = Vector2(979, -16)
+scale = Vector2(0.0968036, 0.0984727)
+texture_normal = ExtResource("16_v2cml")
+texture_pressed = ExtResource("16_v2cml")
+
+[node name="MissionComp" type="Sprite2D" parent="UI"]
+texture_filter = 1
+position = Vector2(177, 107)
+scale = Vector2(0.465593, 0.465593)
+texture = ExtResource("17_mlylh")
 
 [node name="Chests" type="Node" parent="."]
 
