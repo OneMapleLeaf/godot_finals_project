@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://ce8ifewf8nrde"]
+[gd_scene load_steps=25 format=4 uid="uid://ce8ifewf8nrde"]
 
 [ext_resource type="Texture2D" uid="uid://cqd1q0vpewubc" path="res://assets/ground.png" id="1_spvlh"]
 [ext_resource type="Script" path="res://zorvath.gd" id="1_xm31h"]
@@ -11,9 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://dwqekqygdt45" path="res://gemjubs.tscn" id="8_qh5oi"]
 [ext_resource type="Texture2D" uid="uid://b8kqvogjqjbhs" path="res://assets/bridge.png" id="9_6v1e1"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="10_1783n"]
-[ext_resource type="PackedScene" path="res://trees1.tscn" id="11_nw7fo"]
+[ext_resource type="PackedScene" uid="uid://22kow2w3doyu" path="res://trees1.tscn" id="11_nw7fo"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_805wh"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_wnhyi"]
+[ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="15_ur2dv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8j6yf"]
 texture = ExtResource("1_spvlh")
@@ -7869,3 +7870,15 @@ position = Vector2(1188, 381)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("13_wnhyi")]
 position = Vector2(1393, 586)
+
+[node name="lightbeam" parent="." instance=ExtResource("15_ur2dv")]
+position = Vector2(849, 762)
+
+[node name="lightbeam2" parent="." instance=ExtResource("15_ur2dv")]
+position = Vector2(1177, 108)
+
+[node name="lightbeam3" parent="." instance=ExtResource("15_ur2dv")]
+position = Vector2(461, 111)
+
+[node name="lightbeam4" parent="." instance=ExtResource("15_ur2dv")]
+position = Vector2(1142, 548)

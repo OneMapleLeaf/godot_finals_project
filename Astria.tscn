@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://eu6dicmv1e57"]
+[gd_scene load_steps=32 format=4 uid="uid://eu6dicmv1e57"]
 
 [ext_resource type="Script" path="res://astria.gd" id="1_0raj8"]
 [ext_resource type="Texture2D" uid="uid://c6e3mikfihtxk" path="res://assets/astriaBG.png" id="1_hn2mn"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_p4obc"]
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="13_ecccx"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="14_57jpe"]
+[ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="16_jo1ay"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcwdr"]
 texture = ExtResource("1_hn2mn")
@@ -13885,3 +13886,15 @@ position = Vector2(893, 731)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("14_57jpe")]
 position = Vector2(486, 484)
+
+[node name="lightbeam" parent="." instance=ExtResource("16_jo1ay")]
+position = Vector2(964, 546)
+
+[node name="lightbeam2" parent="." instance=ExtResource("16_jo1ay")]
+position = Vector2(67, 164)
+
+[node name="lightbeam3" parent="." instance=ExtResource("16_jo1ay")]
+position = Vector2(1549, 45)
+
+[node name="lightbeam4" parent="." instance=ExtResource("16_jo1ay")]
+position = Vector2(1635, 817)

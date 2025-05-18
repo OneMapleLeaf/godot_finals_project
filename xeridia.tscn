@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=33 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Script" path="res://xeridia.gd" id="1_it2yv"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="11_lix5q"]
 [ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_ni6dq"]
+[ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="15_gnu4q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -8114,3 +8115,15 @@ position = Vector2(1641, 1004)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("13_ni6dq")]
 position = Vector2(75, 727)
+
+[node name="lightbeam" parent="." instance=ExtResource("15_gnu4q")]
+position = Vector2(41, 1063)
+
+[node name="lightbeam2" parent="." instance=ExtResource("15_gnu4q")]
+position = Vector2(61, 67)
+
+[node name="lightbeam3" parent="." instance=ExtResource("15_gnu4q")]
+position = Vector2(1786, 617)
+
+[node name="lightbeam4" parent="." instance=ExtResource("15_gnu4q")]
+position = Vector2(28, 588)

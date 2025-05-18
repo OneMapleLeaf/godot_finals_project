@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://bvmjgy0nedoyx"]
+[gd_scene load_steps=49 format=4 uid="uid://bvmjgy0nedoyx"]
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="15_1hhia"]
 [ext_resource type="PackedScene" uid="uid://dum3kw6xaoykk" path="res://gold.tscn" id="15_b0r7i"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="16_rxyls"]
+[ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="18_46xmr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ushlk"]
 texture = ExtResource("1_1bdms")
@@ -123232,3 +123233,15 @@ position = Vector2(1645, 727)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1921, 377)
+
+[node name="lightbeam" parent="." instance=ExtResource("18_46xmr")]
+position = Vector2(474, 108)
+
+[node name="lightbeam2" parent="." instance=ExtResource("18_46xmr")]
+position = Vector2(1223, 47)
+
+[node name="lightbeam3" parent="." instance=ExtResource("18_46xmr")]
+position = Vector2(1600, 1027)
+
+[node name="lightbeam4" parent="." instance=ExtResource("18_46xmr")]
+position = Vector2(1022, 1050)
