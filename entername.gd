@@ -13,17 +13,21 @@ func _process(delta: float) -> void:
 
 
 func _on_touchscreenstart_pressed() -> void:
-	if $TextEdit.text != "" and $selectionmale.visible == true or $selectionfemale.visible == true:
+	var username = $TextEdit.text.strip_edges()
+	var has_username = username != ""
+	var has_character = $selectionmale.visible or $selectionfemale.visible
+	if has_username and has_character:
 		get_tree().change_scene_to_file("res://dialogue.tscn")
-	if $TextEdit.text == "":
-		$unamevalidation.visible = true
-	else:
-		$unamevalidation.visible = false
 		
-	if $selectionmale.visible == false and $selectionfemale.visible == false:
-		$charvalidation.visible = true
+	if has_username:
+		$unamevalidation.visible = false
 	else:
+		$unamevalidation.visible = true
+		
+	if has_character:
 		$charvalidation.visible = false
+	else:
+		$charvalidation.visible = true
 		
 
 
