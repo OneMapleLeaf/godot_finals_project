@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://c7wcqnxunuf52"]
+[gd_scene load_steps=17 format=3 uid="uid://c7wcqnxunuf52"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_28nh8"]
 [ext_resource type="Texture2D" uid="uid://car4ic23rc0qc" path="res://assets/Sprite-0001.png" id="1_lqm3i"]
@@ -13,6 +13,10 @@
 [ext_resource type="PackedScene" uid="uid://dqqojr7ehpv8o" path="res://resume.tscn" id="11_ldnal"]
 [ext_resource type="PackedScene" uid="uid://bt1x4iknjvb8k" path="res://gameover.tscn" id="12_hixlg"]
 [ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="13_whlxb"]
+[ext_resource type="Texture2D" uid="uid://cspivonvfeow" path="res://assets/quesMark.png" id="14_c362l"]
+[ext_resource type="PackedScene" uid="uid://c1vqku0fmvt3o" path="res://questionAns.tscn" id="15_gh8cf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_elu58"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_28nh8")
@@ -68,5 +72,21 @@ position = Vector2(580, 313)
 scale = Vector2(0.68, 0.68)
 texture = ExtResource("13_whlxb")
 
+[node name="questionmark" type="Sprite2D" parent="."]
+position = Vector2(1033, 35)
+scale = Vector2(0.123148, 0.123148)
+texture = ExtResource("14_c362l")
+
+[node name="qmarkbutton" type="TouchScreenButton" parent="questionmark"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(194.887, -194.887)
+scale = Vector2(-395.266, 378.371)
+texture_normal = SubResource("CanvasTexture_elu58")
+
+[node name="questionans" parent="." instance=ExtResource("15_gh8cf")]
+visible = false
+position = Vector2(65, 8)
+
 [connection signal="pressed" from="inventory" to="." method="_on_inventory_pressed"]
 [connection signal="pressed" from="pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="questionmark/qmarkbutton" to="." method="_on_qmarkbutton_pressed"]

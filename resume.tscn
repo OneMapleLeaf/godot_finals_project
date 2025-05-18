@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://lxrjj043yuq" path="res://assets/restartnewpressed.png" id="4_iy25o"]
 [ext_resource type="Texture2D" uid="uid://caw3avpy4isy4" path="res://assets/restartnew.png" id="5_osl82"]
 [ext_resource type="Texture2D" uid="uid://boa3uha7bkdi" path="res://assets/resumeBtn.png" id="6_dlqgi"]
-[ext_resource type="Texture2D" uid="uid://j5fq8lt6wxj5" path="res://assets/resumeBtnPressed.png" id="7_7owf0"]
 [ext_resource type="Texture2D" uid="uid://hssuf4726qyu" path="res://assets/exitpressed (1).png" id="8_cj2us"]
 [ext_resource type="Texture2D" uid="uid://cdhadrlr7bgom" path="res://assets/exit.png" id="9_iy25o"]
 
@@ -427,6 +426,8 @@ texture = ExtResource("1_wb7ci")
 [sub_resource type="TileSet" id="TileSet_37kly"]
 sources/0 = SubResource("TileSetAtlasSource_sss5c")
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_m4oee"]
+
 [node name="resume" type="Sprite2D"]
 script = ExtResource("1_xq8dx")
 
@@ -451,12 +452,18 @@ scale = Vector2(0.453125, 0.460938)
 texture_normal = ExtResource("4_iy25o")
 texture_pressed = ExtResource("5_osl82")
 
-[node name="resumeBtn" type="TouchScreenButton" parent="."]
+[node name="resume" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(292, 13)
+position = Vector2(512, 239)
 scale = Vector2(0.407488, 0.411902)
-texture_normal = ExtResource("6_dlqgi")
-texture_pressed = ExtResource("7_7owf0")
+texture = ExtResource("6_dlqgi")
+
+[node name="touchscreenresume" type="TouchScreenButton" parent="resume"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -99
+position = Vector2(-215.957, -46.1275)
+scale = Vector2(431.914, 89.8272)
+texture_normal = SubResource("CanvasTexture_m4oee")
 
 [node name="exitBtn" type="TouchScreenButton" parent="."]
 texture_filter = 5
@@ -467,5 +474,5 @@ texture_pressed = ExtResource("9_iy25o")
 
 [connection signal="pressed" from="hometBtn" to="." method="_on_homet_btn_pressed"]
 [connection signal="pressed" from="restartBtn" to="." method="_on_restart_btn_pressed"]
-[connection signal="pressed" from="resumeBtn" to="." method="_on_resume_btn_pressed"]
+[connection signal="pressed" from="resume/touchscreenresume" to="." method="_on_touchscreenresume_pressed"]
 [connection signal="pressed" from="exitBtn" to="." method="_on_exit_btn_pressed"]

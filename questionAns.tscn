@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://c1vqku0fmvt3o"]
+[gd_scene load_steps=20 format=3 uid="uid://c1vqku0fmvt3o"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_2jw70"]
+[ext_resource type="Script" path="res://question_ans.gd" id="1_xoo3f"]
 [ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="2_kbr2i"]
 [ext_resource type="Texture2D" uid="uid://dgns1770cp1tb" path="res://assets/mapa4.png" id="3_4fsg1"]
 [ext_resource type="Texture2D" uid="uid://c5byxj3vi32e8" path="res://assets/mapa1.png" id="4_xto3a"]
@@ -925,7 +926,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="questionans" type="Sprite2D"]
+script = ExtResource("1_xoo3f")
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -968,3 +970,5 @@ position = Vector2(504, 235)
 scale = Vector2(0.0727075, 0.0727075)
 sprite_frames = SubResource("SpriteFrames_kriw6")
 animation = &"map1"
+
+[connection signal="pressed" from="XBtn/xbutton" to="." method="_on_xbutton_pressed"]
