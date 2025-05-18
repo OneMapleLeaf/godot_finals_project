@@ -30,3 +30,8 @@ func _on_inventory_pressed() -> void:
 func _on_pause_pressed() -> void:
 	$resume.visible = true
 	get_tree().paused = true
+
+
+func _on_qmarkbutton_pressed() -> void:
+	$questionans.visible = true
+	print("clicked")
