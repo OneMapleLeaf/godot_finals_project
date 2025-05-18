@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://s3uubsx6mxqv"]
 
-[ext_resource type="Script" uid="uid://cbqnjdcns4roi" path="res://planets.gd" id="1_8o5t3"]
+[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]

@@ -12,6 +12,12 @@ func _process(delta: float) -> void:
 	
 	if Globals.map_obtained:
 		$mapobtained.visible = true
+		
+	if Globals.playerHP == 0:
+		$gameover.visible = true
+		
+	if Globals.maps[1] == true:
+		$missioncomp.visible = true
 
 
 func _on_inventory_pressed() -> void:

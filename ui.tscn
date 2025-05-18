@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c7wcqnxunuf52"]
+[gd_scene load_steps=14 format=3 uid="uid://c7wcqnxunuf52"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_28nh8"]
 [ext_resource type="Texture2D" uid="uid://car4ic23rc0qc" path="res://assets/Sprite-0001.png" id="1_lqm3i"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dng51u3djyirw" path="res://inventory.tscn" id="9_m45f1"]
 [ext_resource type="PackedScene" uid="uid://n6kb64s8kohn" path="res://MapObtained.tscn" id="10_fyadg"]
 [ext_resource type="PackedScene" uid="uid://dqqojr7ehpv8o" path="res://resume.tscn" id="11_ldnal"]
+[ext_resource type="PackedScene" uid="uid://bt1x4iknjvb8k" path="res://gameover.tscn" id="12_hixlg"]
+[ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="13_whlxb"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_28nh8")
@@ -55,6 +57,16 @@ position = Vector2(115, 56)
 process_mode = 3
 visible = false
 position = Vector2(67, 9)
+
+[node name="gameover" parent="." instance=ExtResource("12_hixlg")]
+visible = false
+position = Vector2(66, 9)
+
+[node name="missioncomp" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(580, 313)
+scale = Vector2(0.68, 0.68)
+texture = ExtResource("13_whlxb")
 
 [connection signal="pressed" from="inventory" to="." method="_on_inventory_pressed"]
 [connection signal="pressed" from="pause" to="." method="_on_pause_pressed"]
