@@ -1,7 +1,7 @@
-[gd_scene load_steps=44 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=46 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
-[ext_resource type="Script" uid="uid://bogv3k0ewk22a" path="res://nexar.gd" id="1_h2qr8"]
+[ext_resource type="Script" path="res://nexar.gd" id="1_h2qr8"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_l6s2d"]
 [ext_resource type="Texture2D" uid="uid://0i8c2iq47qv4" path="res://assets/Trees+.png" id="2_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="3_aqk2v"]
@@ -14,9 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://d2xjlkg8e4x3d" path="res://bonfire.tscn" id="13_2o6r5"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="13_6813a"]
 [ext_resource type="PackedScene" uid="uid://5fjk5jgxl0bj" path="res://spinnerattack.tscn" id="14_70uel"]
+[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="14_uv3hr"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="15_aqyky"]
-[ext_resource type="Texture2D" uid="uid://cspivonvfeow" path="res://assets/quesMark.png" id="15_b1y7m"]
-[ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="16_gaie1"]
+[ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="17_q6l0p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -21738,6 +21738,18 @@ texture = ExtResource("2_tlwt5")
 [sub_resource type="TileSet" id="TileSet_036b0"]
 sources/0 = SubResource("TileSetAtlasSource_aqk2v")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdlng"]
+texture = ExtResource("14_uv3hr")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_b1y7m"]
+sources/0 = SubResource("TileSetAtlasSource_kdlng")
+
 [node name="World" type="Node2D"]
 script = ExtResource("1_h2qr8")
 
@@ -22189,18 +22201,31 @@ polygon = PackedVector2Array(804, 1037, 814, 1037, 813, 1050, 812, 1054, 807, 10
 
 [node name="UI" parent="." instance=ExtResource("13_6813a")]
 
-[node name="quesMark" type="TouchScreenButton" parent="UI"]
-texture_filter = 5
-position = Vector2(979, -16)
-scale = Vector2(0.0968036, 0.0984727)
-texture_normal = ExtResource("15_b1y7m")
-texture_pressed = ExtResource("15_b1y7m")
-
-[node name="MissionComp" type="Sprite2D" parent="UI"]
+[node name="GreenGemDisplay" type="TileMapLayer" parent="UI"]
 texture_filter = 1
-position = Vector2(177, 107)
-scale = Vector2(0.465593, 0.465593)
-texture = ExtResource("16_gaie1")
+position = Vector2(-2928, -111)
+scale = Vector2(3.75596, 3.75596)
+tile_map_data = PackedByteArray("AABAAAIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_b1y7m")
+
+[node name="GemLblCount" type="Label" parent="UI"]
+modulate = Color(0.270588, 0.631373, 0.870588, 1)
+texture_filter = 1
+offset_left = 1021.0
+offset_top = 16.0
+offset_right = 1062.0
+offset_bottom = 39.0
+scale = Vector2(1.53585, 1.53585)
+text = "0"
+
+[node name="GemLbl" type="Label" parent="UI"]
+modulate = Color(0.270588, 0.631373, 0.870588, 1)
+texture_filter = 1
+offset_left = 973.0
+offset_top = 22.0
+offset_right = 1014.0
+offset_bottom = 45.0
+text = "Gem:"
 
 [node name="Chests" type="Node" parent="."]
 
@@ -22227,3 +22252,15 @@ position = Vector2(60, 1090)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("15_aqyky")]
 position = Vector2(1908, 657)
+
+[node name="lightbeam" parent="." instance=ExtResource("17_q6l0p")]
+position = Vector2(146, 432)
+
+[node name="lightbeam2" parent="." instance=ExtResource("17_q6l0p")]
+position = Vector2(1918, 748)
+
+[node name="lightbeam3" parent="." instance=ExtResource("17_q6l0p")]
+position = Vector2(1446, 1050)
+
+[node name="lightbeam4" parent="." instance=ExtResource("17_q6l0p")]
+position = Vector2(970, 1038)
