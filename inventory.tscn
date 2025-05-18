@@ -924,7 +924,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4fgxc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2pjyi"]
 texture = ExtResource("1_mrqgh")
 2:2/0 = 0
 3:2/0 = 0
@@ -1358,7 +1358,7 @@ texture = ExtResource("1_mrqgh")
 40:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_mckt2"]
-sources/0 = SubResource("TileSetAtlasSource_4fgxc")
+sources/0 = SubResource("TileSetAtlasSource_2pjyi")
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_q4tpj"]
 

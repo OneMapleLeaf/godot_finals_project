@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=31 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Script" uid="uid://c3b3wclc2w7yo" path="res://xeridia.gd" id="1_it2yv"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
@@ -11,8 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://b5466ij6u8ry" path="res://spider.tscn" id="8_gbtkm"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="9_l70iv"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="10_h5frx"]
+[ext_resource type="Texture2D" uid="uid://cspivonvfeow" path="res://assets/quesMark.png" id="12_m5p6y"]
 [ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_ni6dq"]
+[ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="13_v38xl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y64k"]
 texture = ExtResource("1_kjij7")
@@ -8002,6 +8004,19 @@ position = Vector2(1219, 840)
 position = Vector2(40, 1046)
 
 [node name="UI" parent="." instance=ExtResource("10_h5frx")]
+
+[node name="quesMark" type="TouchScreenButton" parent="UI"]
+texture_filter = 5
+position = Vector2(979, -16)
+scale = Vector2(0.0968036, 0.0984727)
+texture_normal = ExtResource("12_m5p6y")
+texture_pressed = ExtResource("12_m5p6y")
+
+[node name="MissionComp" type="Sprite2D" parent="UI"]
+texture_filter = 1
+position = Vector2(177, 107)
+scale = Vector2(0.465593, 0.465593)
+texture = ExtResource("13_v38xl")
 
 [node name="treetop" parent="." instance=ExtResource("12_vqsi2")]
 position = Vector2(699, 669)

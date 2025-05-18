@@ -1,16 +1,15 @@
-[gd_scene load_steps=20 format=3 uid="uid://n6kb64s8kohn"]
+[gd_scene load_steps=19 format=3 uid="uid://c1vqku0fmvt3o"]
 
-[ext_resource type="Script" uid="uid://bh2yfxi3u2gkv" path="res://map_obtained.gd" id="1_5l7os"]
-[ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_6178q"]
-[ext_resource type="Texture2D" uid="uid://dgns1770cp1tb" path="res://assets/mapa4.png" id="2_hcf6d"]
-[ext_resource type="Texture2D" uid="uid://c5byxj3vi32e8" path="res://assets/mapa1.png" id="3_ik8an"]
-[ext_resource type="Texture2D" uid="uid://dhewtspipq1c5" path="res://assets/mapa2.png" id="4_cepl8"]
-[ext_resource type="Texture2D" uid="uid://dg0cqixxx7nex" path="res://assets/mapa3.png" id="5_kv5i1"]
-[ext_resource type="Texture2D" uid="uid://n88sfk55fpc6" path="res://assets/mapa5.png" id="6_qdbqx"]
-[ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="7_1s38h"]
+[ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_2jw70"]
+[ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="2_kbr2i"]
+[ext_resource type="Texture2D" uid="uid://dgns1770cp1tb" path="res://assets/mapa4.png" id="3_4fsg1"]
+[ext_resource type="Texture2D" uid="uid://c5byxj3vi32e8" path="res://assets/mapa1.png" id="4_xto3a"]
+[ext_resource type="Texture2D" uid="uid://dhewtspipq1c5" path="res://assets/mapa2.png" id="5_gkm0t"]
+[ext_resource type="Texture2D" uid="uid://dg0cqixxx7nex" path="res://assets/mapa3.png" id="6_e0pmc"]
+[ext_resource type="Texture2D" uid="uid://n88sfk55fpc6" path="res://assets/mapa5.png" id="7_s1orn"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_um5o5"]
-texture = ExtResource("1_6178q")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66ed2"]
+texture = ExtResource("1_2jw70")
 8:2/0 = 0
 9:2/0 = 0
 10:2/0 = 0
@@ -422,74 +421,11 @@ texture = ExtResource("1_6178q")
 5:6/0 = 0
 5:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_x181c"]
-sources/0 = SubResource("TileSetAtlasSource_um5o5")
+[sub_resource type="TileSet" id="TileSet_3voxh"]
+sources/0 = SubResource("TileSetAtlasSource_66ed2")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4e304"]
-atlas = ExtResource("2_hcf6d")
-region = Rect2(0, 0, 1080, 1080)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ctnww"]
-atlas = ExtResource("3_ik8an")
-region = Rect2(0, 0, 1080, 1080)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nqkv2"]
-atlas = ExtResource("4_cepl8")
-region = Rect2(0, 0, 1080, 1080)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m3im5"]
-atlas = ExtResource("5_kv5i1")
-region = Rect2(0, 0, 1080, 1080)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ywf46"]
-atlas = ExtResource("6_qdbqx")
-region = Rect2(0, 0, 1080, 1080)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dkrgl"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4e304")
-}],
-"loop": true,
-"name": &"map1",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ctnww")
-}],
-"loop": true,
-"name": &"map2",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nqkv2")
-}],
-"loop": true,
-"name": &"map3",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m3im5")
-}],
-"loop": true,
-"name": &"map4",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ywf46")
-}],
-"loop": true,
-"name": &"map5",
-"speed": 5.0
-}]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bgffh"]
-texture = ExtResource("1_6178q")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2jw70"]
+texture = ExtResource("1_2jw70")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -921,110 +857,114 @@ texture = ExtResource("1_6178q")
 40:10/size_in_atlas = Vector2i(2, 2)
 40:10/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_t086f"]
-sources/0 = SubResource("TileSetAtlasSource_bgffh")
+[sub_resource type="TileSet" id="TileSet_kbr2i"]
+sources/0 = SubResource("TileSetAtlasSource_2jw70")
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_y2q1v"]
+[sub_resource type="CanvasTexture" id="CanvasTexture_66ed2"]
 
-[node name="Node2D" type="Sprite2D"]
-script = ExtResource("1_5l7os")
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e304"]
+atlas = ExtResource("3_4fsg1")
+region = Rect2(0, 0, 1080, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctnww"]
+atlas = ExtResource("4_xto3a")
+region = Rect2(0, 0, 1080, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqkv2"]
+atlas = ExtResource("5_gkm0t")
+region = Rect2(0, 0, 1080, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3im5"]
+atlas = ExtResource("6_e0pmc")
+region = Rect2(0, 0, 1080, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywf46"]
+atlas = ExtResource("7_s1orn")
+region = Rect2(0, 0, 1080, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kriw6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4e304")
+}],
+"loop": true,
+"name": &"map1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctnww")
+}],
+"loop": true,
+"name": &"map2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqkv2")
+}],
+"loop": true,
+"name": &"map3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3im5")
+}],
+"loop": true,
+"name": &"map4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywf46")
+}],
+"loop": true,
+"name": &"map5",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
 
 [node name="frame" type="TileMapLayer" parent="."]
 texture_filter = 1
-position = Vector2(-752, -287)
+position = Vector2(-707, -241)
 scale = Vector2(3.8864, 3.8864)
 tile_map_data = PackedByteArray(0, 0, 19, 0, 8, 0, 0, 0, 2, 0, 2, 0, 0, 0, 18, 0, 8, 0, 0, 0, 2, 0, 8, 0, 0, 0)
-tile_set = SubResource("TileSet_x181c")
+tile_set = SubResource("TileSet_3voxh")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+offset_left = 334.0
+offset_top = 278.0
+offset_right = 687.0
+offset_bottom = 351.0
+theme_override_fonts/font = ExtResource("2_kbr2i")
+theme_override_font_sizes/font_size = 15
+text = "“Hunt down the legendary 
+map and gather 20 shimmering 
+gems to unlock the extraction
+ portal—your escape awaits!”"
+horizontal_alignment = 1
+
+[node name="XBtn" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-221, -52)
+scale = Vector2(1.32939, 1.32939)
+tile_map_data = PackedByteArray(0, 0, 41, 0, 11, 0, 0, 0, 40, 0, 10, 0, 0, 0)
+tile_set = SubResource("TileSet_kbr2i")
+
+[node name="xbutton" type="TouchScreenButton" parent="XBtn"]
+z_index = -99
+position = Vector2(654.435, 176.021)
+scale = Vector2(18.0534, 15.7967)
+texture_normal = SubResource("CanvasTexture_66ed2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(455, 250)
-scale = Vector2(0.105713, 0.105713)
-sprite_frames = SubResource("SpriteFrames_dkrgl")
-animation = &"map5"
-
-[node name="you obtained" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-offset_left = 341.0
-offset_top = 156.0
-offset_right = 597.0
-offset_bottom = 182.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 28
-text = "YOU OBTAINED"
-metadata/_edit_use_anchors_ = true
-
-[node name="map1" type="Label" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 420.0
-offset_top = 318.0
-offset_right = 676.0
-offset_bottom = 344.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 20
-text = "Map 1"
-metadata/_edit_use_anchors_ = true
-
-[node name="map2" type="Label" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 420.0
-offset_top = 318.0
-offset_right = 676.0
-offset_bottom = 344.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 20
-text = "Map 2"
-metadata/_edit_use_anchors_ = true
-
-[node name="map3" type="Label" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 420.0
-offset_top = 318.0
-offset_right = 676.0
-offset_bottom = 344.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 20
-text = "Map 3"
-metadata/_edit_use_anchors_ = true
-
-[node name="map4" type="Label" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 420.0
-offset_top = 318.0
-offset_right = 676.0
-offset_bottom = 344.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 20
-text = "Map 4"
-metadata/_edit_use_anchors_ = true
-
-[node name="map5" type="Label" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 420.0
-offset_top = 318.0
-offset_right = 676.0
-offset_bottom = 344.0
-theme_override_fonts/font = ExtResource("7_1s38h")
-theme_override_font_sizes/font_size = 20
-text = "Map 5"
-metadata/_edit_use_anchors_ = true
-
-[node name="xbutton" type="TileMapLayer" parent="."]
-texture_filter = 1
-position = Vector2(-257, -99)
-scale = Vector2(1.32939, 1.32939)
-tile_map_data = PackedByteArray(0, 0, 41, 0, 11, 0, 0, 0, 40, 0, 10, 0, 0, 0)
-tile_set = SubResource("TileSet_t086f")
-
-[node name="touchscreenbuttonx" type="TouchScreenButton" parent="xbutton"]
-z_index = -1
-position = Vector2(654.436, 176.115)
-scale = Vector2(18.0535, 15.7967)
-texture_normal = SubResource("CanvasTexture_y2q1v")
-
-[connection signal="pressed" from="xbutton/touchscreenbuttonx" to="." method="_on_touchscreenbuttonx_pressed"]
+position = Vector2(504, 235)
+scale = Vector2(0.0727075, 0.0727075)
+sprite_frames = SubResource("SpriteFrames_kriw6")
+animation = &"map1"

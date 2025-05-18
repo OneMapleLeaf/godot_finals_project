@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=44 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="Script" uid="uid://bogv3k0ewk22a" path="res://nexar.gd" id="1_h2qr8"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="13_6813a"]
 [ext_resource type="PackedScene" uid="uid://5fjk5jgxl0bj" path="res://spinnerattack.tscn" id="14_70uel"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="15_aqyky"]
+[ext_resource type="Texture2D" uid="uid://cspivonvfeow" path="res://assets/quesMark.png" id="15_b1y7m"]
+[ext_resource type="Texture2D" uid="uid://dima4u48qc8r1" path="res://assets/MissionComp.png" id="16_gaie1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -22186,6 +22188,19 @@ polygon = PackedVector2Array(804, 1037, 814, 1037, 813, 1050, 812, 1054, 807, 10
 [node name="pickaxe" type="TileMapLayer" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("13_6813a")]
+
+[node name="quesMark" type="TouchScreenButton" parent="UI"]
+texture_filter = 5
+position = Vector2(979, -16)
+scale = Vector2(0.0968036, 0.0984727)
+texture_normal = ExtResource("15_b1y7m")
+texture_pressed = ExtResource("15_b1y7m")
+
+[node name="MissionComp" type="Sprite2D" parent="UI"]
+texture_filter = 1
+position = Vector2(177, 107)
+scale = Vector2(0.465593, 0.465593)
+texture = ExtResource("16_gaie1")
 
 [node name="Chests" type="Node" parent="."]
 
