@@ -73,19 +73,19 @@ func _on_xeridia_button_pressed() -> void:
 		redirect(XERIDIA_SCENE)
 
 func _on_nexar_button_pressed() -> void:
-	if !Globals.maps[1]:
+	if !Globals.maps[1] and Globals.maps[0]:
 		redirect(NEXAR_SCENE)
 
 func _on_valtania_button_pressed() -> void:
-	if !Globals.maps[2]:
+	if !Globals.maps[2] and Globals.maps[1]:
 		redirect(VALTANIA_SCENE)
 
 func _on_astria_button_pressed() -> void:
-	if !Globals.maps[3]:
+	if !Globals.maps[3] and Globals.maps[2]:
 		redirect(ASTRIA_SCENE)
 
 func _on_zorvath_button_pressed() -> void:
-	if !Globals.maps[4]:
+	if !Globals.maps[4] and Globals.maps[4]:
 		redirect(ZORVATH_SCENE)
 
 	
