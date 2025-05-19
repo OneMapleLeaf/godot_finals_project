@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	if Globals.playerHP == 0:
 		$gameover.visible = true
 		
-	if Globals.maps[1] == true:
+	if Globals.curStageProg:
 		$missioncomp.visible = true
 
 

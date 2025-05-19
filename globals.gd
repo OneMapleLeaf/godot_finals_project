@@ -11,6 +11,7 @@ var maps
 var chosenChest
 
 var gems
+var curStageProg
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -37,7 +38,15 @@ func choose_random_chest(chests_node: Node) -> Node:
 	chosen_chest.isrelic = true
 	return chosen_chest
 
-func trigger_chest_opened(chests_node: Node):
+func generate_random_lightbeam(lightbeams: Node) -> Node:
+	randomize()
+	var beam_index = randi() % 4 + 1
+	var chosen_beam = lightbeams.get_node("lightbeam%d" % beam_index)
+	chosen_beam.visible = true
+	chosen_beam.get_node("Area2D/CollisionShape2D").disabled = false
+	return chosen_beam
+	
+func trigger_chest_opened(chests_node: Node): 
 	for child in chests_node.get_children():
 		var child_anim = child.get_node("AnimatedSprite2D")
 		child_anim.play("opening")

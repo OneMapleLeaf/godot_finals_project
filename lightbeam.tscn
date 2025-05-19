@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://qiqoaiwg83w5"]
+[gd_scene load_steps=22 format=3 uid="uid://qiqoaiwg83w5"]
 
 [ext_resource type="Script" path="res://lightbeam.gd" id="1_36v3t"]
 [ext_resource type="Texture2D" uid="uid://cr4ceweii6elq" path="res://assets/lightbeam.png" id="1_ek7s4"]
@@ -100,7 +100,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"blue",
-"speed": 8.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -129,6 +129,9 @@ animations = [{
 "speed": 6.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1i35"]
+size = Vector2(32, 83)
+
 [node name="lightbeam" type="Sprite2D"]
 script = ExtResource("1_36v3t")
 
@@ -138,5 +141,13 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_n5kqv")
 animation = &"blue"
 autoplay = "blue"
-frame = 8
-frame_progress = 1.0
+frame = 5
+frame_progress = 0.385868
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, -1.5)
+shape = SubResource("RectangleShape2D_l1i35")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

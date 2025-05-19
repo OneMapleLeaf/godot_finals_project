@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
-[ext_resource type="Script" uid="uid://ckwge5lgi185c" path="res://spaceship.gd" id="1_h45ub"]
+[ext_resource type="Script" path="res://spaceship.gd" id="1_h45ub"]
 [ext_resource type="TileSet" uid="uid://b6lawr0piso1o" path="res://assets/spaceship.tres" id="2_xokri"]
 [ext_resource type="Texture2D" uid="uid://cpw4rc0ccgfjb" path="res://assets/pixelspace.png" id="3_fddem"]
 [ext_resource type="Texture2D" uid="uid://bi1l8137cl3kc" path="res://assets/Interiors_free_16x16.png" id="3_onphi"]
