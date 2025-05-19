@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://bvmjgy0nedoyx"]
+[gd_scene load_steps=46 format=4 uid="uid://bvmjgy0nedoyx"]
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
@@ -14,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://dm7l4xwfcmf2t" path="res://spike.tscn" id="11_38jjy"]
 [ext_resource type="PackedScene" uid="uid://dj00f5mpj4al2" path="res://torch.tscn" id="12_j3b2s"]
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="14_275pr"]
-[ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="15_1hhia"]
 [ext_resource type="PackedScene" uid="uid://dum3kw6xaoykk" path="res://gold.tscn" id="15_b0r7i"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="16_rxyls"]
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="18_46xmr"]
@@ -122671,18 +122670,6 @@ texture = ExtResource("2_3jxkj")
 [sub_resource type="TileSet" id="TileSet_gqujn"]
 sources/0 = SubResource("TileSetAtlasSource_y5w8d")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b0qx2"]
-texture = ExtResource("15_1hhia")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_v2cml"]
-sources/0 = SubResource("TileSetAtlasSource_b0qx2")
-
 [node name="World_Valtania" type="Node2D"]
 script = ExtResource("1_vcd22")
 metadata/_edit_vertical_guides_ = [1099.0]
@@ -123182,31 +123169,6 @@ position = Vector2(1168, 370)
 frame_progress = 0.188135
 
 [node name="UI" parent="." instance=ExtResource("14_275pr")]
-
-[node name="GreenGemDisplay" type="TileMapLayer" parent="UI"]
-modulate = Color(0.87451, 0.862745, 0.0627451, 1)
-texture_filter = 1
-position = Vector2(-2928, -111)
-scale = Vector2(3.75596, 3.75596)
-tile_map_data = PackedByteArray("AABAAAIAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_v2cml")
-
-[node name="GemLblCount" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 1021.0
-offset_top = 16.0
-offset_right = 1062.0
-offset_bottom = 39.0
-scale = Vector2(1.53585, 1.53585)
-text = "0"
-
-[node name="GemLbl" type="Label" parent="UI"]
-texture_filter = 1
-offset_left = 973.0
-offset_top = 22.0
-offset_right = 1014.0
-offset_bottom = 45.0
-text = "Gem:"
 
 [node name="Chests" type="Node" parent="."]
 
