@@ -68,8 +68,9 @@ position = Vector2(66, 9)
 
 [node name="missioncomp" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(580, 313)
-scale = Vector2(0.68, 0.68)
+texture_filter = 1
+position = Vector2(145, 99)
+scale = Vector2(0.370556, 0.370556)
 texture = ExtResource("13_whlxb")
 
 [node name="questionmark" type="Sprite2D" parent="."]
