@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://qiqoaiwg83w5"]
 
-[ext_resource type="Script" path="res://lightbeam.gd" id="1_36v3t"]
+[ext_resource type="Script" uid="uid://cjkbpigxfoepm" path="res://lightbeam.gd" id="1_36v3t"]
 [ext_resource type="Texture2D" uid="uid://cr4ceweii6elq" path="res://assets/lightbeam.png" id="1_ek7s4"]
 [ext_resource type="Texture2D" uid="uid://cefxintmcwk7e" path="res://assets/lightyellow.png" id="2_q01tk"]
 

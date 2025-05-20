@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://donuei4ni1v1j"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_44wa3"]
-[ext_resource type="Script" path="res://select_character.gd" id="1_hfoaq"]
+[ext_resource type="Script" uid="uid://xx8qxtt722ej" path="res://select_character.gd" id="1_hfoaq"]
 [ext_resource type="Texture2D" uid="uid://y2w16pf76dk" path="res://assets/SOPHIE.png" id="2_xengn"]
 [ext_resource type="Texture2D" uid="uid://5tjvcfhwpuly" path="res://assets/Spritesheet_UI_Flat_Animated.png" id="3_unvyc"]
 [ext_resource type="Texture2D" uid="uid://bcro6iumyrcsb" path="res://assets/namesophie.png" id="4_8e5i8"]

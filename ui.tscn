@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://c7wcqnxunuf52"]
 
-[ext_resource type="Script" path="res://ui.gd" id="1_28nh8"]
+[ext_resource type="Script" uid="uid://2ga6tbeh1slf" path="res://ui.gd" id="1_28nh8"]
 [ext_resource type="Texture2D" uid="uid://car4ic23rc0qc" path="res://assets/Sprite-0001.png" id="1_lqm3i"]
 [ext_resource type="Texture2D" uid="uid://bdfqg752tn4s0" path="res://assets/Upper.png" id="2_t56wn"]
 [ext_resource type="Texture2D" uid="uid://dqcdmupe77nyu" path="res://assets/healthlaoder-export.png" id="3_74lst"]

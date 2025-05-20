@@ -28,7 +28,8 @@ func _on_touchscreenstart_pressed() -> void:
 		$charvalidation.visible = false
 	else:
 		$charvalidation.visible = true
-		
+	
+	Globals.playerusername = username
 
 
 func _on_touchscreenmale_pressed() -> void:

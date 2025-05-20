@@ -11,9 +11,30 @@ var ZORVATH_SCENE = SceneCach.zorvath_instance
 
 func _ready() -> void:
 	pass
-func _process(delta: float) -> void:
-	pass
 	
+func _process(delta: float) -> void:
+	if $".".visible == false:
+		$xerdia/Area2dxerdia.monitorable = false
+		$xerdia/Area2dxerdia.monitoring = false
+		$nexar/Area2dnexar.monitoring = false
+		$nexar/Area2dnexar.monitorable = false
+		$valtania/Area2dvaltania.monitoring = false
+		$valtania/Area2dvaltania.monitorable = false
+		$astria/Area2dastria.monitoring = false
+		$astria/Area2dastria.monitorable = false
+		$zorvath/Area2Dzorvath.monitoring = false
+		$zorvath/Area2Dzorvath.monitorable = false
+	elif $".".visible == true:
+		$xerdia/Area2dxerdia.monitorable = true
+		$xerdia/Area2dxerdia.monitoring = true
+		$nexar/Area2dnexar.monitoring = true
+		$nexar/Area2dnexar.monitorable = true
+		$valtania/Area2dvaltania.monitoring = true
+		$valtania/Area2dvaltania.monitorable = true
+		$astria/Area2dastria.monitoring = true
+		$astria/Area2dastria.monitorable = true
+		$zorvath/Area2Dzorvath.monitoring = true
+		$zorvath/Area2Dzorvath.monitorable = true
 func _on_area_2_dxerdia_mouse_entered() -> void:
 	$xerdia.scale = Vector2(2.349, 2.349)
 
@@ -93,3 +114,7 @@ func redirect(scene: PackedScene):
 	get_tree().change_scene_to_packed(scene)
 	
 	
+
+
+func _on_touchscreenback_pressed() -> void:
+	$".".visible = false
