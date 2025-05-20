@@ -2,17 +2,33 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time
-var SPACESHIP_SCENE = SceneCach.spaceship_instance
-var XERIDIA_SCENE = SceneCach.xeridia_instance
-var NEXAR_SCENE = SceneCach.nexar_instance
-var VALTANIA_SCENE = SceneCach.valtania_instance
-var ASTRIA_SCENE = SceneCach.astria_instance
-var ZORVATH_SCENE = SceneCach.zorvath_instance
-
+var planets
+var unlockable_planets
 func _ready() -> void:
+	unlockable_planets = ["nexar", "valtania", "astria", "zorvath"]
 	pass
 	
 func _process(delta: float) -> void:
+	planetVisiblity()
+	var maps = Globals.maps
+	for i in range(maps.size()):
+		if maps[i]:
+			if i < 4:
+				$".".get_node("Redfutuisticlock%s" % (i + 1)).visible = false
+				$".".get_node("%s" % unlockable_planets[i]).modulate = Color("FFFFFF")
+			$".".get_node("Completed%s" % i).visible = true
+
+		
+	
+func _on_area_2_dxerdia_mouse_entered() -> void:
+	$xerdia.scale = Vector2(2.349, 2.349)
+
+
+func _on_area_2_dxerdia_mouse_exited() -> void:
+	$xerdia.scale = Vector2(1.969, 1.969)
+
+
+func planetVisiblity():
 	if $".".visible == false:
 		$xerdia/Area2dxerdia.monitorable = false
 		$xerdia/Area2dxerdia.monitoring = false
@@ -35,21 +51,11 @@ func _process(delta: float) -> void:
 		$astria/Area2dastria.monitorable = true
 		$zorvath/Area2Dzorvath.monitoring = true
 		$zorvath/Area2Dzorvath.monitorable = true
-func _on_area_2_dxerdia_mouse_entered() -> void:
-	$xerdia.scale = Vector2(2.349, 2.349)
-
-
-func _on_area_2_dxerdia_mouse_exited() -> void:
-	$xerdia.scale = Vector2(1.969, 1.969)
-
-
-
 
 func _on_area_2_dnexar_mouse_entered() -> void:
 	$nexar.scale = Vector2(1.9, 1.9)
 	#testing for unlock planet
-	$nexar.modulate = Color("FFFFFF")
-	$Redfutuisticlock1.visible = false
+	
 	#testing for unlock planet
 
 
@@ -87,27 +93,27 @@ func _on_area_2_dzorvath_mouse_exited() -> void:
 
 
 func _on_backbutton_pressed() -> void:
-	redirect(SPACESHIP_SCENE)
+	redirect(SceneCache.spaceship_instance)
 	
 func _on_xeridia_button_pressed() -> void:
 	if !Globals.maps[0]:
-		redirect(XERIDIA_SCENE)
+		redirect(SceneCache.xeridia_instance)
 
 func _on_nexar_button_pressed() -> void:
 	if !Globals.maps[1] and Globals.maps[0]:
-		redirect(NEXAR_SCENE)
+		redirect(SceneCache.nexar_instance)
 
 func _on_valtania_button_pressed() -> void:
 	if !Globals.maps[2] and Globals.maps[1]:
-		redirect(VALTANIA_SCENE)
+		redirect(SceneCache.valtania_instance)
 
 func _on_astria_button_pressed() -> void:
 	if !Globals.maps[3] and Globals.maps[2]:
-		redirect(ASTRIA_SCENE)
+		redirect(SceneCache.astria_instance)
 
 func _on_zorvath_button_pressed() -> void:
 	if !Globals.maps[4] and Globals.maps[4]:
-		redirect(ZORVATH_SCENE)
+		redirect(SceneCache.zorvath_instance)
 
 	
 func redirect(scene: PackedScene):

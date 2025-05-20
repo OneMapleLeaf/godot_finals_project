@@ -11,8 +11,6 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_pressed("Interact") and OnArea:
 		$Player_Character/planets.visible = true
-		print("working")
-
 
 func _on_consolearea_area_entered(area: Area2D) -> void:
 	OnArea = true

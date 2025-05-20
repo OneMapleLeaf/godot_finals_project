@@ -225,35 +225,35 @@ position = Vector2(-208.984, -40.6709)
 scale = Vector2(417.968, 81.3419)
 texture_normal = SubResource("CanvasTexture_c74fs")
 
-[node name="Completed05" type="Sprite2D" parent="."]
+[node name="Completed4" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(998, 439)
 scale = Vector2(0.238408, 0.238408)
 texture = ExtResource("18_ax4cp")
 
-[node name="Completed03" type="Sprite2D" parent="."]
+[node name="Completed2" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(578, 328)
 scale = Vector2(0.240276, 0.240276)
 texture = ExtResource("18_ax4cp")
 
-[node name="Completed04" type="Sprite2D" parent="."]
+[node name="Completed3" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(805, 240)
 scale = Vector2(0.229769, 0.229769)
 texture = ExtResource("18_ax4cp")
 
-[node name="Completed02" type="Sprite2D" parent="."]
+[node name="Completed1" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(337, 392)
 scale = Vector2(0.247247, 0.247247)
 texture = ExtResource("18_ax4cp")
 
-[node name="Completed01" type="Sprite2D" parent="."]
+[node name="Completed0" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(156, 198)
