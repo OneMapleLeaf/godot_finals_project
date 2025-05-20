@@ -35,7 +35,6 @@ func _on_touchscreenstart_pressed() -> void:
 func _on_touchscreenmale_pressed() -> void:
 	Entername.gender = 1
 	Globals.character_gender = "male"
-	print("male")
 	if $selectionfemale.visible == false:
 		$selectionmale.visible = true
 		
@@ -47,7 +46,6 @@ func _on_touchscreenmale_pressed() -> void:
 func _on_touchscreenfemale_pressed() -> void:
 	Entername.gender = 2
 	Globals.character_gender = "female"
-	print("female")
 	if $selectionmale.visible == false:
 		$selectionfemale.visible = true
 	if $selectionmale.visible == true:

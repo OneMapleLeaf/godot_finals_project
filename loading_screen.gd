@@ -16,12 +16,13 @@ func _process(delta: float) -> void:
 	pass
 
 func preload_scenes() -> void:
-	var spaceship_instance: PackedScene = preload("res://spaceship.tscn")
-	var xeridia_instance: PackedScene = preload("res://xeridia.tscn")
-	var nexar_instance: PackedScene = preload("res://Nexar.tscn")
-	var valtania_instance: PackedScene = preload("res://valtania.tscn")
-	var astria_instance: PackedScene = preload("res://Astria.tscn")
-	var zorvath_instance: PackedScene = preload("res://ZORVATH.tscn")
+	SceneCache.spaceship_instance = preload("res://spaceship.tscn")
+	SceneCache.xeridia_instance = preload("res://xeridia.tscn")
+	SceneCache.nexar_instance = preload("res://Nexar.tscn")
+	SceneCache.valtania_instance = preload("res://valtania.tscn")
+	SceneCache.astria_instance = preload("res://Astria.tscn")
+	SceneCache.zorvath_instance = preload("res://ZORVATH.tscn")
+	
 	
 	await get_tree().process_frame
 	await get_tree().create_timer(0.5).timeout

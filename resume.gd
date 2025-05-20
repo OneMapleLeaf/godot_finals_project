@@ -13,12 +13,14 @@ func _process(delta: float) -> void:
 
 func _on_homet_btn_pressed() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://spaceship.tscn")
+	get_tree().change_scene_to_packed(SceneCache.spaceship_instance)
 	
 
 
 func _on_restart_btn_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().paused = false
+	Globals.resetCurrentStage(Globals.curStage)
+	get_tree().reload_current_scene()
 
 
 func _on_exit_btn_pressed() -> void:
