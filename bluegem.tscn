@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d6u5c5w1xfew"]
 
 [ext_resource type="Texture2D" uid="uid://b0ltnn03nmq1e" path="res://assets/crystal_item_anim_strip_6.png" id="1_r4smq"]
-[ext_resource type="Script" path="res://bluegem.gd" id="2_2q3gf"]
+[ext_resource type="Script" uid="uid://uv3fa7bk3jkn" path="res://bluegem.gd" id="2_2q3gf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4eb7n"]
 atlas = ExtResource("1_r4smq")

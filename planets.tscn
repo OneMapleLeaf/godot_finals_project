@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://s3uubsx6mxqv"]
 
-[ext_resource type="Script" path="res://planets.gd" id="1_8o5t3"]
+[ext_resource type="Script" uid="uid://cbqnjdcns4roi" path="res://planets.gd" id="1_8o5t3"]
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_dknfl"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="2_0jm45"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_lihnd"]
@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://bqtl4ocul0vn6" path="res://assets/XerName.png" id="13_c74fs"]
 [ext_resource type="Texture2D" uid="uid://cov06gyap7py2" path="res://assets/redfutuisticlock.png" id="15_um0gg"]
 [ext_resource type="Texture2D" uid="uid://bkmkhv324wvyq" path="res://assets/backBtn.png" id="16_c74fs"]
-[ext_resource type="Texture2D" uid="uid://bqbywf6v0o30b" path="res://assets/backBtnPressed.png" id="17_ax4cp"]
 [ext_resource type="Texture2D" uid="uid://b08r41i1lsi4j" path="res://assets/completed.png" id="18_ax4cp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sj2x0"]
@@ -35,6 +34,8 @@ radius = 51.0118
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2jvvh"]
 radius = 50.9549
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_c74fs"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_8o5t3")
@@ -212,12 +213,17 @@ position = Vector2(996, 438)
 scale = Vector2(0.237197, 0.237197)
 texture = ExtResource("15_um0gg")
 
-[node name="backbutton" type="TouchScreenButton" parent="."]
+[node name="backbutton" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(883, -89)
+position = Vector2(1068, 47)
 scale = Vector2(0.291889, 0.295051)
-texture_normal = ExtResource("16_c74fs")
-texture_pressed = ExtResource("17_ax4cp")
+texture = ExtResource("16_c74fs")
+
+[node name="touchscreenback" type="TouchScreenButton" parent="backbutton"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(-208.984, -40.6709)
+scale = Vector2(417.968, 81.3419)
+texture_normal = SubResource("CanvasTexture_c74fs")
 
 [node name="Completed05" type="Sprite2D" parent="."]
 visible = false
@@ -269,4 +275,4 @@ texture = ExtResource("18_ax4cp")
 [connection signal="mouse_entered" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_entered"]
 [connection signal="mouse_exited" from="zorvath/Area2Dzorvath" to="." method="_on_area_2_dzorvath_mouse_exited"]
 [connection signal="pressed" from="zorvath/zorvath_button" to="." method="_on_zorvath_button_pressed"]
-[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]
+[connection signal="pressed" from="backbutton/touchscreenback" to="." method="_on_touchscreenback_pressed"]

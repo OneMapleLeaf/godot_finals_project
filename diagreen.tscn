@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://chkwiv31eu8rg"]
 
 [ext_resource type="Texture2D" uid="uid://btjd58w6a6ix5" path="res://assets/crystal_item_anim_strip_6.webp" id="1_4y6eb"]
-[ext_resource type="Script" path="res://diagreen.gd" id="1_yj14i"]
+[ext_resource type="Script" uid="uid://tontu10kllm6" path="res://diagreen.gd" id="1_yj14i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_idtje"]
 atlas = ExtResource("1_4y6eb")

@@ -5,6 +5,7 @@ var isWalking
 var game_over
 
 func _ready() -> void:
+	$playerusername.text = str(Globals.playerusername)
 	game_over = false
 	if Globals.character_gender == null:
 		Globals.character_gender = "male"

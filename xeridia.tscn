@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=4 uid="uid://d3bupl20b1tby"]
 
-[ext_resource type="Script" path="res://xeridia.gd" id="1_it2yv"]
+[ext_resource type="Script" uid="uid://c3b3wclc2w7yo" path="res://xeridia.gd" id="1_it2yv"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
 [ext_resource type="Texture2D" uid="uid://djeivr0pla8hw" path="res://assets/seasonal sample (summer).png" id="2_gdiki"]
 [ext_resource type="Texture2D" uid="uid://dtl5eabdnq83x" path="res://assets/Surplus Trees.png" id="3_b8njg"]

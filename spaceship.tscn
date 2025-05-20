@@ -1,7 +1,7 @@
-[gd_scene load_steps=35 format=4 uid="uid://dufbsnq47dyul"]
+[gd_scene load_steps=36 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
-[ext_resource type="Script" path="res://spaceship.gd" id="1_h45ub"]
+[ext_resource type="Script" uid="uid://ckwge5lgi185c" path="res://spaceship.gd" id="1_h45ub"]
 [ext_resource type="TileSet" uid="uid://b6lawr0piso1o" path="res://assets/spaceship.tres" id="2_xokri"]
 [ext_resource type="Texture2D" uid="uid://cpw4rc0ccgfjb" path="res://assets/pixelspace.png" id="3_fddem"]
 [ext_resource type="Texture2D" uid="uid://bi1l8137cl3kc" path="res://assets/Interiors_free_16x16.png" id="3_onphi"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://drbnraqorln86" path="res://assets/E.png" id="11_82ln7"]
 [ext_resource type="Texture2D" uid="uid://cgvxiyhd36yix" path="res://assets/Walk_scan.png" id="12_odcj8"]
 [ext_resource type="Texture2D" uid="uid://8cc4a45xwxro" path="res://assets/pixel-cyberpunk-interior.png" id="13_oyh7x"]
+[ext_resource type="PackedScene" uid="uid://s3uubsx6mxqv" path="res://planets.tscn" id="14_fdw3y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqmem"]
 texture = ExtResource("3_onphi")
@@ -7333,6 +7334,11 @@ polygon = PackedVector2Array(193, 108, 235, 108, 235, 256, 191, 257)
 
 [node name="Player_Character" parent="." instance=ExtResource("9_2f75y")]
 position = Vector2(521, 299)
+
+[node name="planets" parent="Player_Character" instance=ExtResource("14_fdw3y")]
+visible = false
+position = Vector2(-274, -158)
+scale = Vector2(0.479595, 0.479595)
 
 [node name="Consolearea" type="Area2D" parent="."]
 

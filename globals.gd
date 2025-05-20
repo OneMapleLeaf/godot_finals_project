@@ -13,6 +13,8 @@ var chosenChest
 var gems
 var curStageProg
 
+var playerusername
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	maps = [false, false, false, false, false]

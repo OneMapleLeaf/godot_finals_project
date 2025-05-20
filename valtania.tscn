@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bakl1pf2a60by" path="res://assets/lava.png" id="1_1bdms"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_6yuhu"]
-[ext_resource type="Script" path="res://valtania.gd" id="1_vcd22"]
+[ext_resource type="Script" uid="uid://d1yi8o6d1aqgk" path="res://valtania.gd" id="1_vcd22"]
 [ext_resource type="Texture2D" uid="uid://cl14bv7oatev1" path="res://assets/Karrcz.png" id="2_3jxkj"]
 [ext_resource type="Texture2D" uid="uid://bxrxfy383cwa2" path="res://assets/DungeonCrawl_ProjectUtumnoTileset_0.png" id="3_yqn4a"]
 [ext_resource type="Texture2D" uid="uid://dabrfolk1um1o" path="res://assets/396666040_869731578147463_3831246054818884650_n.png" id="4_5nilq"]
