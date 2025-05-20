@@ -8044,6 +8044,7 @@ position = Vector2(221, 128)
 position = Vector2(153, 128)
 
 [node name="treetop14" parent="." instance=ExtResource("12_vqsi2")]
+visible = false
 position = Vector2(89, 128)
 
 [node name="treetop15" parent="." instance=ExtResource("12_vqsi2")]

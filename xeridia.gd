@@ -5,7 +5,7 @@ var stage_num = 1
 var isFinished = false
 func _ready() -> void:
 	randomize()
-	Globals.curStage = 0
+	Globals.curStage = stage_num - 1
 	Globals.curStageProg = false
 	Globals.choose_random_chest($Chests)
 	
