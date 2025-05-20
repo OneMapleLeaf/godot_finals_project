@@ -71,6 +71,7 @@ func getGemCount(stage_num: int):
 func resetCurrentStage(stage_num: int):
 	gems[gem_index[stage_num] + "_counter"]["count"] = 0
 	maps[stage_num] = false
+	playerHP = 100
 	pass
 	
 func resetWholeGame():
