@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 300 #ORIGINAL SPEED: 150
+var speed = 150 #ORIGINAL SPEED: 150
 var isWalking
 var game_over
 

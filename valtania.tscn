@@ -123196,14 +123196,16 @@ position = Vector2(1645, 727)
 [node name="Chest8" parent="Chests" instance=ExtResource("16_rxyls")]
 position = Vector2(1921, 377)
 
-[node name="lightbeam" parent="." instance=ExtResource("18_46xmr")]
+[node name="lightbeams" type="Node" parent="."]
+
+[node name="lightbeam1" parent="lightbeams" instance=ExtResource("18_46xmr")]
 position = Vector2(474, 108)
 
-[node name="lightbeam2" parent="." instance=ExtResource("18_46xmr")]
+[node name="lightbeam2" parent="lightbeams" instance=ExtResource("18_46xmr")]
 position = Vector2(1223, 47)
 
-[node name="lightbeam3" parent="." instance=ExtResource("18_46xmr")]
+[node name="lightbeam3" parent="lightbeams" instance=ExtResource("18_46xmr")]
 position = Vector2(1600, 1027)
 
-[node name="lightbeam4" parent="." instance=ExtResource("18_46xmr")]
+[node name="lightbeam4" parent="lightbeams" instance=ExtResource("18_46xmr")]
 position = Vector2(1022, 1050)

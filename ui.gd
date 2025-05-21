@@ -34,4 +34,3 @@ func _on_pause_pressed() -> void:
 
 func _on_qmarkbutton_pressed() -> void:
 	$questionans.visible = true
-	print("clicked")

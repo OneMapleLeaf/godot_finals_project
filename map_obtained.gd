@@ -22,7 +22,7 @@ func unlockMap():
 	var stage_paths = {
 		"res://xeridia.tscn": {"map_num": 0},
 		"res://Nexar.tscn": {"map_num": 1},
-		"res://Valtania.tscn": {"map_num": 2},
+		"res://valtania.tscn": {"map_num": 2},
 		"res://Astria.tscn": {"map_num": 3},
 		"res://ZORVATH.tscn": {"map_num": 4},
 	}
