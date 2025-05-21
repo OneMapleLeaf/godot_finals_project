@@ -10,6 +10,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_exit_pressed() -> void:
+func _on_exit_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://intro.tscn")
+	Globals.resetCurrentStage(Globals.curStage)
+
+
+func _on_restart_button_pressed() -> void:
+	Globals.resetCurrentStage(Globals.curStage)
+	get_tree().reload_current_scene()

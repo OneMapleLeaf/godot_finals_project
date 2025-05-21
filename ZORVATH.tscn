@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=4 uid="uid://ce8ifewf8nrde"]
 
 [ext_resource type="Texture2D" uid="uid://cqd1q0vpewubc" path="res://assets/ground.png" id="1_spvlh"]
-[ext_resource type="Script" path="res://zorvath.gd" id="1_xm31h"]
+[ext_resource type="Script" uid="uid://dguadfpq7so8d" path="res://zorvath.gd" id="1_xm31h"]
 [ext_resource type="Texture2D" uid="uid://cp13ep56tftyu" path="res://assets/water_coasts.png" id="2_13mjx"]
 [ext_resource type="Texture2D" uid="uid://c77lbeg8gmnix" path="res://assets/blood.png" id="3_idsia"]
 [ext_resource type="Texture2D" uid="uid://b7fbl6k00c8dq" path="res://assets/cave_tileset.png" id="4_db1xe"]
@@ -7871,14 +7871,16 @@ position = Vector2(1188, 381)
 [node name="Chest8" parent="Chests" instance=ExtResource("13_wnhyi")]
 position = Vector2(1393, 586)
 
-[node name="lightbeam" parent="." instance=ExtResource("15_ur2dv")]
+[node name="lightbeams" type="Node" parent="."]
+
+[node name="lightbeam1" parent="lightbeams" instance=ExtResource("15_ur2dv")]
 position = Vector2(849, 762)
 
-[node name="lightbeam2" parent="." instance=ExtResource("15_ur2dv")]
+[node name="lightbeam2" parent="lightbeams" instance=ExtResource("15_ur2dv")]
 position = Vector2(1177, 108)
 
-[node name="lightbeam3" parent="." instance=ExtResource("15_ur2dv")]
+[node name="lightbeam3" parent="lightbeams" instance=ExtResource("15_ur2dv")]
 position = Vector2(461, 111)
 
-[node name="lightbeam4" parent="." instance=ExtResource("15_ur2dv")]
+[node name="lightbeam4" parent="lightbeams" instance=ExtResource("15_ur2dv")]
 position = Vector2(1142, 548)

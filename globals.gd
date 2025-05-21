@@ -49,7 +49,6 @@ func generate_random_lightbeam(lightbeams: Node) -> Node:
 	var chosen_beam = lightbeams.get_node("lightbeam%d" % beam_index)
 	chosen_beam.visible = true
 	chosen_beam.get_node("Area2D/CollisionShape2D").disabled = false
-	print(chosen_beam)
 	return chosen_beam
 	
 func trigger_chest_opened(chests_node: Node): 

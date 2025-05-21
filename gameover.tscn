@@ -4,9 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_kctv7"]
 [ext_resource type="Texture2D" uid="uid://bsuljb0v33cfj" path="res://assets/gameover.png" id="2_2nw6q"]
 [ext_resource type="Texture2D" uid="uid://ccal3ubcxlcf2" path="res://assets/restartbtn.png" id="3_w3x71"]
-[ext_resource type="Texture2D" uid="uid://p6gvxmovjnno" path="res://assets/restartbtnpressed.png" id="4_af4fq"]
 [ext_resource type="Texture2D" uid="uid://dqypsfjei84p0" path="res://assets/exitBtn.png" id="5_w3x71"]
-[ext_resource type="Texture2D" uid="uid://cgac4hhbjn4y7" path="res://assets/exitPressed.png" id="6_af4fq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1o2j"]
 texture = ExtResource("1_kctv7")
@@ -424,6 +422,10 @@ texture = ExtResource("1_kctv7")
 [sub_resource type="TileSet" id="TileSet_pn7gr"]
 sources/0 = SubResource("TileSetAtlasSource_g1o2j")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nw6q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3x71"]
+
 [node name="gameover" type="Sprite2D"]
 script = ExtResource("1_hlo4w")
 
@@ -434,12 +436,17 @@ scale = Vector2(3.8864, 3.8864)
 tile_map_data = PackedByteArray(0, 0, 19, 0, 8, 0, 0, 0, 2, 0, 2, 0, 0, 0, 18, 0, 8, 0, 0, 0, 2, 0, 8, 0, 0, 0)
 tile_set = SubResource("TileSet_pn7gr")
 
-[node name="exit" type="TouchScreenButton" parent="."]
+[node name="exit" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(394, 236)
-scale = Vector2(0.209005, 0.211269)
-texture_normal = ExtResource("5_w3x71")
-texture_pressed = ExtResource("6_af4fq")
+position = Vector2(506.13, 360.354)
+scale = Vector2(0.353, 0.356)
+texture = ExtResource("5_w3x71")
+
+[node name="exit_button" type="TouchScreenButton" parent="exit"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0.33844, -0.994385)
+scale = Vector2(21.639, 4.571)
+shape = SubResource("RectangleShape2D_2nw6q")
 
 [node name="Gameover" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -447,11 +454,16 @@ position = Vector2(496, 261)
 scale = Vector2(0.501519, 0.501519)
 texture = ExtResource("2_2nw6q")
 
-[node name="restart" type="TouchScreenButton" parent="."]
+[node name="restart" type="Sprite2D" parent="."]
 texture_filter = 5
-position = Vector2(393, 199)
-scale = Vector2(0.210854, 0.21449)
-texture_normal = ExtResource("3_w3x71")
-texture_pressed = ExtResource("4_af4fq")
+position = Vector2(506, 309.463)
+scale = Vector2(0.35, 0.356)
+texture = ExtResource("3_w3x71")
 
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[node name="restart_button" type="TouchScreenButton" parent="restart"]
+self_modulate = Color(1, 1, 1, 0)
+scale = Vector2(21.56, 4.705)
+shape = SubResource("RectangleShape2D_w3x71")
+
+[connection signal="pressed" from="exit/exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="restart/restart_button" to="." method="_on_restart_button_pressed"]
