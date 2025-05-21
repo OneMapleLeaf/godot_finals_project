@@ -15,8 +15,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.get_parent().name == "player_character":
-		Globals.playerHP = 100
-		get_tree().change_scene_to_file("res://spaceship.tscn")
-		Globals.curStageProg = false
-	pass # Replace with function body.
+	Globals.playerHP = 100
+	get_tree().change_scene_to_file("res://spaceship.tscn")
+	Globals.curStageProg = false

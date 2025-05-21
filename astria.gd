@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 	var gemCounter = Globals.getGemCount(stage_num - 1)
 	if Globals.map_obtained:
 		Globals.trigger_chest_opened($Chests)
-	if Globals.maps[stage_num - 1] == true and gemCounter >= 15: 
+	if Globals.maps[stage_num - 1] == true and gemCounter >= 5: 
 		if !isFinished:
 			Globals.generate_random_lightbeam($lightbeams)
 			isFinished = true

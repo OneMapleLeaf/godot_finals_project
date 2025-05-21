@@ -13117,7 +13117,7 @@ tile_map_data = PackedByteArray("AAAPAAAAAQAAAAEAAAAPAAEAAQAAAAIAAAAPAAIAAQAAAAM
 tile_set = SubResource("TileSet_norub")
 
 [node name="lightning" parent="." instance=ExtResource("7_4iyw2")]
-position = Vector2(61, 118)
+position = Vector2(382, 209)
 scale = Vector2(4.625, 3.80357)
 frame_progress = 0.963148
 
@@ -13181,7 +13181,7 @@ scale = Vector2(2.98125, 2.34375)
 frame_progress = 0.908631
 
 [node name="lightning14" parent="." instance=ExtResource("7_4iyw2")]
-position = Vector2(758, 687)
+position = Vector2(682, 640)
 scale = Vector2(2.98125, 2.34375)
 frame_progress = 0.267755
 
@@ -13206,7 +13206,7 @@ scale = Vector2(2.98125, 2.34375)
 frame_progress = 0.267755
 
 [node name="lightning16" parent="." instance=ExtResource("7_4iyw2")]
-position = Vector2(156, 693)
+position = Vector2(351, 702)
 scale = Vector2(2.98125, 2.34375)
 frame_progress = 0.267755
 
@@ -13844,7 +13844,7 @@ position = Vector2(434, 60)
 position = Vector2(1397, 251)
 
 [node name="Chest7" parent="Chests" instance=ExtResource("14_57jpe")]
-position = Vector2(893, 731)
+position = Vector2(906, 745)
 
 [node name="Chest8" parent="Chests" instance=ExtResource("14_57jpe")]
 position = Vector2(486, 484)
