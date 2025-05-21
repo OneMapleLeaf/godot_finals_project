@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=46 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="Script" uid="uid://bogv3k0ewk22a" path="res://nexar.gd" id="1_h2qr8"]
@@ -15,7 +15,10 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="13_6813a"]
 [ext_resource type="PackedScene" uid="uid://5fjk5jgxl0bj" path="res://spinnerattack.tscn" id="14_70uel"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="15_aqyky"]
+[ext_resource type="PackedScene" uid="uid://c10tyhj0ounfa" path="res://topIceTree.tscn" id="17_gaie1"]
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="17_q6l0p"]
+[ext_resource type="PackedScene" uid="uid://dxeyhw7up7ce0" path="res://topIceTree2.tscn" id="18_aahws"]
+[ext_resource type="PackedScene" uid="uid://ca3rxa4xngoc7" path="res://topIcetree3.tscn" id="19_la7rj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -21986,6 +21989,7 @@ position = Vector2(486, 259)
 scale = Vector2(0.808761, 0.808761)
 
 [node name="cabin" type="TileMapLayer" parent="."]
+z_index = 11
 texture_filter = 1
 position = Vector2(80, 315)
 scale = Vector2(0.293173, 0.293173)
@@ -22018,10 +22022,12 @@ polygon = PackedVector2Array(-2, 29, -2, 67, 12, 46, 14, 48, 16, 45, 27, 41, 38,
 polygon = PackedVector2Array(233, 32, 231, 38, 232, 47, 233, 49, 233, 72, 235, 70, 237, 70, 240, 66, 242, 61, 245, 57, 261, 36, 264, 39, 271, 47, 274, 42, 276, 40, 277, 41, 279, 44, 283, 39, 287, 39, 293, 43, 295, 50, 300, 55, 300, 58, 305, 61, 310, 59, 316, 60, 319, 62, 326, 57, 327, 64, 330, 75, 335, 78, 341, 76, 342, 75, 349, 80, 358, 76, 360, 70, 361, 65, 364, 62, 366, 61, 372, 56, 374, 57, 378, 61, 384, 62, 386, 59, 389, 57, 389, 59, 389, 63, 391, 67, 392, 68, 397, 76, 400, 77, 405, 75, 406, 74, 410, 76, 411, 80, 416, 80, 417, 76, 421, 72, 426, 68, 430, 63, 429, 62, 435, 58, 436, 57, 439, 59, 442, 61, 443, 61, 445, 62, 449, 61, 450, 57, 453, 57, 454, 58, 454, 61, 453, 62, 454, 64, 455, 67, 456, 71, 457, 72, 460, 76, 463, 78, 466, 79, 470, 77, 471, 75, 472, 76, 474, 78, 476, 79, 477, 79, 480, 77, 490, 67, 493, 64, 491, 63, 492, 61, 493, 63, 499, 61, 498, 57, 499, 57, 501, 57, 503, 59, 508, 61, 508, 61, 511, 63, 514, 61, 515, 58, 516, 58, 520, 70, 525, 77, 528, 78, 531, 77, 533, 76, 537, 76, 538, 80, 540, 79, 542, 76, 545, 76, 546, 75, 556, 65, 556, 61, 558, 61, 563, 57, 570, 63, 577, 62, 589, 48, 591, 47, 595, 41, 599, 44, 605, 41, 609, 42, 613, 47, 614, 50, 615, 54, 620, 59, 623, 61, 627, 59, 630, 59, 632, 61, 634, 63, 640, 63, 652, 46, 655, 46, 658, 42, 659, 41, 661, 43, 667, 41, 673, 41, 678, 48, 681, 54, 683, 59, 688, 60, 695, 59, 698, 60, 700, 61, 702, 62, 707, 59, 706, 57, 710, 60, 710, 64, 711, 68, 713, 70, 713, 73, 714, 74, 716, 76, 724, 79, 727, 77, 729, 80, 732, 80, 744, 70, 747, 63, 752, 62, 755, 59, 756, 60, 764, 61, 769, 63, 770, 60, 773, 58, 774, 65, 775, 67, 782, 76, 788, 76, 797, 76, 797, 79, 804, 74, 813, 64, 815, 62, 819, 58, 821, 59, 826, 61, 829, 64, 832, 63, 835, 57, 837, 59, 837, 62, 842, 74, 849, 78, 853, 76, 856, 78, 859, 79, 863, 78, 870, 74, 877, 63, 883, 59, 889, 58, 889, 77, 893, 79, 898, 79, 900, 75, 902, 77, 905, 87, 909, 93, 914, 94, 915, 91, 918, 94, 922, 95, 928, 90, 936, 87, 941, 81, 943, 77, 948, 72, 949, 76, 951, 79, 952, 89, 953, 93, 957, 94, 966, 90, 967, 98, 973, 106, 976, 108, 982, 108, 986, 110, 996, 108, 1000, 102, 1013, 89, 1016, 94, 1016, 109, 1027, 108, 1036, 122, 1046, 124, 1053, 129, 1063, 116, 1076, 108, 1083, 122, 1089, 126, 1096, 130, 1105, 140, 1114, 140, 1120, 140, 1132, 129, 1143, 124, 1147, 126, 1158, 129, 1176, 118, 1184, 131, 1192, 132, 1199, 125, 1211, 122, 1219, 128, 1230, 141, 1244, 144, 1249, 140, 1255, 135, 1259, 129, 1264, 123, 1288, 100, 1295, 110, 1303, 105, 1319, 109, 1325, 130, 1331, 128, 1343, 129, 1359, 112, 1368, 103, 1373, 103, 1380, 113, 1395, 128, 1402, 128, 1419, 117, 1423, 110, 1432, 106, 1442, 106, 1446, 113, 1454, 124, 1469, 125, 1478, 127, 1481, 139, 1485, 142, 1496, 143, 1503, 143, 1515, 130, 1520, 126, 1525, 125, 1533, 125, 1542, 128, 1549, 140, 1556, 143, 1560, 143, 1565, 143, 1581, 133, 1587, 127, 1593, 124, 1591, 114, 1587, 102, 1573, 101, 1566, 111, 1555, 105, 1541, 88, 1524, 90, 1499, 110, 1479, 88, 1459, 88, 1443, 76, 1436, 72, 1428, 79, 1420, 74, 1413, 91, 1407, 88, 1407, 93, 1402, 94, 1395, 88, 1382, 74, 1376, 68, 1368, 78, 1362, 73, 1351, 77, 1349, 88, 1343, 93, 1336, 95, 1331, 92, 1324, 81, 1319, 72, 1314, 65, 1312, 73, 1299, 76, 1293, 74, 1289, 80, 1286, 89, 1280, 88, 1278, 95, 1273, 94, 1270, 87, 1266, 95, 1262, 92, 1257, 88, 1256, 94, 1254, 101, 1254, 107, 1249, 102, 1249, 111, 1245, 109, 1243, 113, 1239, 108, 1239, 114, 1234, 101, 1234, 110, 1227, 94, 1228, 102, 1222, 86, 1219, 94, 1215, 94, 1213, 90, 1209, 87, 1207, 86, 1204, 93, 1199, 101, 1198, 94, 1197, 89, 1194, 88, 1192, 95, 1191, 100, 1191, 104, 1190, 106, 1185, 103, 1184, 112, 1174, 108, 1171, 100, 1170, 105, 1165, 101, 1164, 92, 1162, 102, 1159, 87, 1155, 94, 1153, 93, 1149, 89, 1146, 88, 1145, 87, 1129, 89, 1128, 104, 1122, 104, 1122, 111, 1116, 111, 1112, 108, 1107, 102, 1104, 102, 1100, 94, 1093, 87, 1091, 98, 1087, 87, 1083, 87, 1077, 71, 1077, 77, 1071, 77, 1065, 72, 1062, 90, 1051, 95, 1046, 95, 1042, 88, 1035, 81, 1031, 75, 1029, 81, 1020, 77, 1016, 68, 1016, 57, 1011, 65, 1003, 57, 998, 74, 994, 70, 992, 78, 987, 79, 980, 68, 974, 72, 972, 63, 970, 69, 965, 66, 967, 55, 963, 66, 960, 62, 954, 58, 950, 41, 947, 46, 941, 42, 937, 41, 934, 51, 931, 62, 929, 55, 926, 63, 922, 62, 917, 61, 916, 55, 909, 50, 906, 45, 905, 51, 902, 40, 898, 47, 895, 46, 892, 42, 889, 40, 887, 23, 883, 31, 880, 32, 874, 27, 872, 34, 870, 42, 868, 43, 866, 41, 864, 46, 860, 49, 858, 48, 852, 37, 851, 45, 843, 30, 841, 38, 838, 23, 834, 28, 830, 32, 828, 25, 824, 23, 819, 30, 816, 33, 810, 24, 807, 32, 806, 40, 803, 38, 800, 46, 798, 48, 793, 48, 786, 38, 786, 44, 779, 29, 779, 42, 774, 23, 772, 32, 767, 31, 762, 25, 753, 33, 746, 25, 743, 36, 740, 43, 728, 50, 723, 48, 716, 33, 713, 37, 710, 21, 708, 31, 704, 31, 700, 25, 693, 29, 692, 23, 687, 32, 683, 13, 681, 18, 676, 5, 674, 3, 669, 14, 659, 12, 658, 17, 648, 9, 646, 19, 646, 30, 641, 23, 638, 31, 634, 30, 631, 30, 627, 26, 627, 25, 622, 16, 617, 11, 612, 6, 609, 3, 608, 5, 598, 11, 590, 14, 586, 7, 581, 29, 571, 29, 564, 26, 555, 37, 553, 26, 549, 41, 541, 43, 536, 51, 533, 43, 523, 32, 522, 34, 517, 26, 511, 31, 505, 22, 502, 26, 496, 28, 491, 24, 489, 28, 486, 40, 482, 39, 482, 44, 478, 45, 473, 45, 468, 38, 468, 43, 458, 30, 455, 24, 452, 26, 443, 27, 437, 23, 437, 29, 424, 31, 419, 38, 410, 45, 404, 39, 397, 37, 392, 23, 382, 29, 376, 25, 373, 31, 363, 25, 359, 42, 353, 39, 353, 44, 348, 45, 343, 50, 339, 36, 332, 33, 327, 24, 322, 27, 311, 27, 306, 21, 301, 17, 295, 8, 287, 4, 285, 9, 278, 10, 275, 17, 267, 12, 267, 17, 261, 23, 255, 28, 247, 35)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(236, 88, 242, 103, 248, 106, 266, 109, 279, 103, 285, 95, 320, 102, 319, 79, 284, 90, 274, 102, 261, 103, 250, 101, 247, 97, 243, 96)
+position = Vector2(1, 19)
+polygon = PackedVector2Array(233, 57, 238, 103, 247, 109, 265, 115, 283, 107, 285, 95, 320, 102, 319, 79, 284, 90, 274, 102, 261, 103, 250, 101, 247, 97, 243, 96)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(204, 106, 197, 118, 187, 122, 175, 123, 165, 120, 158, 109, 154, 107, 145, 106, 136, 104, 130, 101, 117, 102, 109, 105, 101, 107, 87, 110, 82, 102, 87, 103, 103, 102, 115, 99, 128, 97, 133, 99, 142, 101, 158, 104, 163, 110, 169, 117, 178, 117, 187, 116, 196, 114)
+position = Vector2(0, 17)
+polygon = PackedVector2Array(204, 64, 197, 118, 187, 122, 175, 123, 165, 120, 158, 109, 154, 107, 145, 106, 136, 104, 130, 101, 117, 102, 109, 105, 101, 107, 69, 104, 71, 44, 87, 103, 103, 102, 115, 99, 128, 97, 133, 99, 142, 101, 158, 104, 163, 110, 169, 117, 178, 117, 187, 116, 196, 114)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(124, 129, 128, 133, 138, 134, 141, 132, 145, 127, 144, 115, 134, 112, 124, 116, 122, 123)
@@ -22081,10 +22087,10 @@ polygon = PackedVector2Array(928, 279, 930, 265, 929, 243, 947, 237, 960, 235, 9
 polygon = PackedVector2Array(901, 191, 919, 170, 947, 160, 956, 156, 969, 155, 1094, 155, 1121, 161, 1141, 170, 1137, 130, 1128, 135, 1119, 143, 1100, 140, 1085, 127, 1075, 113, 1056, 130, 1045, 128, 1038, 125, 1025, 112, 1021, 112, 1014, 111, 1014, 97, 1012, 95, 998, 108, 982, 114, 975, 110, 967, 106, 963, 96, 959, 95, 953, 95, 947, 90, 942, 84, 930, 96, 923, 98, 898, 95, 894, 143, 925, 146, 926, 161)
 
 [node name="CollisionPolygon2D24" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(1150, 172, 1156, 184, 1166, 190, 1176, 190, 1184, 191, 1187, 198, 1195, 203, 1217, 203, 1226, 197, 1229, 193, 1250, 197, 1266, 195, 1263, 175, 1245, 177, 1217, 200, 1196, 199, 1193, 197, 1184, 187, 1171, 187, 1161, 184)
+polygon = PackedVector2Array(1150, 172, 1156, 184, 1166, 190, 1176, 190, 1184, 191, 1187, 198, 1188, 211, 1216, 214, 1226, 197, 1229, 193, 1250, 197, 1266, 195, 1263, 175, 1245, 177, 1217, 200, 1196, 199, 1193, 197, 1184, 187, 1171, 187, 1161, 184)
 
 [node name="CollisionPolygon2D25" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(1309, 163, 1303, 169, 1290, 173, 1280, 174, 1276, 172, 1268, 169, 1265, 167, 1263, 165, 1286, 169, 1296, 168)
+polygon = PackedVector2Array(1309, 163, 1307, 175, 1289, 182, 1282, 178, 1274, 179, 1268, 169, 1265, 167, 1263, 165, 1286, 169, 1296, 168)
 
 [node name="CollisionPolygon2D26" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(823, 174, 827, 175, 834, 176, 834, 180, 840, 181, 849, 183, 850, 189, 854, 182, 859, 180, 868, 183, 869, 179, 869, 174, 873, 175, 874, 190, 874, 194, 884, 197, 897, 195, 899, 192, 917, 172, 897, 187, 890, 175, 879, 177, 879, 192, 874, 173, 871, 171, 865, 179, 859, 175, 852, 178, 848, 178, 840, 177)
@@ -22184,6 +22190,14 @@ polygon = PackedVector2Array(196, 1069, 206, 1070, 205, 1084, 197, 1084)
 [node name="CollisionPolygon2D57" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(804, 1037, 814, 1037, 813, 1050, 812, 1054, 807, 1054, 804, 1052)
 
+[node name="CollisionPolygon2D58" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(0, 19)
+polygon = PackedVector2Array(94, 313, 96, 423, 203, 420, 205, 311)
+
+[node name="CollisionPolygon2D59" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(51, 46)
+polygon = PackedVector2Array(-42, 0, -43, 1020, 1888, 1016, 1871, -22, -61, -20, -61, -49, 1956, -41, 1973, 1099, -71, 1112)
+
 [node name="pickaxe" type="TileMapLayer" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("13_6813a")]
@@ -22225,3 +22239,123 @@ position = Vector2(1446, 1050)
 
 [node name="lightbeam4" parent="." instance=ExtResource("17_q6l0p")]
 position = Vector2(970, 1038)
+
+[node name="topIcetree" parent="." instance=ExtResource("17_gaie1")]
+position = Vector2(665, 304)
+
+[node name="Node2D5" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(47, -15)
+
+[node name="Node2D6" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(526, -51)
+
+[node name="Node2D7" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(559, -32)
+
+[node name="Node2D8" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(558, -18)
+
+[node name="Node2D9" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(112, 1)
+
+[node name="Node2D10" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(160, 14)
+
+[node name="Node2D11" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(158, 55)
+
+[node name="Node2D12" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(208, 15)
+
+[node name="Node2D13" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(205, 40)
+
+[node name="Node2D14" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(542, -143)
+
+[node name="Node2D15" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(624, -178)
+
+[node name="Node2D16" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(702, 160)
+
+[node name="Node2D17" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(722, 194)
+
+[node name="Node2D19" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(692, 199)
+
+[node name="Node2D18" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(719, 221)
+
+[node name="Node2D20" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-465, 432)
+
+[node name="Node2D21" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-465, 461)
+
+[node name="Node2D22" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-545, 432)
+
+[node name="Node2D23" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-626, 431)
+
+[node name="Node2D24" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-593, 464)
+
+[node name="Node2D25" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-513, 432)
+
+[node name="Node2D26" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-481, 432)
+
+[node name="Node2D27" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-466, 467)
+
+[node name="Node2D29" parent="topIcetree" instance=ExtResource("18_aahws")]
+position = Vector2(-465, 720)
+
+[node name="Node2D28" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(-529, 464)
+
+[node name="Node2D" parent="topIcetree" instance=ExtResource("18_aahws")]
+position = Vector2(143, 687)
+
+[node name="Node2D2" parent="topIcetree" instance=ExtResource("18_aahws")]
+position = Vector2(-609, 225)
+
+[node name="Node2D3" parent="topIcetree" instance=ExtResource("18_aahws")]
+position = Vector2(-385, 240)
+
+[node name="Node2D4" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(183, -160)
+
+[node name="Node2D30" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(231, -48)
+
+[node name="Node2D31" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(-664, -17)
+
+[node name="Node2D32" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(-631, 33)
+
+[node name="Node2D33" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1159, 671)
+
+[node name="Node2D34" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1113, 686)
+
+[node name="Node2D35" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1079, 721)
+
+[node name="Node2D36" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1016, 750)
+
+[node name="Node2D37" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1143, 735)
+
+[node name="Node2D38" parent="topIcetree" instance=ExtResource("19_la7rj")]
+position = Vector2(1179, 737)
+
+[node name="Node2D39" parent="topIcetree" instance=ExtResource("17_gaie1")]
+position = Vector2(609, -34)
