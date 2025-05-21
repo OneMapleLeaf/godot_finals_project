@@ -7839,7 +7839,7 @@ polygon = PackedVector2Array(567, 98, 551, 106, 537, 108, 518, 109, 517, 97, 512
 [node name="boarderStaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="boarderStaticBody2D"]
-position = Vector2(-3, 1)
+position = Vector2(2, 3)
 build_mode = 1
 polygon = PackedVector2Array(0, 1, 1921, 3, 1919, 1085, -3, 1083, -2.17905, 786.907)
 
@@ -7880,7 +7880,7 @@ position = Vector2(849, 762)
 position = Vector2(1177, 108)
 
 [node name="lightbeam3" parent="lightbeams" instance=ExtResource("15_ur2dv")]
-position = Vector2(461, 111)
+position = Vector2(681, 258)
 
 [node name="lightbeam4" parent="lightbeams" instance=ExtResource("15_ur2dv")]
-position = Vector2(1142, 548)
+position = Vector2(1095, 549)

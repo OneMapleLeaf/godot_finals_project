@@ -112,7 +112,7 @@ func _on_astria_button_pressed() -> void:
 		redirect(SceneCache.astria_instance)
 
 func _on_zorvath_button_pressed() -> void:
-	if !Globals.maps[4] and Globals.maps[4]:
+	if Globals.maps[3]:
 		redirect(SceneCache.zorvath_instance)
 
 	
