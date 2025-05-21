@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://dghec8u30mwi5"]
 
-[ext_resource type="Script" uid="uid://cmsx0tw4t4lv4" path="res://loading_screen.gd" id="1_da6pd"]
+[ext_resource type="Script" path="res://loading_screen.gd" id="1_da6pd"]
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_ydtht"]
 [ext_resource type="Texture2D" uid="uid://cpsfyixjpxkva" path="res://assets/SCATTEREDWHITE.png" id="2_72qm6"]
 [ext_resource type="PackedScene" uid="uid://cu7xhg3roi7ep" path="res://star.tscn" id="3_gp55c"]

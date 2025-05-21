@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=4 uid="uid://ce8ifewf8nrde"]
 
 [ext_resource type="Texture2D" uid="uid://cqd1q0vpewubc" path="res://assets/ground.png" id="1_spvlh"]
-[ext_resource type="Script" uid="uid://dguadfpq7so8d" path="res://zorvath.gd" id="1_xm31h"]
+[ext_resource type="Script" path="res://zorvath.gd" id="1_xm31h"]
 [ext_resource type="Texture2D" uid="uid://cp13ep56tftyu" path="res://assets/water_coasts.png" id="2_13mjx"]
 [ext_resource type="Texture2D" uid="uid://c77lbeg8gmnix" path="res://assets/blood.png" id="3_idsia"]
 [ext_resource type="Texture2D" uid="uid://b7fbl6k00c8dq" path="res://assets/cave_tileset.png" id="4_db1xe"]
