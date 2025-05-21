@@ -22361,3 +22361,6 @@ position = Vector2(1179, 737)
 
 [node name="Node2D39" parent="topIcetree" instance=ExtResource("17_gaie1")]
 position = Vector2(609, -34)
+
+[node name="Node2D5" parent="." instance=ExtResource("18_aahws")]
+position = Vector2(55, 528)
