@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://htrfmc5q4p5l"]
+[gd_scene load_steps=14 format=3 uid="uid://htrfmc5q4p5l"]
 
 [ext_resource type="Texture2D" uid="uid://obvk0xikblen" path="res://assets/tree-ezgif.com-gif-to-sprite-converter-removebg-preview.png" id="1_263ca"]
+[ext_resource type="PackedScene" uid="uid://dmy2ej2jmi21l" path="res://tree_front.tscn" id="2_s6bwa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5y6oq"]
 atlas = ExtResource("1_263ca")
@@ -91,4 +92,7 @@ frame_progress = 0.360246
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 build_mode = 1
-polygon = PackedVector2Array(-12.3529, -2.11189, 1.76471, -2.11189, 1.76471, 12.6713, 8.82353, 25.3427, 5.29412, 35.9021, -1.76471, 29.5664, -7.05882, 31.6783, -14.1176, 29.5664, -15.8824, 21.1189, -15.8824, 10.5594)
+polygon = PackedVector2Array(-12.3529, -2.11189, 1.76471, -2.11189, 1.76471, 12.6713, 8.82353, 25.3427, 35.2941, 50.6853, 12.3529, 35.9021, 8.82352, 42.2378, 15.8823, 59.1329, 1.7647, 46.4615, 5.29412, 35.9021, -1.76471, 29.5664, -10.5882, 46.4615, -14.1176, 63.3566, -17.647, 54.9091, -15.8823, 44.3496, -33.5294, 61.2448, -28.2353, 44.3496, -14.1176, 29.5664, -15.8824, 21.1189, -15.8824, 10.5594)
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("2_s6bwa")]
+position = Vector2(0, -38.014)

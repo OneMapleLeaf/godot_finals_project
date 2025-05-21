@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=4 uid="uid://eu6dicmv1e57"]
 
-[ext_resource type="Script" uid="uid://b2onnp0tav7lf" path="res://astria.gd" id="1_0raj8"]
+[ext_resource type="Script" path="res://astria.gd" id="1_0raj8"]
 [ext_resource type="Texture2D" uid="uid://c6e3mikfihtxk" path="res://assets/astriaBG.png" id="1_hn2mn"]
 [ext_resource type="PackedScene" uid="uid://cphsrwvd3wr2y" path="res://player_character.tscn" id="1_vswc8"]
 [ext_resource type="Texture2D" uid="uid://bh5bxe8fn27ym" path="res://assets/base_out_atlas.png" id="2_t60ex"]
