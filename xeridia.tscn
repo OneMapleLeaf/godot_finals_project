@@ -8092,3 +8092,5 @@ position = Vector2(1786, 617)
 
 [node name="lightbeam4" parent="lightbeams" instance=ExtResource("15_gnu4q")]
 position = Vector2(28, 588)
+
+[node name="xeridiabgm" type="AudioStreamPlayer2D" parent="."]

@@ -4,6 +4,13 @@ extends Node2D
 var stage_num = 2
 var isFinished = false
 func _ready() -> void:
+	var bgm_player = $nexarbgm
+	var bgm_stream = load("res://assets/sounds/nexarbgsound.mp3")
+	bgm_stream = bgm_stream.duplicate()
+	bgm_stream.loop = true
+	bgm_player.stream = bgm_stream
+	bgm_player.play()
+	
 	randomize()
 	Globals.curStage = stage_num - 1
 	Globals.curStageProg = false

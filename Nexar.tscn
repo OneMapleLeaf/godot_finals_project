@@ -22364,3 +22364,56 @@ position = Vector2(609, -34)
 
 [node name="Node2D5" parent="." instance=ExtResource("18_aahws")]
 position = Vector2(55, 528)
+
+[node name="nexarbgm" type="AudioStreamPlayer2D" parent="."]
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(582, 208)
+
+[node name="AnimatedSprite2D2" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(33, 450)
+
+[node name="AnimatedSprite2D3" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(246, 445)
+
+[node name="AnimatedSprite2D4" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(61, 659)
+
+[node name="AnimatedSprite2D5" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1529, 695)
+
+[node name="AnimatedSprite2D6" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1645, 639)
+
+[node name="AnimatedSprite2D7" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1757, 700)
+
+[node name="AnimatedSprite2D8" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1646, 756)
+
+[node name="AnimatedSprite2D9" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1659, 918)
+
+[node name="AnimatedSprite2D10" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1542, 836)
+
+[node name="AnimatedSprite2D11" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1868, 764)
+
+[node name="AnimatedSprite2D12" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1758, 849)
+
+[node name="AnimatedSprite2D13" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1857, 924)
+
+[node name="AnimatedSprite2D14" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1610, 1009)
+
+[node name="AnimatedSprite2D15" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1776, 271)
+
+[node name="AnimatedSprite2D16" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1402, 432)
+
+[node name="AnimatedSprite2D17" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1456, 180)

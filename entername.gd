@@ -33,6 +33,7 @@ func _on_touchscreenstart_pressed() -> void:
 
 
 func _on_touchscreenmale_pressed() -> void:
+	$select.play()
 	Entername.gender = 1
 	Globals.character_gender = "male"
 	if $selectionfemale.visible == false:
@@ -44,6 +45,7 @@ func _on_touchscreenmale_pressed() -> void:
 
 
 func _on_touchscreenfemale_pressed() -> void:
+	$select.play()
 	Entername.gender = 2
 	Globals.character_gender = "female"
 	if $selectionmale.visible == false:

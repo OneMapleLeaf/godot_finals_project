@@ -1,9 +1,12 @@
-[gd_scene load_steps=45 format=3 uid="uid://cphsrwvd3wr2y"]
+[gd_scene load_steps=48 format=3 uid="uid://cphsrwvd3wr2y"]
 
 [ext_resource type="Script" uid="uid://dc1w77kcbrt3f" path="res://player_character.gd" id="1_cs804"]
 [ext_resource type="Texture2D" uid="uid://c3j1t8appawvt" path="res://assets/MaleChars.png" id="2_4akcp"]
 [ext_resource type="Texture2D" uid="uid://4ssw7i2aqu44" path="res://assets/FemaleChar.png" id="3_0hvvw"]
 [ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="4_0hvvw"]
+[ext_resource type="AudioStream" uid="uid://d2l15yqb8sod5" path="res://assets/sounds/malegrunt.mp3" id="5_6qc1w"]
+[ext_resource type="AudioStream" uid="uid://14aag6tn4me4" path="res://assets/sounds/femalegrunt.mp3" id="6_uuvki"]
+[ext_resource type="AudioStream" uid="uid://fpdw61bokee7" path="res://assets/sounds/gempickup2.mp3" id="7_04jrr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e4h70"]
 atlas = ExtResource("3_0hvvw")
@@ -382,6 +385,15 @@ offset_bottom = -12.0
 theme_override_fonts/font = ExtResource("4_0hvvw")
 theme_override_font_sizes/font_size = 10
 text = "rommer"
+
+[node name="malegrunt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_6qc1w")
+
+[node name="femalegrunt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_uuvki")
+
+[node name="gempick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_04jrr")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

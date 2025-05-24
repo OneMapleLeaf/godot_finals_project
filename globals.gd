@@ -17,9 +17,11 @@ var curStage
 var curStageProg
 
 var playerusername
+var extracted
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	extracted = false
 	maps = [false, false, false, false, false]
 	gem_index = ["green_gem", "blue_gem", "gold_gem", "violet_gem", "red_gem"]
 	gems = {
