@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dtxx6jkt6euo4"]
+[gd_scene load_steps=25 format=3 uid="uid://dtxx6jkt6euo4"]
 
 [ext_resource type="Script" uid="uid://b30r0tr7g8xj8" path="res://entername.gd" id="1_31wyg"]
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_qylq5"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://wbx8c0vl0tsb" path="res://assets/Male.png" id="6_vwb6j"]
 [ext_resource type="Texture2D" uid="uid://bw3xugq5s72kt" path="res://assets/Female.png" id="7_5odrv"]
 [ext_resource type="Texture2D" uid="uid://bv7tfrgj3uwkt" path="res://assets/startBtn2.png" id="8_5odrv"]
+[ext_resource type="AudioStream" uid="uid://bb0687m0a6mwi" path="res://assets/sounds/select-002-337219.mp3" id="11_5mj8u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7j2hv"]
 texture = ExtResource("1_qylq5")
@@ -1017,6 +1018,9 @@ offset_bottom = 165.0
 theme_override_fonts/font = ExtResource("3_f7sxe")
 theme_override_font_sizes/font_size = 16
 text = "Please Choose a Character"
+
+[node name="select" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_5mj8u")
 
 [connection signal="pressed" from="touchscreenstart" to="." method="_on_touchscreenstart_pressed"]
 [connection signal="pressed" from="touchscreenmale" to="." method="_on_touchscreenmale_pressed"]

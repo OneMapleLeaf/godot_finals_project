@@ -86,6 +86,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if parent.is_in_group("collectibles"):
 		parent.queue_free()
 		Globals.collectiblesCounter(parent.item_type)
+		$gempick.play()
 	if parent.is_in_group("obstacles"):
 		$DamageTimer.start()
 
@@ -98,6 +99,11 @@ func _on_area_2d_area_exited(area: Area2D) -> void:
 func _on_damage_timer_timeout() -> void:
 	Globals.playerHP -= 5
 	$AnimationPlayer.play("on_hit")
+	if Globals.character_gender == "female":
+		$femalegrunt.play()
+	elif Globals.character_gender == "male":
+		$malegrunt.play()
+		$malegrunt.seek(0.7)
 	if Globals.playerHP <= 0 and !game_over:
 		$AnimatedSprite2D.visible = false
 		game_over = true

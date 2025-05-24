@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://dufbsnq47dyul"]
+[gd_scene load_steps=51 format=4 uid="uid://dufbsnq47dyul"]
 
 [ext_resource type="Texture2D" uid="uid://dquyp3erslfw5" path="res://assets/bg.png" id="1_5a6wv"]
 [ext_resource type="Script" uid="uid://ckwge5lgi185c" path="res://spaceship.gd" id="1_h45ub"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://cgvxiyhd36yix" path="res://assets/Walk_scan.png" id="12_odcj8"]
 [ext_resource type="Texture2D" uid="uid://8cc4a45xwxro" path="res://assets/pixel-cyberpunk-interior.png" id="13_oyh7x"]
 [ext_resource type="PackedScene" uid="uid://s3uubsx6mxqv" path="res://planets.tscn" id="14_fdw3y"]
+[ext_resource type="AudioStream" uid="uid://b82d0sovn4gq5" path="res://assets/sounds/spaceshipbgsound.mp3" id="15_qsnst"]
+[ext_resource type="AudioStream" uid="uid://ce6grc3irqc2x" path="res://assets/sounds/accesscomp.mp3" id="16_a35v7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqmem"]
 texture = ExtResource("3_onphi")
@@ -6662,73 +6664,6 @@ texture = ExtResource("8_tb5uw")
 sources/0 = SubResource("TileSetAtlasSource_svkk0")
 sources/1 = SubResource("TileSetAtlasSource_p463p")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3a58n"]
-size = Vector2(51.5, 78)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oyh7x"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fdw3y"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(48, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xkbdo"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(96, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qsnst"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(144, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a35v7"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(192, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xr3d5"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(240, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xdi6r"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(288, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tajay"]
-atlas = ExtResource("12_odcj8")
-region = Rect2(336, 0, 48, 48)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7spds"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oyh7x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fdw3y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xkbdo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qsnst")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a35v7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xr3d5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xdi6r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tajay")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdw3y"]
 texture = ExtResource("13_oyh7x")
 0:0/0 = 0
@@ -7258,13 +7193,147 @@ texture = ExtResource("13_oyh7x")
 [sub_resource type="TileSet" id="TileSet_xkbdo"]
 sources/0 = SubResource("TileSetAtlasSource_fdw3y")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsnst"]
+size = Vector2(21, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a35v7"]
+size = Vector2(24, 15.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xr3d5"]
+size = Vector2(64, 59.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdi6r"]
+size = Vector2(121.5, 61.75)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tajay"]
+radius = 19.0605
+height = 53.962
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tajay"]
+size = Vector2(57.5, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7spds"]
+size = Vector2(59, 45)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mpml"]
+size = Vector2(27.5, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uw4jc"]
+size = Vector2(119.5, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cels2"]
+size = Vector2(120, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3a58n"]
+size = Vector2(51.5, 78)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyh7x"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdw3y"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkbdo"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsnst"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a35v7"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xr3d5"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdi6r"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(288, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tajay"]
+atlas = ExtResource("12_odcj8")
+region = Rect2(336, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7spds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyh7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdw3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkbdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsnst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a35v7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xr3d5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdi6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tajay")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_qsnst"]
+resource_name = "fadeout"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 1, 1, 1), Color(0, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a35v7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xr3d5"]
+_data = {
+&"RESET": SubResource("Animation_a35v7"),
+&"fadeout": SubResource("Animation_qsnst")
+}
+
 [node name="Spaceship" type="Node2D"]
 script = ExtResource("1_h45ub")
 metadata/_edit_horizontal_guides_ = [-159.0, 1624.0]
 metadata/_edit_vertical_guides_ = [-361.0]
 
 [node name="Bg" type="Sprite2D" parent="."]
-position = Vector2(609, 358)
+position = Vector2(609, 355)
 texture = ExtResource("1_5a6wv")
 
 [node name="Bg" type="Sprite2D" parent="Bg"]
@@ -7306,6 +7375,11 @@ tile_set = SubResource("TileSet_0sd8x")
 tile_map_data = PackedByteArray("AAAEACoAAAAAAAAAAAAGACYAAAAAAAAAAAAGAEYAAAAAAAAAAAADAE4AAAAAAAAAAAADABIAAAAAAAAAAAAGAAoAAAAAAAAAAABAABMAAQAAAAIAAAAiACIAAQAAAAIAAAA=")
 tile_set = SubResource("TileSet_wlw1k")
 
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAA4ACMAAAAXAAgAAAA4ACQAAAAXAAkAAAA3ACMAAAAWAAgAAAA3ACQAAAAWAAkAAAAvACMAAAAWAAYAAAAvACQAAAAWAAcAAAAwACMAAAAXAAYAAAAwACQAAAAXAAcAAAAoAAYAAAAMAAoAAAAoAAcAAAAMAAsAAAAoAAgAAAAMAAwAAAAoAAkAAAAMAA0AAAApAAYAAAANAAoAAAApAAcAAAANAAsAAAApAAgAAAANAAwAAAApAAkAAAANAA0AAAAqAAYAAAAQAAoAAAAqAAcAAAAQAAsAAAAqAAgAAAAQAAwAAAAqAAkAAAAQAA0AAAArAAYAAAARAAoAAAArAAcAAAARAAsAAAArAAgAAAARAAwAAAArAAkAAAARAA0AAAAMABYAAAAUAAYAAAAMABcAAAAUAAcAAAANABYAAAAVAAYAAAANABcAAAAVAAcAAAAMABgAAAAUAAYAAAAMABkAAAAUAAcAAAANABgAAAAVAAYAAAANABkAAAAVAAcAAAAMABoAAAAUAAYAAAAMABsAAAAUAAcAAAANABoAAAAVAAYAAAANABsAAAAVAAcAAAAMABwAAAAUAAYAAAAMAB0AAAAUAAcAAAANABwAAAAVAAYAAAANAB0AAAAVAAcAAAAMADQAAAAWAAYAAAAMADUAAAAWAAcAAAANADQAAAAXAAYAAAANADUAAAAXAAcAAAAMADYAAAAWAAYAAAAMADcAAAAWAAcAAAANADYAAAAXAAYAAAANADcAAAAXAAcAAAAMADgAAAAWAAYAAAAMADkAAAAWAAcAAAANADgAAAAXAAYAAAANADkAAAAXAAcAAAAMADoAAAAWAAYAAAAMADsAAAAWAAcAAAANADoAAAAXAAYAAAANADsAAAAXAAcAAAAoAB8AAAANAAQAAAAoACAAAAANAAUAAAApAB8AAAAOAAQAAAApACAAAAAOAAUAAAAqAB8AAAAPAAQAAAAqACAAAAAPAAUAAAArAB8AAAAQAAQAAAArACAAAAAQAAUAAAAyAB8AAAANAAQAAAAyACAAAAANAAUAAAAzAB8AAAAOAAQAAAAzACAAAAAOAAUAAAA0AB8AAAAPAAQAAAA0ACAAAAAPAAUAAAA1AB8AAAAQAAQAAAA1ACAAAAAQAAUAAAA8AB8AAAANAAQAAAA8ACAAAAANAAUAAAA9AB8AAAAOAAQAAAA9ACAAAAAOAAUAAAA+AB8AAAAPAAQAAAA+ACAAAAAPAAUAAAA/AB8AAAAQAAQAAAA/ACAAAAAQAAUAAAApACEAAAAWAAoAAAApACIAAAAWAAsAAAAqACEAAAAXAAoAAAAqACIAAAAXAAsAAAAzACEAAAAWAAoAAAAzACIAAAAWAAsAAAA0ACEAAAAXAAoAAAA0ACIAAAAXAAsAAAA9ACEAAAAWAAoAAAA9ACIAAAAWAAsAAAA+ACEAAAAXAAoAAAA+ACIAAAAXAAsAAAA=")
+tile_set = SubResource("TileSet_xkbdo")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
@@ -7331,6 +7405,79 @@ polygon = PackedVector2Array(1089, 707, 384, 706, 385, 799, 734, 797, 733, 769, 
 
 [node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(193, 108, 235, 108, 235, 256, 191, 257)
+
+[node name="collisionchairs" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(205.5, 415)
+shape = SubResource("RectangleShape2D_qsnst")
+
+[node name="collisionchairs2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(205, 895)
+shape = SubResource("RectangleShape2D_qsnst")
+
+[node name="collisionchairs3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(764.375, 577.75)
+shape = SubResource("RectangleShape2D_a35v7")
+
+[node name="collisionchairs4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(672, 549.625)
+shape = SubResource("RectangleShape2D_a35v7")
+
+[node name="collisionchairs5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(832, 547)
+shape = SubResource("RectangleShape2D_a35v7")
+
+[node name="collisionchairs7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(992, 548)
+shape = SubResource("RectangleShape2D_a35v7")
+
+[node name="collisionchairs6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(894.906, 579)
+shape = SubResource("RectangleShape2D_a35v7")
+
+[node name="collisionvmachine" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(423, 501.625)
+shape = SubResource("RectangleShape2D_xr3d5")
+
+[node name="collisionscreen" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(674, 511.125)
+shape = SubResource("RectangleShape2D_xdi6r")
+
+[node name="collisionscreen2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(833, 513)
+shape = SubResource("RectangleShape2D_xdi6r")
+
+[node name="collisiontable" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(833, 576)
+rotation = -1.55509
+shape = SubResource("CapsuleShape2D_tajay")
+
+[node name="collisionvending" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(420.25, 119.5)
+shape = SubResource("RectangleShape2D_tajay")
+
+[node name="collisionvending2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(485, 118)
+shape = SubResource("RectangleShape2D_tajay")
+
+[node name="collisionsmallvend" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(672.5, 128.5)
+shape = SubResource("RectangleShape2D_7spds")
+
+[node name="collisionconsole" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(800.75, 194.5)
+shape = SubResource("RectangleShape2D_6mpml")
+
+[node name="collisionconsole2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(543, 515)
+shape = SubResource("RectangleShape2D_6mpml")
+
+[node name="collisionscreendesign" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1024.25, 251)
+shape = SubResource("RectangleShape2D_uw4jc")
+
+[node name="collisionscreendesign2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(897, 194)
+shape = SubResource("RectangleShape2D_cels2")
 
 [node name="Player_Character" parent="." instance=ExtResource("9_2f75y")]
 position = Vector2(521, 299)
@@ -7362,10 +7509,26 @@ sprite_frames = SubResource("SpriteFrames_7spds")
 autoplay = "default"
 frame_progress = 0.0551388
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-texture_filter = 1
-tile_map_data = PackedByteArray("AAA4ACMAAAAXAAgAAAA4ACQAAAAXAAkAAAA3ACMAAAAWAAgAAAA3ACQAAAAWAAkAAAAvACMAAAAWAAYAAAAvACQAAAAWAAcAAAAwACMAAAAXAAYAAAAwACQAAAAXAAcAAAAoAAYAAAAMAAoAAAAoAAcAAAAMAAsAAAAoAAgAAAAMAAwAAAAoAAkAAAAMAA0AAAApAAYAAAANAAoAAAApAAcAAAANAAsAAAApAAgAAAANAAwAAAApAAkAAAANAA0AAAAqAAYAAAAQAAoAAAAqAAcAAAAQAAsAAAAqAAgAAAAQAAwAAAAqAAkAAAAQAA0AAAArAAYAAAARAAoAAAArAAcAAAARAAsAAAArAAgAAAARAAwAAAArAAkAAAARAA0AAAAMABYAAAAUAAYAAAAMABcAAAAUAAcAAAANABYAAAAVAAYAAAANABcAAAAVAAcAAAAMABgAAAAUAAYAAAAMABkAAAAUAAcAAAANABgAAAAVAAYAAAANABkAAAAVAAcAAAAMABoAAAAUAAYAAAAMABsAAAAUAAcAAAANABoAAAAVAAYAAAANABsAAAAVAAcAAAAMABwAAAAUAAYAAAAMAB0AAAAUAAcAAAANABwAAAAVAAYAAAANAB0AAAAVAAcAAAAMADQAAAAWAAYAAAAMADUAAAAWAAcAAAANADQAAAAXAAYAAAANADUAAAAXAAcAAAAMADYAAAAWAAYAAAAMADcAAAAWAAcAAAANADYAAAAXAAYAAAANADcAAAAXAAcAAAAMADgAAAAWAAYAAAAMADkAAAAWAAcAAAANADgAAAAXAAYAAAANADkAAAAXAAcAAAAMADoAAAAWAAYAAAAMADsAAAAWAAcAAAANADoAAAAXAAYAAAANADsAAAAXAAcAAAAoAB8AAAANAAQAAAAoACAAAAANAAUAAAApAB8AAAAOAAQAAAApACAAAAAOAAUAAAAqAB8AAAAPAAQAAAAqACAAAAAPAAUAAAArAB8AAAAQAAQAAAArACAAAAAQAAUAAAAyAB8AAAANAAQAAAAyACAAAAANAAUAAAAzAB8AAAAOAAQAAAAzACAAAAAOAAUAAAA0AB8AAAAPAAQAAAA0ACAAAAAPAAUAAAA1AB8AAAAQAAQAAAA1ACAAAAAQAAUAAAA8AB8AAAANAAQAAAA8ACAAAAANAAUAAAA9AB8AAAAOAAQAAAA9ACAAAAAOAAUAAAA+AB8AAAAPAAQAAAA+ACAAAAAPAAUAAAA/AB8AAAAQAAQAAAA/ACAAAAAQAAUAAAApACEAAAAWAAoAAAApACIAAAAWAAsAAAAqACEAAAAXAAoAAAAqACIAAAAXAAsAAAAzACEAAAAWAAoAAAAzACIAAAAWAAsAAAA0ACEAAAAXAAoAAAA0ACIAAAAXAAsAAAA9ACEAAAAWAAoAAAA9ACIAAAAWAAsAAAA+ACEAAAAXAAoAAAA+ACIAAAAXAAsAAAA=")
-tile_set = SubResource("TileSet_xkbdo")
+[node name="spaceshipbgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_qsnst")
+
+[node name="accessconsolesfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_a35v7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
+offset_left = -354.0
+offset_top = -184.0
+offset_right = 1581.0
+offset_bottom = 1751.0
+color = Color(0, 1, 1, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_xr3d5")
+}
 
 [connection signal="area_entered" from="Consolearea" to="." method="_on_consolearea_area_entered"]
 [connection signal="area_exited" from="Consolearea" to="." method="_on_consolearea_area_exited"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d31w3bjb13tya"]
 
 [ext_resource type="Texture2D" uid="uid://db1efodpnuqjv" path="res://assets/gems.png" id="1_48p8q"]
-[ext_resource type="Script" path="res://gray.gd" id="2_qwpf6"]
+[ext_resource type="Script" uid="uid://ckex5arpgphf2" path="res://gray.gd" id="2_qwpf6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5lc7s"]
 atlas = ExtResource("1_48p8q")
@@ -58,15 +58,16 @@ radius = 5.09136
 
 [node name="gray" type="AnimatedSprite2D" groups=["collectibles"]]
 modulate = Color(1, 0.286275, 1, 1)
-position = Vector2(0, 1.19209e-07)
-scale = Vector2(0.785645, 0.646404)
+position = Vector2(0, 3)
+scale = Vector2(2.01782, 1.6602)
 sprite_frames = SubResource("SpriteFrames_wcn6n")
 autoplay = "default"
 frame_progress = 0.7331
 script = ExtResource("2_qwpf6")
 
 [node name="Area2d" type="Area2D" parent="."]
+position = Vector2(-0.495584, -1.80701)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2d"]
-position = Vector2(0, -1.54702)
+position = Vector2(0.495584, -1.19209e-07)
 shape = SubResource("CircleShape2D_feokm")

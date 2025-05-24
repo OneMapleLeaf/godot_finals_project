@@ -7884,3 +7884,5 @@ position = Vector2(681, 258)
 
 [node name="lightbeam4" parent="lightbeams" instance=ExtResource("15_ur2dv")]
 position = Vector2(1095, 549)
+
+[node name="zorvathbgm" type="AudioStreamPlayer2D" parent="."]

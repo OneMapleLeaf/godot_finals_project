@@ -1,9 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://bun4wcak1wwug"]
+[gd_scene load_steps=24 format=3 uid="uid://bun4wcak1wwug"]
 
 [ext_resource type="Texture2D" uid="uid://s2h7vsnfnn1i" path="res://assets/lootchest_item_anim_opening_strip_5.png" id="1_ijw8x"]
 [ext_resource type="Script" uid="uid://bhqflyvnsuylb" path="res://chestloot.gd" id="1_lv2p5"]
 [ext_resource type="Texture2D" uid="uid://btybhxsccmjlh" path="res://assets/lootchest_item_anim_strip_8.png" id="2_gkaly"]
 [ext_resource type="Texture2D" uid="uid://dlbsdb6gxxa6g" path="res://assets/open.png" id="3_gkaly"]
+[ext_resource type="AudioStream" uid="uid://boyxi0rynualk" path="res://assets/sounds/mapcollected.mp3" id="5_omwiw"]
+[ext_resource type="AudioStream" uid="uid://bigip2utgvcqr" path="res://assets/sounds/openchest.mp3" id="6_qfix7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b8lj6"]
 atlas = ExtResource("1_ijw8x")
@@ -165,6 +167,12 @@ texture_filter = 1
 position = Vector2(-26.95, -65.95)
 scale = Vector2(0.0962036, 0.0962036)
 texture = ExtResource("3_gkaly")
+
+[node name="mapcollected" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_omwiw")
+
+[node name="chestempty" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_qfix7")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

@@ -13324,7 +13324,7 @@ position = Vector2(1741, 87)
 position = Vector2(963, 263)
 
 [node name="gray23" parent="." instance=ExtResource("10_3jtgm")]
-position = Vector2(872, 96)
+position = Vector2(874, 150)
 
 [node name="gray24" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(1331, 120)
@@ -13862,3 +13862,8 @@ position = Vector2(1549, 45)
 
 [node name="lightbeam4" parent="lightbeams" instance=ExtResource("16_jo1ay")]
 position = Vector2(1635, 817)
+
+[node name="astriabgm" type="AudioStreamPlayer2D" parent="."]
+
+[node name="gray25" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1203, 463)
