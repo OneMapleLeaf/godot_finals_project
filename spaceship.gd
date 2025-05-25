@@ -12,7 +12,11 @@ func _process(delta: float) -> void:
 		$CanvasLayer/ColorRect.visible = true
 		$CanvasLayer/AnimationPlayer.play("fadeout")
 		Globals.extracted = false
+	if Globals.maps[4] == true:
+		get_tree().change_scene_to_file("res://EndDialogue.tscn")
+		Globals.extracted = false
 	if Input.is_action_pressed("Interact") and OnArea:
+		$CanvasLayer/ColorRect.visible = false
 		$accessconsolesfx.play()
 		$Player_Character/planets.visible = true
 

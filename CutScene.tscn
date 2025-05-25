@@ -1,6 +1,7 @@
-[gd_scene load_steps=47 format=3 uid="uid://qhgr7i68adkn"]
+[gd_scene load_steps=48 format=3 uid="uid://qhgr7i68adkn"]
 
 [ext_resource type="Texture2D" uid="uid://5d6ocdy5r5b2" path="res://assets/bg-stars.png" id="1_7w8im"]
+[ext_resource type="Script" uid="uid://cgxqwkefsh5sh" path="res://cut_scene.gd" id="1_tt5al"]
 [ext_resource type="Texture2D" uid="uid://boqhgmd5boenj" path="res://assets/dash.png" id="2_tt5al"]
 [ext_resource type="PackedScene" uid="uid://dfjn80t15s10s" path="res://XerdiaPlanet.tscn" id="3_yue76"]
 [ext_resource type="PackedScene" uid="uid://ry1ruu0jw71j" path="res://NexarPlanet.tscn" id="4_24831"]
@@ -246,12 +247,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d4ye7")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="cutscene" type="Node2D"]
+script = ExtResource("1_tt5al")
 
 [node name="Bg-stars" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -368,10 +370,13 @@ position = Vector2(-1.01597, 0.507984)
 scale = Vector2(5.195, 5.493)
 shape = SubResource("CircleShape2D_ph0jm")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="spaceshipscene" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(585, 136)
 scale = Vector2(4.00771, 4.00771)
 sprite_frames = SubResource("SpriteFrames_twnn4")
 autoplay = "default"
-frame_progress = 0.156475
+frame = 30
+frame_progress = 1.0
+
+[connection signal="animation_finished" from="spaceshipscene" to="." method="_on_spaceshipscene_animation_finished"]

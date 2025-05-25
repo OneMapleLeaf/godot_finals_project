@@ -2,7 +2,7 @@ extends Node2D
 
 var current_line := 0
 const TOTAL_LINES := 6
-const NEXT_SCENE_PATH := "res://spaceship.tscn"
+const NEXT_SCENE_PATH := "res://CutScene.tscn"
 
 func _ready() -> void:
 	if Entername.gender == 1:
@@ -22,4 +22,4 @@ func _on_next_pressed():
 	if current_line < 6:
 		get_node("Line%d" % (current_line + 1)).visible = true
 	else:
-		get_tree().change_scene_to_file(NEXT_SCENE_PATH)
+		get_tree().change_scene_to_packed(SceneCache.cutscene_instance)

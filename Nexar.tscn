@@ -22237,7 +22237,7 @@ position = Vector2(146, 432)
 position = Vector2(1918, 748)
 
 [node name="lightbeam3" parent="lightbeams" instance=ExtResource("17_q6l0p")]
-position = Vector2(1446, 1050)
+position = Vector2(1530, 1023)
 
 [node name="lightbeam4" parent="lightbeams" instance=ExtResource("17_q6l0p")]
 position = Vector2(970, 1038)
@@ -22398,7 +22398,7 @@ position = Vector2(1659, 918)
 position = Vector2(1542, 836)
 
 [node name="AnimatedSprite2D11" parent="." instance=ExtResource("11_ic0uy")]
-position = Vector2(1868, 764)
+position = Vector2(1820, 742)
 
 [node name="AnimatedSprite2D12" parent="." instance=ExtResource("11_ic0uy")]
 position = Vector2(1758, 849)
