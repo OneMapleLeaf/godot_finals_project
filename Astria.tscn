@@ -13258,7 +13258,7 @@ position = Vector2(1828, 777)
 frame_progress = 0.266985
 
 [node name="gray" parent="." instance=ExtResource("10_3jtgm")]
-position = Vector2(870, 91)
+position = Vector2(942, 105)
 
 [node name="gray2" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(546, 140)
@@ -13306,7 +13306,7 @@ position = Vector2(1513, 1039)
 position = Vector2(1574, 857)
 
 [node name="gray17" parent="." instance=ExtResource("10_3jtgm")]
-position = Vector2(1679, 777)
+position = Vector2(1598, 587)
 
 [node name="gray18" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(1748, 558)
@@ -13324,7 +13324,7 @@ position = Vector2(1741, 87)
 position = Vector2(963, 263)
 
 [node name="gray23" parent="." instance=ExtResource("10_3jtgm")]
-position = Vector2(874, 150)
+position = Vector2(734, 264)
 
 [node name="gray24" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(1331, 120)
@@ -13867,3 +13867,48 @@ position = Vector2(1635, 817)
 
 [node name="gray25" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(1203, 463)
+
+[node name="gray26" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(517, 926)
+
+[node name="gray27" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(758, 651)
+
+[node name="gray28" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1288, 655)
+
+[node name="gray29" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1887, 81)
+
+[node name="gray30" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1473, 937)
+
+[node name="gray31" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(167, 681)
+
+[node name="gray32" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(307, 440)
+
+[node name="gray33" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(197, 198)
+
+[node name="gray34" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(122, 149)
+
+[node name="gray35" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(331, 73)
+
+[node name="gray36" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1161, 333)
+
+[node name="gray37" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(1349, 338)
+
+[node name="gray38" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(300, 245)
+
+[node name="gray39" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(476, 238)
+
+[node name="gray40" parent="." instance=ExtResource("10_3jtgm")]
+position = Vector2(827, 163)

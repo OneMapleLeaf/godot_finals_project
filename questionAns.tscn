@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://c1vqku0fmvt3o"]
 
 [ext_resource type="Texture2D" uid="uid://dqnm6a4rq3d7a" path="res://assets/Spritesheet_UI_Flat.png" id="1_2jw70"]
-[ext_resource type="Script" uid="uid://74k7mu82pecl" path="res://question_ans.gd" id="1_xoo3f"]
+[ext_resource type="Script" uid="uid://dweq10ke7a5lh" path="res://question_ans.gd" id="1_xoo3f"]
 [ext_resource type="FontFile" uid="uid://b8ny8t1j78ei5" path="res://assets/pixelated-elegance-font/PixelatedEleganceRegular-ovyAA.ttf" id="2_kbr2i"]
 [ext_resource type="Texture2D" uid="uid://dgns1770cp1tb" path="res://assets/mapa4.png" id="3_4fsg1"]
 [ext_resource type="Texture2D" uid="uid://c5byxj3vi32e8" path="res://assets/mapa1.png" id="4_xto3a"]
@@ -946,7 +946,7 @@ offset_bottom = 351.0
 theme_override_fonts/font = ExtResource("2_kbr2i")
 theme_override_font_sizes/font_size = 15
 text = "“Hunt down the legendary 
-map and gather 20 shimmering 
+map and gather 30 shimmering 
 gems to unlock the extraction
  portal—your escape awaits!”"
 horizontal_alignment = 1

@@ -122778,6 +122778,12 @@ polygon = PackedVector2Array(1288, 543, 1311, 530, 1329, 545, 1328, 560, 1325, 5
 position = Vector2(-554, 109)
 polygon = PackedVector2Array(1288, 543, 1311, 530, 1329, 545, 1328, 560, 1325, 557, 1309, 554, 1281, 555)
 
+[node name="gold" parent="stones/StaticBody2D" instance=ExtResource("15_b0r7i")]
+position = Vector2(120, 532)
+
+[node name="gold2" parent="stones/StaticBody2D" instance=ExtResource("15_b0r7i")]
+position = Vector2(1284, 916)
+
 [node name="statue" type="TileMapLayer" parent="."]
 position = Vector2(12, 47)
 scale = Vector2(3.3045, 2.88693)
@@ -123219,7 +123225,70 @@ position = Vector2(1761, 354)
 position = Vector2(1747, 1065)
 
 [node name="gold18" parent="." instance=ExtResource("15_b0r7i")]
-position = Vector2(632, 749)
+position = Vector2(634, 728)
 
 [node name="gold19" parent="." instance=ExtResource("15_b0r7i")]
-position = Vector2(632, 807)
+position = Vector2(636, 765)
+
+[node name="gold20" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(863, 115)
+
+[node name="gold21" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(437, 935)
+
+[node name="gold22" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(942, 1010)
+
+[node name="gold23" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(261, 998)
+
+[node name="gold24" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(288, 146)
+
+[node name="gold25" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1467, 357)
+
+[node name="gold26" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1881, 142)
+
+[node name="gold27" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1801, 54)
+
+[node name="gold28" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1199, 156)
+
+[node name="gold29" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1294, 38)
+
+[node name="gold30" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1485, 801)
+
+[node name="gold31" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(871, 671)
+
+[node name="gold32" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1188, 533)
+
+[node name="gold33" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1290, 762)
+
+[node name="gold34" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(905, 461)
+
+[node name="gold35" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(756, 217)
+
+[node name="gold36" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1431, 639)
+
+[node name="gold37" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1889, 428)
+
+[node name="gold38" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(1114, 1066)
+
+[node name="gold39" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(634, 806)
+
+[node name="gold40" parent="." instance=ExtResource("15_b0r7i")]
+position = Vector2(636, 845)
