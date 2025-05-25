@@ -22,6 +22,7 @@ func preload_scenes() -> void:
 	SceneCache.valtania_instance = preload("res://valtania.tscn")
 	SceneCache.astria_instance = preload("res://Astria.tscn")
 	SceneCache.zorvath_instance = preload("res://ZORVATH.tscn")
+	SceneCache.cutscene_instance = preload("res://CutScene.tscn")
 	
 	
 	await get_tree().process_frame

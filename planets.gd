@@ -17,8 +17,6 @@ func _process(delta: float) -> void:
 				$".".get_node("Redfutuisticlock%s" % (i + 1)).visible = false
 				$".".get_node("%s" % unlockable_planets[i]).modulate = Color("FFFFFF")
 			$".".get_node("Completed%s" % i).visible = true
-
-		
 	
 func _on_area_2_dxerdia_mouse_entered() -> void:
 	$xerdia.scale = Vector2(2.349, 2.349)
@@ -40,6 +38,7 @@ func planetVisiblity():
 		$astria/Area2dastria.monitorable = false
 		$zorvath/Area2Dzorvath.monitoring = false
 		$zorvath/Area2Dzorvath.monitorable = false
+		print("not visible")
 	elif $".".visible == true:
 		$xerdia/Area2dxerdia.monitorable = true
 		$xerdia/Area2dxerdia.monitoring = true
@@ -51,6 +50,7 @@ func planetVisiblity():
 		$astria/Area2dastria.monitorable = true
 		$zorvath/Area2Dzorvath.monitoring = true
 		$zorvath/Area2Dzorvath.monitorable = true
+		print("visible")
 
 func _on_area_2_dnexar_mouse_entered() -> void:
 	$nexar.scale = Vector2(1.9, 1.9)

@@ -6,3 +6,4 @@ var nexar_instance
 var valtania_instance
 var astria_instance
 var zorvath_instance
+var cutscene_instance
