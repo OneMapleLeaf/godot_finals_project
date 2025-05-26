@@ -38,7 +38,7 @@ func planetVisiblity():
 		$astria/Area2dastria.monitorable = false
 		$zorvath/Area2Dzorvath.monitoring = false
 		$zorvath/Area2Dzorvath.monitorable = false
-		print("not visible")
+		
 	elif $".".visible == true:
 		$xerdia/Area2dxerdia.monitorable = true
 		$xerdia/Area2dxerdia.monitoring = true
@@ -50,7 +50,6 @@ func planetVisiblity():
 		$astria/Area2dastria.monitorable = true
 		$zorvath/Area2Dzorvath.monitoring = true
 		$zorvath/Area2Dzorvath.monitorable = true
-		print("visible")
 
 func _on_area_2_dnexar_mouse_entered() -> void:
 	$nexar.scale = Vector2(1.9, 1.9)
