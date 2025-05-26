@@ -388,9 +388,11 @@ text = "rommer"
 
 [node name="malegrunt" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_6qc1w")
+volume_db = 20.038
 
 [node name="femalegrunt" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_uuvki")
+volume_db = 15.0
 
 [node name="gempick" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_04jrr")

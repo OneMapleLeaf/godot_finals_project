@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_homet_btn_pressed() -> void:
+	Globals.playerHP = 100
 	get_tree().paused = false
 	get_tree().change_scene_to_packed(SceneCache.spaceship_instance)
 	
