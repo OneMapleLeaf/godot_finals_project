@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/nexarbgsound.mp3-3adeb9f903cbc6aa5ffe1e035eab
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

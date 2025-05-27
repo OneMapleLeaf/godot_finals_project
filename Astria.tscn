@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://eu6dicmv1e57"]
+[gd_scene load_steps=30 format=4 uid="uid://eu6dicmv1e57"]
 
 [ext_resource type="Script" uid="uid://b2onnp0tav7lf" path="res://astria.gd" id="1_0raj8"]
 [ext_resource type="Texture2D" uid="uid://c6e3mikfihtxk" path="res://assets/astriaBG.png" id="1_hn2mn"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_p4obc"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="14_57jpe"]
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="16_jo1ay"]
+[ext_resource type="AudioStream" uid="uid://djr7x6um58qr3" path="res://assets/sounds/astriabgsound.mp3" id="16_y3vik"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcwdr"]
 texture = ExtResource("1_hn2mn")
@@ -13864,6 +13865,8 @@ position = Vector2(1549, 45)
 position = Vector2(1635, 817)
 
 [node name="astriabgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_y3vik")
+autoplay = true
 
 [node name="gray25" parent="." instance=ExtResource("10_3jtgm")]
 position = Vector2(1203, 463)

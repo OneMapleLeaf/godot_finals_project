@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://civnow1efben7"
+uid="uid://p7md5ndi13gv"
 path="res://.godot/imported/zorvathbgsound.mp3-226518bb5a784eb2ac64a0c59c29a62c.mp3str"
 
 [deps]
@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/zorvathbgsound.mp3-226518bb5a784eb2ac64a0c59c
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

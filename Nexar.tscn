@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://6ylrag3qfjaa"]
+[gd_scene load_steps=47 format=4 uid="uid://6ylrag3qfjaa"]
 
 [ext_resource type="Texture2D" uid="uid://hb3bm1kv43uf" path="res://assets/Ground_mossice.png" id="1_fj7yv"]
 [ext_resource type="Script" uid="uid://bogv3k0ewk22a" path="res://nexar.gd" id="1_h2qr8"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="17_q6l0p"]
 [ext_resource type="PackedScene" uid="uid://dxeyhw7up7ce0" path="res://topIceTree2.tscn" id="18_aahws"]
 [ext_resource type="PackedScene" uid="uid://ca3rxa4xngoc7" path="res://topIcetree3.tscn" id="19_la7rj"]
+[ext_resource type="AudioStream" uid="uid://k7poqdgbfobj" path="res://assets/sounds/nexarbgsound.mp3" id="20_4moa4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -22369,6 +22370,7 @@ position = Vector2(847, 30)
 position = Vector2(55, 528)
 
 [node name="nexarbgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_4moa4")
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("11_ic0uy")]
 position = Vector2(582, 208)

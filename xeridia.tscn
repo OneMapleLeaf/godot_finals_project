@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://d3bupl20b1tby"]
+[gd_scene load_steps=31 format=4 uid="uid://d3bupl20b1tby"]
 
 [ext_resource type="Script" uid="uid://c3b3wclc2w7yo" path="res://xeridia.gd" id="1_it2yv"]
 [ext_resource type="Texture2D" uid="uid://dxfmx7svbr6up" path="res://assets/seasonal sample (spring).png" id="1_kjij7"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c8uvrjngkr2hy" path="res://treetop.tscn" id="12_vqsi2"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_ni6dq"]
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="15_gnu4q"]
+[ext_resource type="AudioStream" uid="uid://dgr8uq2j51wlp" path="res://assets/sounds/xeridiabgsound.mp3" id="15_v38xl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m5p6y"]
 texture = ExtResource("1_kjij7")
@@ -8094,3 +8095,5 @@ position = Vector2(1786, 617)
 position = Vector2(28, 588)
 
 [node name="xeridiabgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_v38xl")
+autoplay = true

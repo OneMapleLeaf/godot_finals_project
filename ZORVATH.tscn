@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://cxhbju02cqefy"]
+[gd_scene load_steps=26 format=4 uid="uid://cxhbju02cqefy"]
 
 [ext_resource type="Texture2D" uid="uid://cqd1q0vpewubc" path="res://assets/ground.png" id="1_spvlh"]
 [ext_resource type="Script" uid="uid://dguadfpq7so8d" path="res://zorvath.gd" id="1_xm31h"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wcqnxunuf52" path="res://ui.tscn" id="12_805wh"]
 [ext_resource type="PackedScene" uid="uid://bun4wcak1wwug" path="res://chestloot.tscn" id="13_wnhyi"]
 [ext_resource type="PackedScene" uid="uid://qiqoaiwg83w5" path="res://lightbeam.tscn" id="15_ur2dv"]
+[ext_resource type="AudioStream" uid="uid://p7md5ndi13gv" path="res://assets/sounds/zorvathbgsound.mp3" id="16_rgdxa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8j6yf"]
 texture = ExtResource("1_spvlh")
@@ -7222,3 +7223,4 @@ position = Vector2(681, 258)
 position = Vector2(1095, 549)
 
 [node name="zorvathbgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_rgdxa")
