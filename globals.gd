@@ -75,5 +75,14 @@ func resetCurrentStage(stage_num: int):
 	pass
 	
 func resetWholeGame():
+	maps = [false, false, false, false, false]
+	gems = {
+		"green_gem_counter": {"count": 0},
+		"blue_gem_counter": {"count": 0},
+		"gold_gem_counter": {"count": 0},
+		"violet_gem_counter": {"count": 0},
+		"red_gem_counter": {"count": 0},
+	}
+	playerHP = 100
 	pass
 	

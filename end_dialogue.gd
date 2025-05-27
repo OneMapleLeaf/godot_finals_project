@@ -22,4 +22,5 @@ func _on_next_pressed():
 	if current_line < 6:
 		get_node("Line%d" % (current_line + 1)).visible = true
 	else:
+		Globals.resetWholeGame()
 		get_tree().change_scene_to_packed(SceneCache.cutscene_instance)
